@@ -32,8 +32,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
 
-    
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+    <!-- for head slider -->
+    <script>
+    	   wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+    </script>
+	<!-- head slider script ends -->
     <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -153,8 +172,7 @@
          <!-- navbar-collapse.// -->
     <!-- Navigation ends -->
     <!-- section divides -->
-    <div class="intro-section custom-owl-carousel" id="home-section" style=" background:rgba(31, 42, 68, 0.25) !important;">
-        <!-- <div class="container"> -->
+<!--     <div class="intro-section custom-owl-carousel" id="home-section" style=" background:rgba(31, 42, 68, 0.25) !important;">
           <div class="row align-items-center">
             <div class="col-lg-5 mr-auto" data-aos="fade-up">
   
@@ -198,8 +216,68 @@
   
             </div>
           </div>
-        <!-- </div> -->
+      </div> -->
+
+      <!-- head slider section-->
+      <section>
+    <div id="slider-animation" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#slider-animation" data-slide-to="0" class="active"></li>
+    <li data-target="#slider-animation" data-slide-to="1"></li>
+    <li data-target="#slider-animation" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    <header>
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="images/welcome.mp4" type="video/mp4">
+  </video>
+  <div class="contain h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white"><!-- 
+        <p class="lead mb-0 wow " data-wow-duration="4s">to </p> -->
+        <!-- <h4 class="display-3 wow slideInLeft" data-wow-duration="10s">
+
+        <div class="space"></div>we can best aid you...</h4> -->
       </div>
+    </div>
+  </div>
+</header>
+    </div>
+    <div class="carousel-item">
+      <img src="images/chicago-690364.jpg" alt="Workspace">
+    <div class="text-box">
+            <h2 class="wow slideInUp" data-wow-duration="4s" >AideOne</h2>
+            <p class="wow fadeInDown" data-wow-duration="4s">Helps you experience the fastest and secure way to grow business with the leader in Professional Services. </p>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/laptop-5582775_1920.jpg" alt="Workspace">
+    <div class="text-box">
+            <h2 class="wow fadeInUp" data-wow-duration="4s">Aideone School of
+Finance and Tax</h2>
+            <p class="wow fadeInUp" data-wow-duration="2s">Aiding the fulfillment of your career goals with finesse and a professional touch</p>
+        </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#slider-animation" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#slider-animation" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+    
+</section>
+      <!-- head slider section ends -->
 
       
             <hr style="width:100%;margin-left:50; margin-right:50; height:1px; border:none; color:red; background-color:#fff;">
@@ -210,7 +288,8 @@
 	        <div class="row" style="margin-top: 100px;">
 	          
 	          <div class="col-lg-6">
-	            <h1 class="my-4" style="margin-top: 50px;">AideOne Consult Limited<hr style="width:20%;margin-left:50; margin-right:50; height:3px; border:none; color:red; background-color:#e91c58;"></h1><br><h4 style=" margin-bottom: 60px;">...we can best aide you</h4>
+	            <h1 class="my-4" style="margin-top: 50px;">AideOne Consult Limited<hr style="width:20%;margin-left:50; margin-right:50; height:3px; border:none; color:red; background-color:#e91c58;"></h1><br>
+		    <div class="wow slideInLeft" data-wow-duration="4s"><h4 style=" margin-bottom: 60px;">...we can best aide you</h4></div>
 	            <p>Aideone is a consulting company dedicated to aiding businesses fulfil their vision using first-class technology and a dedicated highly skilled team to provide Business, Financial, Tax, Accounting, Human Resources and Assurance services. 
 	           <p><a href="#" target="_blank" class="btn btn-outline-light py-3 px-5">Learn more</a></p></p>
 	          </div>
@@ -225,6 +304,7 @@
 
           		<!-- Services section-->
 
+		    <div class="wow slideInUp" data-wow-duration="4s">
 		        <div id="content-desktop">
 				    <div class="row" style="font-family: Arial;">
 				      
@@ -232,8 +312,9 @@
 				      	<div class="slide-text">
 		                  <h1>Our Services<hr style="width:30%;margin-left:50; margin-right:50; margin-bottom: 75px;height:3px; border:none; color:red; background-color:#e91c58;"></h1>
 		                  <img class=" img-fluid" src="images/kindpng_473551.png" alt="card image">
-		                  <p class="mb-5" style="margin-top: 40px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsa nulla sed quis rerum amet natus quas necessitatibus.</p>
-		                  <p><a href="#" target="_blank" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
+		                  <p class="mb-5" style="margin-top: 40px;">
+		    <div class="wow slideInLeft" data-wow-duration="4s">We offer a full range of services that cut across your day-to-day operations and ensuring compliance with relevant accounting, tax, and regulatory requirements at all stages in your business life cycle.</p>
+		                  <p><a href="#" target="_blank" class="btn btn-outline-light py-3 px-5">Learn more</a></p></div>
 		                </div>
 				      </div>
 				      <div class="col-lg-8 col-md-6 col-sm-4">
@@ -308,10 +389,12 @@
 				      </div>
 				    </div>
 				</div>
+			</div>
 			<!-- services Desktop view section ends -->
 
 			<!-- services Mobile view section -->
 
+		    <div class="wow slideInUp" data-wow-duration="4s">
 				<div id="content-mobile">
 							<section class="services pt-100 pb-50" id="services">
 				         <div class="container">
@@ -380,10 +463,12 @@
 				         </div>
 				      </section>
 				  </div>
+				</div>
 			<!-- services Mobile view section ends -->
 
 
 		    <!-- Counter -->
+		    <div class="wow slideInUp" data-wow-duration="4s">
 		    	<div class="container">
 					<div class="row">
 					    <br/>
@@ -424,6 +509,7 @@
 				              </div>
 				         </div>
 				</div>
+			</div>
 		    <!-- Counter ending -->
 
 
@@ -517,7 +603,7 @@
 
             <div class="ha-heading-parallax">
                 <div class="space-400"></div><h5 class="section-title h1">Our Team</h5><div class="space-200"></div>
-                 <h5>Meet our seasoned professionals dedicated to aiding you.</h5>
+                 <h5>Meet our seasoned professionals dedicated to aiding the achievement of your goals.</h5>
                  <div class="space-400"></div>
             </div>
             <div class="ha-content ha-content-whitecolor">
@@ -1140,7 +1226,7 @@
         <!-- Testimonials -->
         <div class="container">
 				<div class="container-fluid px-2 px-md-4 py-5 mx-auto">
-        <h2>Testimonials<hr align="center" style="width:25%; height:3px; border:none; color:red; background-color:#e91c58;"></h2>
+        <h2>Testimonials<hr align="center" style="width:10%; height:3px; border:none; color:red; background-color:#e91c58;"></h2>
 				    <div class="row d-flex justify-content-center">
 				        <div class="col-md-10 col-lg-9 col-xl-8">
 				            <div class="card card-main border-0 text-center">
@@ -1207,7 +1293,7 @@
 
         <!-- -------Insights------- -->
         <div class="container cta-100 ">
-        <h2>Insights<hr align="center" style="width:25%; height:3px; border:none; color:red; background-color:#e91c58;"></h2>
+        <h2>Insights<hr align="center" style="width:10%; height:3px; border:none; color:red; background-color:#e91c58;"></h2>
           <div class="container">
             <div class="row blog">
               <div class="col-md-12">
@@ -1420,10 +1506,10 @@
                             <div class="layer_content">
                                 <div class="section_title"><!-- 
                                     <h5> Academy </h5> -->
-                                    <h2>Aideone School of<strong>Finance and Tax</strong></h2>
+                                    <h2 class="wow fadeIn" data-wow-duration="4s">Aideone School of<strong>Finance and Tax</strong></h2>
                                     <div class="heading_line"><span></span></div>
-                                    <p>Aideone Academy is a leading learning solution provider with various training products ranging from:</p>
-					                  <ul>
+                                    <p class=" wow slideInLeft" data-wow-duration="4s">Aideone Academy is a leading learning solution provider with various training products ranging from:</p>
+					                  <ul class=" wow slideInLeft" data-wow-duration="4s">
 					                    <li>
 					                      International financial reporting standards ((IFRS) Training)
 					                    </li>
@@ -1465,7 +1551,7 @@
 				<!-- Academy / Contact section ends -->
 
 				<!-- footer -->
-	<section id="footer">
+	<section id="footer" class=" wow slideInUp" data-wow-duration="4s">
 		<div class="container">
 			<div class="row text-center text-xs-center text-sm-left text-md-left">
 				<div class="col-xs-12 col-sm-4 col-md-4">
@@ -1480,6 +1566,19 @@
                       </p>
                       <p>+2348032006438 / +2348032015510</p>
                       <p>info@aideone.com.ng</p>
+
+			<div class="row"><!-- 
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5"> -->
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul><!-- 
+				</div> -->
+				<hr>
+			</div>
                     </div>
                   </div>
 				</div>
@@ -1503,7 +1602,7 @@
 						<li><a href="#" title="Design and developed by iDear Concepts"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
 					</ul>
 				</div>
-			</div>
+			</div><!-- 
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
 					<ul class="list-unstyled list-inline social text-center">
@@ -1515,13 +1614,19 @@
 					</ul>
 				</div>
 				<hr>
-			</div>	
+			</div> -->	
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
 					<p class="m-0 text-center text-black">Copyright &copy; <a href="#"><span class="span text-violat ">AideOne Consult </span></a><script> document.write(new Date().getFullYear());</script></p>
 				</div>
 				<hr>
 			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p style=" color: #000;">Designed with <i class="fa fa-heart-o"></i> by	<a style="color: #000;" href="https://github.com/Oluwafemi-iDEAR" target="_blank"> Oluwafemi </a></p>
+				</div>
+				<hr>
+			</div>
 		</div>
 	</section>
 								<!-- ./Footer ends -->
