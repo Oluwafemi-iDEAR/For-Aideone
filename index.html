@@ -21,7 +21,7 @@
     <!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="js/bootstrap.min.js"></script>
-    
+	<script src="js/typewriter.js"></script>
 
     
                 <!-- Google font -->
@@ -83,28 +83,28 @@
     <nav class="navbar navbar-expand-lg navbar-default bg-light fixed-top">
           
       <div class="container">
-	   <a class="navbar-brand" href="index.html"><img src="images/aideone.png" alt="AideOne" height="50" class='img-responsive'></a>
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+	    <a class="navbar-brand" href="index.html"><img src="images/aideone.png" alt="AideOne" height="50" class='img-responsive'></a>
+     	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="main_nav">
         
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active"> <a class="nav-link" href="#"><i class="fa fa-home"></i> </a> </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> About Us </a>
-            <ul class="dropdown-menu dropdown-menu-right">
-              <li><a class="dropdown-item" href="#"> About the Firm</a></li>
-              <li><a class="dropdown-item" href="#"> Meet our Team </a></li>
-              <li><a class="dropdown-item" href="#"> Core Values</a></li>
-              <li><a class="dropdown-item" href="#"> Vision </a></li>
-              <li><a class="dropdown-item" href="#"> Mission & Values</a></li>
-            </ul>
-        </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> About Us </a>
+            	<ul class="dropdown-menu dropdown-menu-right wow slideInDown" data-wow-duration="1s">
+                  <li><a class="dropdown-item" href="about.html"> About the Firm</a></li>
+              	  <li><a class="dropdown-item" href="about.html#team"> Meet our Team </a></li>
+              	  <li><a class="dropdown-item" href="about.html#values"> Core Values</a></li>
+              	  <li><a class="dropdown-item" href="about.html#vision"> Vision </a></li>
+              	  <li><a class="dropdown-item" href="about.html#mission"> Mission & Values</a></li>
+            	</ul>
+        	</li>
        
           <li class="nav-item dropdown has-megamenu">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Services  </a>
-              <div class="dropdown-menu megamenu" role="menu">
+              <div class="dropdown-menu megamenu  wow slideInDown" data-wow-duration="1s" role="menu">
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="col-megamenu">
@@ -152,14 +152,14 @@
         
           <li class="nav-item dropdown">
             <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> Careers </a>
-            <ul class="dropdown-menu dropdown-menu-right">
+            <ul class="dropdown-menu dropdown-menu-right wow slideInDown" data-wow-duration="1s">
               <li><a class="dropdown-item" href="#"> Drop CV</a></li>
               <li><a class="dropdown-item" href="#"> Join Our Team </a></li>
             </ul>
         </li>	
           <li class="nav-item dropdown">
             <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> Insights </a>
-            <ul class="dropdown-menu dropdown-menu-right">
+            <ul class="dropdown-menu dropdown-menu-right wow slideInDown" data-wow-duration="1s">
               <li><a class="dropdown-item" href="#"> Newsletters</a></li>
               <li><a class="dropdown-item" href="#"> Updates </a></li>
             </ul>
@@ -171,54 +171,7 @@
           </nav>
          <!-- navbar-collapse.// -->
     <!-- Navigation ends -->
-    <!-- section divides -->
-<!--     <div class="intro-section custom-owl-carousel" id="home-section" style=" background:rgba(31, 42, 68, 0.25) !important;">
-          <div class="row align-items-center">
-            <div class="col-lg-5 mr-auto" data-aos="fade-up">
-  
-              <div class="owl-carousel slide-one-item-alt-text">
-                <div class="slide-text">
-                  <h1>We Do Awesome Things</h1>
-                  <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsa nulla sed quis rerum amet natus quas necessitatibus.</p>
-                  <p><a href="#" target="_blank" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
-                </div>
-                <div class="slide-text">
-                  <h1>Welcome</h1>
-                  <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsa nulla sed quis rerum amet natus quas necessitatibus.</p>
-                  <p><a href="#" target="_blank" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
-                </div>
-                <div class="slide-text">
-                  <h1>High Quality Website Templates</h1>
-                  <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsa nulla sed quis rerum amet natus quas necessitatibus.</p>
-                  <p><a href="#" target="_blank" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
-                </div>
-                <div class="slide-text">
-                  <h1>We do things right.</h1>
-                  <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsa nulla sed quis rerum amet natus quas necessitatibus.</p>
-                  <p><a href="#" target="_blank" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
-                </div>
-              </div>
-  
-            </div>
-            <div class="col-lg-6 ml-auto"  data-aos="fade-up" data-aos-delay="100">
-                          
-              <div class="owl-carousel slide-one-item-alt">
-                <img src="images/img_1.jpg" alt="Image" class="img-fluid">
-                <img src="images/img_2.jpg" alt="Image" class="img-fluid">
-                <img src="images/img_3.jpg" alt="Image" class="img-fluid">
-                <img src="images/img_4.jpg" alt="Image" class="img-fluid">
-              </div>
-  
-              <div class="owl-custom-direction">
-                <a href="#" class="custom-prev"><i class="fa fa-arrow-left"></i></a>
-                <a href="#" class="custom-next"><i class="fa fa-arrow-right"></i></a>
-              </div>
-  
-            </div>
-          </div>
-      </div> -->
-
-      <!-- head slider section-->
+   <!-- head slider section-->
       <section>
     <div id="slider-animation" class="carousel slide" data-ride="carousel">
 
@@ -252,16 +205,15 @@
     <div class="carousel-item">
       <img src="images/chicago-690364.jpg" alt="Workspace">
     <div class="text-box">
-            <h2 class="wow slideInUp" data-wow-duration="4s" >AideOne</h2>
-            <p class="wow fadeInDown" data-wow-duration="4s">Helps you experience the fastest and secure way to grow business with the leader in Professional Services. </p>
+            <h2 class="wow slideInUp" data-wow-duration="2s" >AideOne</h2>
+            <p class="wow fadeInDown" data-wow-duration="2s">Helps you experience the fastest and secure way to grow business with the leader in Professional Services. </p>
         </div>
     </div>
     <div class="carousel-item">
       <img src="images/laptop-5582775_1920.jpg" alt="Workspace">
     <div class="text-box">
-            <h2 class="wow fadeInUp" data-wow-duration="4s">Aideone School of
-Finance and Tax</h2>
-            <p class="wow fadeInUp" data-wow-duration="2s">Aiding the fulfillment of your career goals with finesse and a professional touch</p>
+            <h1 class="wow fadeInUp" data-wow-duration="4s" style="font-size: 40px;">Aideone </h1>
+            <p class="wow fadeInUp" data-wow-duration="2s">...We can best Aid you.</p>
         </div>
     </div>
   </div>
@@ -302,9 +254,128 @@ Finance and Tax</h2>
 
 
 
+        		<!-- Best for you -->
+
+        		<section id="what-we-do" class="wow fadeIn" data-wow-duration="3s">
+		<div class="container-fluid">
+			<h2 class="section-title mb-2 h1">Why Choose Us</h2><hr style="width:20%;margin-left:50; margin-right:50; height:3px; border:none; color:red; background-color:#e91c58;">
+			
+			<div class="row mt-5">
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+					<div class="card">
+						<div class="card-block block-1">
+							<h3 class="card-title">Customer Support</h3>
+							<p class="card-text">Excellent customer service is our Core Value.</p>
+							<a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more" >Read more<i class="fa fa-angle-double-right ml-2"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+					<div class="card">
+						<div class="card-block block-2">
+							<h3 class="card-title">Customized Solutions</h3>
+							<p class="card-text">We tailor our service to meet your perculiar needs and circumstance.</p>
+							<a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more" >Read more<i class="fa fa-angle-double-right ml-2"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+					<div class="card">
+						<div class="card-block block-3">
+							<h3 class="card-title">Excellent Reputation</h3>
+							<p class="card-text">Our brand essence is one of our core values. Professional execution and timing.</p>
+							<a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more" >Read more<i class="fa fa-angle-double-right ml-2"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+					<div class="card">
+						<div class="card-block block-4">
+							<h3 class="card-title">Client Satisfaction</h3>
+							<p class="card-text">Dedicated to providing personal attention to all our clients.</p>
+							<a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more" >Read more<i class="fa fa-angle-double-right ml-2"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>	
+	</section>
+
+
+
+
+
+
+
+<!-- 					
+<section>
+<div class="container">
+
+	
+		<div class="row mbr-justify-content-center">
+
+            <div class="col-lg-6 mbr-col-md-10">
+                <div class="wrap">
+                    <div class="ico-wrap service_tab_1">
+                        <span class="mbr-iconfont fa-volume-up fa fa-icon-image"></span>
+                    </div>
+                    <div class="text-wrap vcenter">
+                        <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Customer <span>Support</span></h2>
+                        <p class="mbr-fonts-style text1 mbr-text display-6">Excellent customer service is our Core Value</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mbr-col-md-10">
+                <div class="wrap">
+                    <div class="ico-wrap service_tab_1">
+                        <span class="mbr-iconfont fa-smile fa fa-icon-image"><i class="fa fa-smile"></i></span>
+                    </div>
+                    <div class="text-wrap vcenter">
+                        <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Client
+                            <span>Satisfaction</span>
+                        </h2>
+                        <p class="mbr-fonts-style text1 mbr-text display-6">Dedicated to providing personal attention to all our clients.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mbr-col-md-10">
+                <div class="wrap">
+                    <div class="ico-wrap service_tab_1">
+                        <span class="mbr-iconfont fa-globe fa fa-icon-image"></span>
+                    </div>
+                    <div class="text-wrap vcenter">
+                        <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Excellent <span>Reputation</span>
+                        </h2>
+                        <p class="mbr-fonts-style text1 mbr-text display-6">Our brand essence is one of our core values. Professional execution and timing.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mbr-col-md-10">
+                <div class="wrap">
+                    <div class="ico-wrap service_tab_1">
+                        <span class="mbr-iconfont fa-trophy fa fa-icon-image"></span>
+                    </div>
+                    <div class="text-wrap vcenter">
+                        <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Customized<span> Solutions</span></h2>
+                        <p class="mbr-fonts-style text1 mbr-text display-6">We tailor our service to meet your perculiar needs and circumstance.</p>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+
+</div>
+
+</section> -->
+        		<!-- Best for you -->
+
           		<!-- Services section-->
 
-		    <div class="wow slideInUp" data-wow-duration="4s">
+		    <div class="wow slideInUp" data-wow-duration="3s">
 		        <div id="content-desktop">
 				    <div class="row" style="font-family: Arial;">
 				      
@@ -313,8 +384,9 @@ Finance and Tax</h2>
 		                  <h1>Our Services<hr style="width:30%;margin-left:50; margin-right:50; margin-bottom: 75px;height:3px; border:none; color:red; background-color:#e91c58;"></h1>
 		                  <img class=" img-fluid" src="images/kindpng_473551.png" alt="card image">
 		                  <p class="mb-5" style="margin-top: 40px;">
-		    <div class="wow slideInLeft" data-wow-duration="4s">We offer a full range of services that cut across your day-to-day operations and ensuring compliance with relevant accounting, tax, and regulatory requirements at all stages in your business life cycle.</p>
-		                  <p><a href="#" target="_blank" class="btn btn-outline-light py-3 px-5">Learn more</a></p></div>
+		    				<div class="wow slideInLeft" data-wow-duration="4s">We offer a full range of services that cut across your day-to-day operations and ensuring compliance with relevant accounting, tax, and regulatory requirements at all stages in your business life cycle.</p>
+		                  	<p><a href="#" target="_blank" class="btn btn-outline-light py-3 px-5">Learn more</a></p>
+		                  </div>
 		                </div>
 				      </div>
 				      <div class="col-lg-8 col-md-6 col-sm-4">
@@ -333,7 +405,7 @@ Finance and Tax</h2>
 		                           <span class="forActive"></span>
 		                           </span>
 		                           <span class="itemDot itemDot3" data-tab="3">
-		                           <i class="fa fa-search"></i>
+		                           <i class="fa fa-laptop"></i>
 		                           <span class="forActive"></span>
 		                           </span>
 		                           <span class="itemDot itemDot4" data-tab="4">
@@ -363,7 +435,7 @@ Finance and Tax</h2>
 		                           <div class="CirItem title-box CirItem3">
 		                              <h2 class="title"><span>Accounting Process Review and Transformation.</span></h2><!-- 
 		                              <p>Accounting Process Review and Transformation.</p> -->
-		                              <i class="fa fa-search"></i>
+		                              <i class="fa fa-laptop"></i>
 		                           </div>
 		                           <div class="CirItem title-box CirItem4">
 		                              <h2 class="title"><span>Finance function resourcing and outsourcing.</span></h2><!-- 
@@ -371,7 +443,7 @@ Finance and Tax</h2>
 		                              <i class="fa fa-file"></i>
 		                           </div>
 		                           <div class="CirItem title-box CirItem5">
-		                              <h2 class="title"><span>Audit and Assurance Service .</span></h2>
+		                              <h2 class="title"><span>Audit and Assurance Service.</span></h2>
 		                              <!-- <p>Audit and Assurance Service .</p> -->
 		                              <i class="fa fa-briefcase"></i>
 		                           </div>
@@ -396,8 +468,8 @@ Finance and Tax</h2>
 
 		    <div class="wow slideInUp" data-wow-duration="4s">
 				<div id="content-mobile">
-							<section class="services pt-100 pb-50" id="services">
-				         <div class="container">
+					<section class="services pt-100 pb-50" id="services">
+				        <div class="container">
 				            <div class="row">
 				               <div class="col-xl-6 mx-auto text-center">
 				                  <div class="section-title mb-100">
@@ -406,12 +478,15 @@ Finance and Tax</h2>
 				                  </div>
 				               </div>
 				            </div>
+				               <div class="slide-text">
+				                  <p class="mb-5" style="margin-top: 40px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsa nulla sed quis rerum amet natus quas necessitatibus.</p>
+				               </div>
 				            <div class="row">
 				               <div class="col-lg-4 col-md-6">
 				                  <!-- Single Service -->
 				                  <div class="single-service">
 				                     <i class="fa fa-laptop"></i>
-				                     <h4>Web Design </h4>
+				                     <h4>Bookkeeping and Accounting Services. </h4>
 				                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry </p>
 				                  </div>
 				               </div>
@@ -419,7 +494,7 @@ Finance and Tax</h2>
 				                  <!-- Single Service -->
 				                  <div class="single-service">
 				                     <i class="fa fa-gears"></i>
-				                     <h4>Web Development</h4>
+				                     <h4>Tax Compliance and Advisory.</h4>
 				                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry </p>
 				                  </div>
 				               </div>
@@ -427,7 +502,7 @@ Finance and Tax</h2>
 				                  <!-- Single Service -->
 				                  <div class="single-service">
 				                     <i class="fa fa-mobile"></i>
-				                     <h4>Responsive Design</h4>
+				                     <h4>Accounting Process Review and Transformation.</h4>
 				                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry </p>
 				                  </div>
 				               </div>
@@ -435,7 +510,7 @@ Finance and Tax</h2>
 				                  <!-- Single Service -->
 				                  <div class="single-service">
 				                     <i class="fa fa-magic"></i>
-				                     <h4>Graphic Design</h4>
+				                     <h4>Finance function resourcing and outsourcing.</h4>
 				                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry </p>
 				                  </div>
 				               </div>
@@ -443,7 +518,7 @@ Finance and Tax</h2>
 				                  <!-- Single Service -->
 				                  <div class="single-service">
 				                     <i class="fa fa-pencil"></i>
-				                     <h4>Creative Design</h4>
+				                     <h4>Audit and Assurance Service.</h4>
 				                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry </p>
 				                  </div>
 				               </div>
@@ -451,19 +526,18 @@ Finance and Tax</h2>
 				                  <!-- Single Service -->
 				                  <div class="single-service">
 				                     <i class="fa fa-fa fa-lightbulb-o"></i>
-				                     <h4>Branding</h4>
+				                     <h4>Human Resource and Payroll Services.</h4>
 				                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry </p>
 				                  </div>
 				               </div>
 				               <div class="slide-text">
-				                  <p class="mb-5" style="margin-top: 40px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsa nulla sed quis rerum amet natus quas necessitatibus.</p>
 				                  <p><a href="#" target="_blank" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
 				                </div>
 				            </div>
-				         </div>
-				      </section>
-				  </div>
+				        </div>
+				    </section>
 				</div>
+			</div>
 			<!-- services Mobile view section ends -->
 
 
@@ -513,7 +587,7 @@ Finance and Tax</h2>
 		    <!-- Counter ending -->
 
 
-<!--				(Services One - Do not delete)
+			<!--	(Services One - Do not delete)
                   <div class="container">
             <div class="row">
               <div class="container-fluid" style=" margin-top: 70px; margin-bottom: 70px;">
@@ -588,644 +662,13 @@ Finance and Tax</h2>
 
           <!-- Team -->
 
-        <div class="space-400"></div>
-</div>
-
-                                    <!-- Team Section-->
-
-                                    <div class="container-fluid">
-
-    <div>
-
-            <div class="ha-bg-parallax text-center block-marginb-none" data-type="background" data-speed="60">
-
-        <div class="ha-parallax-body">
-
-            <div class="ha-heading-parallax">
-                <div class="space-400"></div><h5 class="section-title h1">Our Team</h5><div class="space-200"></div>
-                 <h5>Meet our seasoned professionals dedicated to aiding the achievement of your goals.</h5>
-                 <div class="space-400"></div>
-            </div>
-            <div class="ha-content ha-content-whitecolor">
-                <div class="row">
-                    <!-- Team member -->
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="image-flip" >
-                            <div class="mainflip flip-0">
-                                <div class="frontside">
-                                    <div class="card">
-                                        <div class="card-body text-center">
-                                            <p><img class=" img-fluid" src="images/maleavatar.png" alt="card image"></p>
-                                            <h4 class="card-title">Yesufu J. </h4>
-                                            <p class="card-text">Partner.</p>
-                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="backside">
-                                    <div class="card">
-                                        <div class="card-body text-center mt-4">
-                                            <h4 class="card-title">Yesufu J.</h4>
-                                            <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                            <ul class="list-inline">
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-facebook"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-skype"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-google"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ./Team member -->
-                    <!-- Team member -->
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                            <div class="mainflip">
-                                <div class="frontside">
-                                    <div class="card">
-                                        <div class="card-body text-center">
-                                            <p><img class=" img-fluid" src="images/maleavatar.png" alt="card image"></p>
-                                            <h4 class="card-title">Popogbe Oluwatobi</h4>
-                                            <p class="card-text">Partner.</p>
-                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="backside">
-                                    <div class="card">
-                                        <div class="card-body text-center mt-4">
-                                            <h4 class="card-title">Popogbe Oluwatobi</h4>
-                                            <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                            <ul class="list-inline">
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-facebook"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-skype"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-google"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ./Team member -->
-                    <!-- Team member -->
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                            <div class="mainflip">
-                                <div class="frontside">
-                                    <div class="card">
-                                        <div class="card-body text-center">
-                                            <p><img class=" img-fluid" src="images/femaleavatar.png" alt="card image"></p>
-                                            <h4 class="card-title">Chioma Uwakah</h4>
-                                            <p class="card-text">Position.</p>
-                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="backside">
-                                    <div class="card">
-                                        <div class="card-body text-center mt-4">
-                                            <h4 class="card-title">Chioma Uwakah</h4>
-                                            <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                            <ul class="list-inline">
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-facebook"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-skype"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-google"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ./Team member -->
-                    <!-- Team member -->
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                            <div class="mainflip">
-                                <div class="frontside">
-                                    <div class="card">
-                                        <div class="card-body text-center">
-                                            <p><img class=" img-fluid" src="images/maleavatar.png" alt="card image"></p>
-                                            <h4 class="card-title">Samuel Olasunkanmi</h4>
-                                            <p class="card-text">Position.</p>
-                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="backside">
-                                    <div class="card">
-                                        <div class="card-body text-center mt-4">
-                                            <h4 class="card-title">Samuel Olasunkanmi</h4>
-                                            <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                            <ul class="list-inline">
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-facebook"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-skype"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-google"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ./Team member -->
-                    <!-- Team member -->
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                            <div class="mainflip">
-                                <div class="frontside">
-                                    <div class="card">
-                                        <div class="card-body text-center">
-                                            <p><img class=" img-fluid" src="images/femaleavatar.png" alt="card image"></p>
-                                            <h4 class="card-title">Popogbe Oluseyi</h4>
-                                            <p class="card-text">HR & Administrator</p>
-                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="backside">
-                                    <div class="card">
-                                        <div class="card-body text-center mt-4">
-                                            <h4 class="card-title">Popogbe Oluseyi</h4>
-                                            <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                            <ul class="list-inline">
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-facebook"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-skype"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-google"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ./Team member -->
-                    <!-- Team member -->
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                            <div class="mainflip">
-                                <div class="frontside">
-                                    <div class="card">
-                                        <div class="card-body text-center">
-                                            <p><img class=" img-fluid" src="images/femaleavatar.png" alt="card image"></p>
-                                            <h4 class="card-title">J. Oluwatobi</h4>
-                                            <p class="card-text">Position.</p>
-                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="backside">
-                                    <div class="card">
-                                        <div class="card-body text-center mt-4">
-                                            <h4 class="card-title">J. Oluwatobi</h4>
-                                            <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                            <ul class="list-inline">
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-facebook"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-skype"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-google"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ./Team member -->
-
-                </div>
-
-            <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">View more</a> </div>
-            </div>
-
-            <div class="ha-parallax-divider-wrapper">
-
-                <span class="ha-diamond-divider-md img-responsive"></span>
-
-            </div>
- <div class="space-400"></div>
-
-        </div>
-
-    </div>
-    
- 
-    </div>
-
-</div> <div class="space-400"></div>
-<!--        
-        <section id="team" class="pb-5">
-                <h5 class="section-title h1">Our Team<hr style="width:7%;margin-left:50; margin-right:50; margin-bottom: 75px;height:3px; border:none; color:red; background-color:#e91c58;"></h5>
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="image-flip" >
-                            <div class="mainflip flip-0">
-                                <div class="frontside">
-                                    <div class="card">
-                                        <div class="card-body text-center">
-                                            <p><img class=" img-fluid" src="images/maleavatar.png" alt="card image"></p>
-                                            <h4 class="card-title">Yesufu J. </h4>
-                                            <p class="card-text">Partner.</p>
-                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="backside">
-                                    <div class="card">
-                                        <div class="card-body text-center mt-4">
-                                            <h4 class="card-title">Yesufu J.</h4>
-                                            <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                            <ul class="list-inline">
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-facebook"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-skype"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-google"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                            <div class="mainflip">
-                                <div class="frontside">
-                                    <div class="card">
-                                        <div class="card-body text-center">
-                                            <p><img class=" img-fluid" src="images/maleavatar.png" alt="card image"></p>
-                                            <h4 class="card-title">Popogbe Oluwatobi</h4>
-                                            <p class="card-text">Partner.</p>
-                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="backside">
-                                    <div class="card">
-                                        <div class="card-body text-center mt-4">
-                                            <h4 class="card-title">Popogbe Oluwatobi</h4>
-                                            <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                            <ul class="list-inline">
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-facebook"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-skype"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-google"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                            <div class="mainflip">
-                                <div class="frontside">
-                                    <div class="card">
-                                        <div class="card-body text-center">
-                                            <p><img class=" img-fluid" src="images/femaleavatar.png" alt="card image"></p>
-                                            <h4 class="card-title">Chioma Uwakah</h4>
-                                            <p class="card-text">Position.</p>
-                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="backside">
-                                    <div class="card">
-                                        <div class="card-body text-center mt-4">
-                                            <h4 class="card-title">Chioma Uwakah</h4>
-                                            <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                            <ul class="list-inline">
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-facebook"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-skype"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-google"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                            <div class="mainflip">
-                                <div class="frontside">
-                                    <div class="card">
-                                        <div class="card-body text-center">
-                                            <p><img class=" img-fluid" src="images/maleavatar.png" alt="card image"></p>
-                                            <h4 class="card-title">Samuel Olasunkanmi</h4>
-                                            <p class="card-text">Position.</p>
-                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="backside">
-                                    <div class="card">
-                                        <div class="card-body text-center mt-4">
-                                            <h4 class="card-title">Samuel Olasunkanmi</h4>
-                                            <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                            <ul class="list-inline">
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-facebook"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-skype"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-google"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                            <div class="mainflip">
-                                <div class="frontside">
-                                    <div class="card">
-                                        <div class="card-body text-center">
-                                            <p><img class=" img-fluid" src="images/femaleavatar.png" alt="card image"></p>
-                                            <h4 class="card-title">Popogbe Oluseyi</h4>
-                                            <p class="card-text">HR & Administrator</p>
-                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="backside">
-                                    <div class="card">
-                                        <div class="card-body text-center mt-4">
-                                            <h4 class="card-title">Popogbe Oluseyi</h4>
-                                            <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                            <ul class="list-inline">
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-facebook"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-skype"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-google"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                            <div class="mainflip">
-                                <div class="frontside">
-                                    <div class="card">
-                                        <div class="card-body text-center">
-                                            <p><img class=" img-fluid" src="images/femaleavatar.png" alt="card image"></p>
-                                            <h4 class="card-title">J. Oluwatobi</h4>
-                                            <p class="card-text">Position.</p>
-                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="backside">
-                                    <div class="card">
-                                        <div class="card-body text-center mt-4">
-                                            <h4 class="card-title">J. Oluwatobi</h4>
-                                            <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                            <ul class="list-inline">
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-facebook"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-skype"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                        <i class="fa fa-google"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </section> -->
-        			<!-- Team section ends-->
-
-
-
-
-
-
+        	<div class="space-400"></div>
+		</div>
 
 
         <!-- Testimonials -->
         <div class="container">
-				<div class="container-fluid px-2 px-md-4 py-5 mx-auto">
+				<div class="container-fluid px-2 px-md-4 py-5 mx-auto wow slideInLeft" data-wow-duration="4s">
         <h2>Testimonials<hr align="center" style="width:10%; height:3px; border:none; color:red; background-color:#e91c58;"></h2>
 				    <div class="row d-flex justify-content-center">
 				        <div class="col-md-10 col-lg-9 col-xl-8">
@@ -1271,24 +714,7 @@ Finance and Tax</h2>
 				        </div>
 				    </div>
 				</div>
-       							 <!-- Testimonials ends -->
-     						 <!-- clients -->
-				<div class="container">
-				   <section class="customer-logos slider">
-				      <div class="slide"><img src="images/sample.png"></div>
-				      <div class="slide"><img src="images/Poster 6.jpg"></div>
-				      <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
-				      <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
-				      <div class="slide"><img src="images/sample3.jpg"></div>
-				      <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
-				      <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
-				      <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
-				      <div class="slide"><img src="images/aide1.jpg"></div>
-				   </section>
-				   
-				</div>
-				      <!-- client section ends -->
-			
+       			<!-- Testimonials ends -->
 
 
         <!-- -------Insights------- -->
@@ -1496,8 +922,10 @@ Finance and Tax</h2>
 
 		</div>
 
+
+
 							<!-- Academy/Contact section -->
-          <section class="testimonial_section">
+          <section class="academy_section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7">
@@ -1524,12 +952,12 @@ Finance and Tax</h2>
                     </div>
                     <div class="col-lg-5">
 
-                        <div class="testimonial_box">
-                            <div class="testimonial_container">
+                        <div class="academy_box">
+                            <div class="academy_container">
                                 <div class="background_layer"></div>
                                 <div class="layer_content">
                                     <div class="testimonial_owlCarousel owl-carousel">
-                                        <div class="testimonials"> 
+                                        <div class="academy"> 
                                             <div class="section_title">
                                     <div class="heading_line"><span></span></div>
                                     <h2>Aideone Academy...</h2>
@@ -1549,6 +977,47 @@ Finance and Tax</h2>
         </section>
   
 				<!-- Academy / Contact section ends -->
+
+
+
+                                    <!-- Team Section-->
+
+    	<div class="container-fluid">
+		  <div>
+            <div class="ha-bg-parallax text-center block-marginb-none" data-type="background" data-speed="60">
+	          <div class="ha-parallax-body">
+	            <div class="ha-heading-parallax">
+                  <div class="space-400"></div>
+                  <h5 class="section-title h1">At AideOne</h5>
+                  <div class="space-200"></div>
+                  <h5>Experience The Fastest Efficient Way For Your Business Growth With The Leader In Professional Services</h5>
+                  <div class="space-400"></div>
+            	</div>
+            	<div class="ha-content ha-content-whitecolor">
+                  <div class="row">
+                    <!-- Team member -->
+
+                    <!-- ./Team member -->
+
+                  </div>
+
+            	  <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">Get started</a> 
+            	  </div>
+            	</div>
+	            <div class="ha-parallax-divider-wrapper">
+
+                  <span class="ha-diamond-divider-md img-responsive"></span>
+	            </div>
+
+ 				<div class="space-400"></div>
+        	  </div>
+		    </div>
+      	  </div>
+		</div> 
+
+		<div class="space-400"></div>
+
+
 
 				<!-- footer -->
 	<section id="footer" class=" wow slideInUp" data-wow-duration="4s">
@@ -1586,7 +1055,7 @@ Finance and Tax</h2>
 					<h5>Quick links</h5>
 					<ul class="list-unstyled quick-links">
 						<li><a href="#"><i class="fa fa-angle-double-right"></i>Home</a></li>
-						<li><a href="#"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="about.html"><i class="fa fa-angle-double-right"></i>About</a></li>
 						<li><a href="#"><i class="fa fa-angle-double-right"></i>Services</a></li>
 						<li><a href="#"><i class="fa fa-angle-double-right"></i>Careers</a></li>
 						<li><a href="#"><i class="fa fa-angle-double-right"></i>Insights</a></li>
@@ -1623,7 +1092,7 @@ Finance and Tax</h2>
 			</div>	
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-					<p style=" color: #000;">Designed with <i class="fa fa-heart-o"></i> by	<a style="color: #000;" href="https://github.com/Oluwafemi-iDEAR" target="_blank"> Oluwafemi </a></p>
+					<p><a style="color: #6d0523;" href="https://github.com/Oluwafemi-iDEAR" target="_blank">Designed with <i class="fa fa-heart-o"></i> by	 Oluwafemi </a></p>
 				</div>
 				<hr>
 			</div>
@@ -1678,6 +1147,33 @@ $('.testimonial_owlCarousel').owlCarousel({
 </script> -->
 <!-- Testimonials scripts ends -->
 
+
+<!-- scroll up script-->
+<script>
+	$(document).ready(function(){
+      $('body').append('<div id="toTop" class="btn btn-info"><span class="glyphicon glyphicon-chevron-up"></span> ^ </div>');
+    	$(window).scroll(function () {
+			if ($(this).scrollTop() != 0) {
+				$('#toTop').fadeIn();
+			} else {
+				$('#toTop').fadeOut();
+			}
+		}); 
+    $('#toTop').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+});
+
+</script>
+<!-- scroll up script ends-->
+
+<!-- See more examples of how to use Formbutton at formspree.io/formbutton/docs -->
+  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+  <script>
+    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+    formbutton("create", {action: "https://formspree.io/mgepwneb"})
+  </script>
     <!-- page content ends -->
 
     <script src="js/services.js"></script>
