@@ -9,9 +9,10 @@ body {
 #toTop{
   position: fixed;
   bottom: 100px;
-  right: 10px;
+  right: 30px;
   cursor: pointer;
   display: none;
+  background-color: transparent;
 }
 /*scroll up ends*/
 
@@ -182,7 +183,7 @@ header .overlay {
   box-sizing: border-box;
   border-left: 100px solid #020d29;
   border-bottom: 400px solid transparent;
-  background: url(http://www.divscode.com/bootimg/pexel.jpeg);
+  background: url(../images/businessman-2682712_1920.jpg);
   background-position: -350px -59px;
   background-repeat: no-repeat;
 }
@@ -199,11 +200,11 @@ header .overlay {
     color: #000;  
   }*/
                   /*-------navbar-toggler------*/
+                   /*-------button------*/
   .btn {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 900; 
-    background-color: #FFF; 
     color: black; 
     border: 2px solid #496199; 
   }
@@ -214,6 +215,26 @@ header .overlay {
       border-color: #e91c58;
       color: #000; 
     } 
+
+
+    .glow {
+      font-size: 24px;
+      color: #fff;
+      text-align: center;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+
+      @-webkit-keyframes glow {
+        from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+      }
+  
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+      }
+    }
 
   /* ------------------------------- button ends--------------------------------- */
 
