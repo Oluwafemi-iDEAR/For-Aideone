@@ -5,6 +5,16 @@ body {
     background-repeat: no-repeat
 }
 
+.aideone{
+  font-size: 36px;
+  font-family: sans-serif;/* 
+  font-style: normal; 
+  font-weight: 200; */
+  line-height: 38px; 
+  color: #fff; 
+  letter-spacing: 2.5px; 
+  text-shadow:  5px 5px 5px rgb(14, 33, 33);
+}
 /*-- scroll up --*/
 #toTop{
   position: fixed;
@@ -522,7 +532,7 @@ section .section-title{
 /*--------------------------------parallax section-----------------------------------------*/
 .ha-bg-parallax {
 
-    background: url(../images/businessman-2682712_1920.jpg) 100% -195px no-repeat fixed;
+    background: url(../images/graph-163509.jpg) 100% -195px no-repeat fixed;
 
     -moz-background-size: cover;
 
