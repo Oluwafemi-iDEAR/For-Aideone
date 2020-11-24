@@ -1538,13 +1538,18 @@ a {
 	margin-left: -25px;
 }
 .contact {
-	background-image: url("images/city-4679928.jpg");
 	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
+  background-attachment: fixed;
 	position: relative;
 	z-index: 2;
 	color: #fff;
+}
+
+.details {
+  background-color: #020d26;
+  border-radius: 7px;
+  padding-top: 40px;
 }
 .contact-form input,
 textarea {
@@ -1555,7 +1560,7 @@ textarea {
 	text-transform: capitalize;
 	margin-top: 15px;
 	background-color: transparent;
-	color: #fff;
+	color: #000;
 }
 .contact:before {
 	position: absolute;
@@ -1564,7 +1569,7 @@ textarea {
 	height: 100%;
 	left: 0;
 	top: 0;
-	background-color: #020d29;
+	background-color: #fff;
 	z-index: -1;
 	opacity: .85;
 	/* -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)"; */
@@ -1615,6 +1620,53 @@ textarea {
 
 
 /* ---------------------------Contact Homepage Ends-------------------------------------- */
+
+/* -----------------------Services1 Homepage------------------------------- */
+
+
+
+/* -----------------------Services1 Homepage Ends------------------------------- */
+
+
+/* -------------------------Services HomePage-----------------------------*/
+.nav-pills-custom .nav-link {
+  color: #aaa;
+  background: #fff;
+  position: relative;
+}
+
+.nav-pills-custom .nav-link.active {
+  color: #041b50 !important;
+  background: rgb(119, 105, 250) !important;
+  border: 4px solid #e91c58;
+  border-radius: 5px;
+}
+
+
+/* Add indicator arrow for the active tab */
+@media (min-width: 992px) {
+  .nav-pills-custom .nav-link::before {
+      content: '';
+      display: block;
+      border-top: 8px solid transparent;
+      border-left: 10px solid #fff;
+      border-bottom: 8px solid transparent;
+      position: absolute;
+      top: 50%;
+      right: -10px;
+      transform: translateY(-50%);
+      opacity: 0;
+  }
+}
+
+.nav-pills-custom .nav-link.active::before {
+  opacity: 1;
+}
+
+
+
+
+/* -------------------------Services HomePage Ends----------------------------- */
 
   /*----------------------------------Footer----------------------------------------*/
 

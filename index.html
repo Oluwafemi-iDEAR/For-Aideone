@@ -33,7 +33,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
     <!-- for head slider -->
     <script>
     	   wow = new WOW(
@@ -104,44 +131,32 @@
         	</li> -->
        
           <li class="nav-item dropdown has-megamenu">
-            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Services  </a>
+            <a class="nav-link dropdown-toggle" href="services.html" data-toggle="dropdown"> Services  </a>
               <div class="dropdown-menu megamenu  wow fadeIn" data-wow-duration="2s" role="menu">
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="col-megamenu">
-                                      <h6 class="title">Primary Services</h6>
-                                      <ul class="list-unstyled">
-                                          <li><a href="#">FinancialAdvisory</a></li>
-                                          <li><a href="#">Consulting</a></li>
-                                          <li><a href="#">Tax</a></li>
-                                           <li><a href="#">Legal</a></li>
-                                          <li><a href="#">Risks & Audit</a></li>
-                                          <!--<li><a href="#">Custom Menu</a></li> -->
-                                      </ul>
+                                      <h6 class="title"><a href="#">Bookkeeping and Accounting Services</h6>
+                                      <h6 class="title"><a href="services.html#v-pills-tca">Tax Compliance and Advisory</h6>
+                                      <h6 class="title"><a href="#">Accounting Process Review and Transformation</h6>
+                                      <h6 class="title"><a href="services.html#v-pills-ffro">Finance function resourcing and outsourcing</h6>
+                                      <h6 class="title"><a href="#">Audit and Assurance Service</h6>
+                                      <h6 class="title"><a href="#">Human Resource and Payroll Services</h6>
                                     </div>  <!-- col-megamenu.// -->
                                 </div><!-- end col-3 -->
                                 <div class="col-md-4">
                                   <div class="col-megamenu">
-                                    <h6 class="title">Industries</h6>
-                                        <ul class="list-unstyled">
-                                            <li><a href="#">Customer Business</a></li>
-                                            <li><a href="#">Financial Services</a></li>
-                                            <li><a href="#">Others</a></li>
-                                            <!-- <li><a href="#">Custom Menu</a></li>
-                                            <li><a href="#">Custom Menu</a></li>
-                                            <li><a href="#">Custom Menu</a></li> -->
-                                        </ul>
-                                    </div>  <!-- col-megamenu.// -->
+                                    <img src="images/img_1.jpg" alt="Workspace">
+                                  </div>  <!-- col-megamenu.// -->
                                 </div><!-- end col-3 -->                       
                                 <div class="col-md-4">
                                   <div class="col-megamenu">
-                                  <h5 class="title">Title Menu Three</h5>
+                                  <h5 class="title">Aideone School of Finance and Tax</h5>
                                   <h6>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                          cillum dolore eu fugiat nulla pariatur. 
+                                    Aideone Academy is a leading learning solution provider with various training products. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. 
                         <a href="#" class="btn btn-sm btn-primary"> Continue</a>
                                   </h6>
                                     </div>  <!-- col-megamenu.// -->
