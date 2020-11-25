@@ -292,40 +292,32 @@
       <li class="nav-item"><a class="nav-link" href="about.html"> About Us </a></li>
                
       <li class="nav-item dropdown has-megamenu">
-        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Services  </a>
-          <div class="dropdown-menu megamenu  wow slideInDown" data-wow-duration="1s" role="menu">
+        <a class="nav-link dropdown-toggle" href="services.html" data-toggle="dropdown"> Services  </a>
+          <div class="dropdown-menu megamenu  wow fadeIn" data-wow-duration="2s" role="menu">
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="col-megamenu">
-                                  <h6 class="title">Primary Services</h6>
-                                  <ul class="list-unstyled">
-                                      <li><a href="#">FinancialAdvisory</a></li>
-                                      <li><a href="#">Consulting</a></li>
-                                      <li><a href="#">Tax</a></li>
-                                       <li><a href="#">Legal</a></li>
-                                      <li><a href="#">Risks & Audit</a></li>
-                                  </ul>
+                                  <h6 class="title"><a href="services.html">Bookkeeping and Accounting Services</h6>
+                                  <h6 class="title"><a href="services.html">Tax Compliance and Advisory</h6>
+                                  <h6 class="title"><a href="services.html">Accounting Process Review and Transformation</h6>
+                                  <h6 class="title"><a href="services.html">Finance function resourcing and outsourcing</h6>
+                                  <h6 class="title"><a href="services.html">Audit and Assurance Service</h6>
+                                  <h6 class="title"><a href="services.html">Human Resource and Payroll Services</h6>
                                 </div>  <!-- col-megamenu.// -->
                             </div><!-- end col-3 -->
                             <div class="col-md-4">
                               <div class="col-megamenu">
-                                <h6 class="title">Industries</h6>
-                                    <ul class="list-unstyled">
-                                        <li><a href="#">Customer Business</a></li>
-                                        <li><a href="#">Financial Services</a></li>
-                                        <li><a href="#">Others</a></li>
-                                    </ul>
-                                </div>  <!-- col-megamenu.// -->
+                                <img src="images/img_1.jpg" alt="Workspace">
+                              </div>  <!-- col-megamenu.// -->
                             </div><!-- end col-3 -->                       
                             <div class="col-md-4">
                               <div class="col-megamenu">
-                              <h5 class="title">Title Menu Three</h5>
+                              <h5 class="title">Aideone School of Finance and Tax</h5>
                               <h6>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                      cillum dolore eu fugiat nulla pariatur. 
+                                Aideone Academy is a leading learning solution provider with various training products. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. 
                     <a href="#" class="btn btn-sm btn-primary"> Continue</a>
                               </h6>
                                 </div>  <!-- col-megamenu.// -->
@@ -529,13 +521,56 @@
                                             <!-- ./Footer ends -->
              
 
+<!-- scroll up script-->
+<script>
+  $(document).ready(function(){
+      $('body').append('<div id="toTop" class="btn btn-info"><span class="glyphicon glyphicon-chevron-up"></span> <i class="fa fa-angle-up fa-2x text-dark"></i> </div>');
+      $(window).scroll(function () {
+      if ($(this).scrollTop() != 0) {
+        $('#toTop').fadeIn();
+      } else {
+        $('#toTop').fadeOut();
+      }
+    }); 
+    $('#toTop').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+});
+
+</script>
+<!-- scroll up script ends-->
+  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
   <script>
+    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+    formbutton("create", {action: "https://formspree.io/mgepwneb"})
+  </script>
+    <!-- page content ends -->
+
+    <script src="js/services.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="js/client.js"></script>
+    <script src="js/counter.js"></script>
+    <!-- 
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="js/script.js"></script>
+
+    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script> -->
+ 
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
       $(window).scroll(function(){
       $('nav').toggleClass('scrolled', $(this).scrollTop() > 150);});
       
     </script>
 
-  <script type="text/javascript">
+<script type="text/javascript">
   $().ready(function(){
       $('[rel="tooltip"]').tooltip();
 
@@ -560,8 +595,7 @@
   }
 
 
-</script>                                          
-            
+</script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>                               
 </body>
 </html>

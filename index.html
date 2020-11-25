@@ -34,33 +34,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
     <!-- for head slider -->
     <script>
     	   wow = new WOW(
@@ -203,7 +177,7 @@ $(document).ready(function(){
     <div class="carousel-item active">
     <header>
   <div class="overlay"></div>
-  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" height="80%">
     <source src="images/welcome.mp4" type="video/mp4">
   </video>
   <div class="contain h-100">
@@ -283,12 +257,12 @@ $(document).ready(function(){
 							<h3 class="card-title">Vast Experience</h3>
 							<p class="card-text">Excellent customer service is our Core Value.</p><br>
 					  <!-- <div class="col"> -->
-					    <div class="counter">
+					    <!-- <div class="counter">
 				      	  <i class="fa fa-code fa-2x"></i>
 				      	  <h2 class="timer count-title count-number" data-to="50" data-speed="4000"></h2>
 				      	  <h5 style="text-align: center;">yrs</h5>
 				       	  <p class="count-text ">Combined experience</p>
-				        </div>
+				        </div> -->
 					  <!-- </div> --><!-- 
 							<a href="#" title="Read more" class="read-more" >Read more<i class="fa fa-angle-double-right ml-2"></i></a> -->
 						</div>
@@ -300,11 +274,11 @@ $(document).ready(function(){
 							<h3 class="card-title">Customized Solutions</h3>
 							<p class="card-text">We tailor our service to meet your perculiar needs and circumstance.</p>
 				      <!-- <div class="col"> -->
-				        <div class="counter">
+				        <!-- <div class="counter">
 				      	  <i class="fa fa-lightbulb-o fa-2x"></i>
 				      	  <h2 class="timer count-title count-number" data-to="90" data-speed="5000"></h2><br>
 				      	  <p class="count-text ">Project Completed</p>
-				    	</div>
+				    	</div> -->
 				      <!-- </div> --><!-- 
 							<a href="#" title="Read more" class="read-more" >Read more<i class="fa fa-angle-double-right ml-2"></i></a> -->
 						</div>
@@ -316,11 +290,11 @@ $(document).ready(function(){
 							<h3 class="card-title">Excellent Reputation</h3>
 							<p class="card-text">Our brand essence is one of our core values. Professional execution and timing.</p>
 				      <!-- <div class="col"> -->
-				      	<div class="counter">
+				      	<!-- <div class="counter">
 				      	  <i class="fa fa-trophy fa-2x"></i>
 				      	  <h2 class="timer count-title count-number" data-to="5" data-speed="3000"></h2><br>
 				      	  <p class="count-text ">Awards and recognitions</p>
-				    	</div>
+				    	</div> -->
 				      <!-- </div> --><!-- 
 							<a href="#" title="Read more" class="read-more" >Read more<i class="fa fa-angle-double-right ml-2"></i></a> -->
 						</div>
@@ -332,11 +306,11 @@ $(document).ready(function(){
 							<h3 class="card-title">Client Satisfaction</h3>
 							<p class="card-text">Dedicated to providing personal attention to all our clients.</p><br>
 				      <!-- <div class="col"> -->
-				        <div class="counter">
+				        <!-- <div class="counter">
 				      	  <i class="fa fa-users fa-2x"></i>
 				      		<h2 class="timer count-title count-number" data-to="27" data-speed="4000"></h2><br>
 				      		<p class="count-text ">Happy Clients</p>
-				    	</div>
+				    	</div> -->
 				      <!-- </div> --><!-- 
 							<a href="#" title="Read more" class="read-more" >Read more<i class="fa fa-angle-double-right ml-2"></i></a> -->
 						</div>
@@ -510,7 +484,7 @@ $(document).ready(function(){
 		                        </div>
 		                        <div class="contentCircle">
 		                           <div class="CirItem title-box active CirItem1">
-		                              <h2 class="title"><span>Bookkeeping and Accounting Services.</span></h2><!-- 
+		                              <h2 class="title"><a href="services.html"><span>Bookkeeping and Accounting Services.</span></a></h2><!-- 
 		                              <p>Bookkeeping and Accounting Services.</p> -->
 		                              <i class="fa fa-book"></i>
 		                           </div>

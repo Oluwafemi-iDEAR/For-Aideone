@@ -4,6 +4,18 @@ body {
     height: 100%;
     background-repeat: no-repeat
 }
+a{
+  color: #b788f5;
+}
+a:link {
+  text-decoration: none;
+}/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+a:active {
+  color: blue;
+}
 
 .aideone{
   font-size: 36px;
@@ -35,8 +47,8 @@ body {
   
 header {
   position: relative;
-  background-color: black;
-  height: 100vh;
+   background-color: transparent; /*black; */
+  height: 90vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -107,12 +119,12 @@ header .overlay {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-  width: 150px;
+    width: 150px;
     height: 150px;  
 }
 
 .loader {
-    width: calc(100% - 0px);
+  width: calc(100% - 0px);
   height: calc(100% - 0px);
   border: 8px solid #162534;
   border-top: 8px solid #09f;
@@ -138,7 +150,7 @@ header .overlay {
     .navbar .nav-item .dropdown-menu{ display: none; }
     .navbar .nav-item:hover .nav-link{ color: #fff;  }
     .navbar .nav-item:hover .dropdown-menu{ display: block; }
-    .navbar .nav-item:hover .dropdown-menu{ background-color: rgba(67, 59, 136, 0.85) !important; }
+    .navbar .nav-item:hover .dropdown-menu{ background-color: rgba(77, 67, 165, 0.85) !important; }
     .navbar .nav-item:hover .dropdown-menu{ color:#fff !important; }
     .navbar .nav-item .dropdown-menu{ margin-top:0; }
     }	
