@@ -150,7 +150,7 @@ header .overlay {
     .navbar .nav-item .dropdown-menu{ display: none; }
     .navbar .nav-item:hover .nav-link{ color: #fff;  }
     .navbar .nav-item:hover .dropdown-menu{ display: block; }
-    .navbar .nav-item:hover .dropdown-menu{ background-color: rgba(77, 67, 165, 0.85) !important; }
+    .navbar .nav-item:hover .dropdown-menu{ background-color: rgba(74, 79, 126, 0.85) !important; }
     .navbar .nav-item:hover .dropdown-menu{ color:#fff !important; }
     .navbar .nav-item .dropdown-menu{ margin-top:0; }
     }	
