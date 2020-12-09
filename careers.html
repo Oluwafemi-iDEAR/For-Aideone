@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Services</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="images/aideone.jpg" rel="icon" type="image/png">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src="js/jquery-1.11.1.min.js"></script>
+	  <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  	<script src="js/bootstrap.min.js"></script>
+    <script src='main.js'></script>
+    <style>
+        
+
+.masthead {
+  padding: 3rem 0 7rem;
+  position: relative;
+  background-image: url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, #e91c58 0%, #d22f23 100%);
+  background-size: cover;
+  z-index: 0;
+  margin-top: 30px;
+}
+
+.masthead svg.wave {
+  position: absolute;
+  bottom: -1px;
+  left: 0
+}
+
+.masthead h1 {
+  color: #000;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.1;
+  z-index: 1
+}
+
+.masthead h2 {
+  color: rgba(255, 255, 255, .6);
+  font-weight: 600;
+  z-index: 1;
+  font-size: 1.2rem
+}
+
+.masthead a {
+  color: rgba(255, 255, 255, .8);
+  text-decoration: underline;
+  z-index: 1
+}
+
+.masthead a:hover {
+  color: #fff
+}
+
+.masthead a:active {
+  text-decoration: none
+}
+
+@media(min-width:992px) {
+  .masthead h1 {
+      font-size: 3rem
+  }
+  .masthead h2 {
+      font-size: 1.5rem
+  }
+}
+
+.masthead .masthead-cards {
+  position: relative;
+  z-index: 1
+}
+
+.masthead .masthead-cards .shape {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .3);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 30% 70% 70% 30%/30% 30% 70% 70%
+}
+
+.masthead .masthead-cards .card {
+  opacity: 1;
+  font-size: .8rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: .05rem;
+  color: #212529;
+  transition: .15s all
+}
+
+.masthead .masthead-cards .card:hover {
+  margin-top: -.25rem;
+  margin-bottom: .25rem
+}
+
+.masthead .masthead-cards .card:active {
+  margin-top: inherit;
+  margin-bottom: inherit
+}
+
+.masthead .masthead-cards .card.border-bottom-blue:hover {
+  color: #2092ed
+}
+
+/* .masthead .masthead-cards .card.border-bottom-green:hover {
+  color: #28a745
+} */
+
+.masthead .masthead-cards .card.border-bottom-red:hover {
+  color: #dd3d31
+}
+
+/* .masthead .masthead-cards .card.border-bottom-yellow:hover {
+  color: #ffc107
+} */
+
+.masthead-page {
+  padding: 1rem 0 4rem
+}
+
+@media(min-width:992px) {
+  .masthead-page h1 {
+      font-size: 2.5rem
+  }
+}
+
+/* .border-bottom-yellow {
+  border-color: #ffc107!important;
+} */
+
+.border-bottom-red {
+  border-color: #dd3d31!important;
+}
+
+.border-bottom-blue {
+  border-color: #2092ed!important;
+}
+
+/* .border-bottom-green {
+  border-color: #28a745!important;
+} */
+
+.border-bottom-blue, /*.border-bottom-green,*/ .border-bottom-red /*,.border-bottom-yellow */{
+  border-bottom: .4rem solid!important;
+}
+.shadow-lg {
+  box-shadow: 0 2rem 1.5rem -1.5rem rgba(33,37,41,.15),0 0 1.5rem .5rem rgba(33,37,41,.05)!important;
+}
+.border-0 {
+  border: 0!important;
+}
+
+    </style>
+</head>
+<body style="background-color: #020d29;">
+
+    <nav class="navbar navbar-expand-lg navbar-default bg-light fixed-top">
+          
+        <div class="container">
+         <a class="navbar-brand" href="index.html"><img src="images/aideone.png" alt="AideOne" height="50" class='img-responsive'></a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main_nav">
+          
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"> <a class="nav-link" href="index.html"><i class="fa fa-home"></i> </a> </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"> About Us </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active"> Services </a>
+              </li>
+            
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> Careers </a>
+              <ul class="dropdown-menu dropdown-menu-right wow slideInDown" data-wow-duration="1s">
+                <li><a class="dropdown-item" href="#"> Drop CV</a></li>
+                <li><a class="dropdown-item" href="#"> Join Our Team </a></li>
+              </ul>
+          </li>	
+            <li class="nav-item dropdown">
+              <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> Insights </a>
+              <ul class="dropdown-menu dropdown-menu-right wow slideInDown" data-wow-duration="1s">
+                <li><a class="dropdown-item" href="#"> Newsletters</a></li>
+                <li><a class="dropdown-item" href="#"> Updates </a></li>
+              </ul>
+          </li>
+            <li class="nav-item"><a class="nav-link" href="contact.html"> Contact Us </a></li>
+          </ul>
+                        </div><!-- end row -->
+          </div>
+            </nav>
+           <!-- navbar-collapse.// -->
+      <!-- Navigation ends -->
+
+    <!-- Demo header-->
+<header class="masthead">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 py-5">
+                <h1 class="mb-4">Aideone School of
+                  Finance and Tax!</h1>
+                <h2 class="m-0">Aideone Academy is a leading learning solution provider with various training products ranging from:
+                   General Board administration Training, General Finance and Operations Management Trainings e.t.c.</h2>
+            </div>
+            <div class="col-lg-5">
+                <div class="py-5 px-4 masthead-cards">
+                    <div class="d-flex">
+                        <a href="#" class="w-50 pr-3 pb-4">
+                            <div class="card border-0 border-bottom-blue shadow-lg shadow-hover">
+                                <div class="card-body text-center">
+                                    <div class="text-center">
+                                        <i class="fa fa-pencil fa-4x my-2"></i>
+                                    </div>
+                                    Register
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="w-50 pl-3 pb-4">
+                            <div class="card border-0 border-bottom-red shadow-lg shadow-hover">
+                                <div class="card-body text-center">
+                                    <div class="text-center">
+                                        <i class="fa fa-th fa-4x my-2"></i>
+                                    </div>
+                                    FAQ
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="d-flex">
+                        <a href="#" class="w-50 pr-3">
+                            <div class="card border-0 border-bottom-blue shadow-lg shadow-hover">
+                                <div class="card-body text-center">
+                                    <div class="text-center">
+                                        <i class="fa fa-4x fa-list my-2"></i>
+                                    </div>
+                                    Other Services
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="w-50 pl-3">
+                            <div class="card border-0 border-bottom-red shadow-lg shadow-hover">
+                                <div class="card-body text-center">
+                                    <div class="text-center">
+                                        <i class="fa fa-4x fa-home my-2"></i>
+                                    </div>
+                                    Home
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="shape"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <svg style="pointer-events: none" class="wave" width="100%" height="50px" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 75">
+        <defs>
+            <style>
+                .a {
+                    fill: none;
+                }
+                
+                .b {
+                    clip-path: url(#a);
+                }
+                
+                .c,
+                .d {
+                    fill: #020d29;
+                }
+                
+                .d {
+                    opacity: 0.5;
+                    isolation: isolate;
+                }
+            </style>
+            <clipPath id="a">
+                <rect class="a" width="1920" height="75"></rect>
+            </clipPath>
+        </defs>
+        <title>wave</title>
+        <g class="b">
+            <path class="c" d="M1963,327H-105V65A2647.49,2647.49,0,0,1,431,19c217.7,3.5,239.6,30.8,470,36,297.3,6.7,367.5-36.2,642-28a2511.41,2511.41,0,0,1,420,48"></path>
+        </g>
+        <g class="b">
+            <path class="d" d="M-127,404H1963V44c-140.1-28-343.3-46.7-566,22-75.5,23.3-118.5,45.9-162,64-48.6,20.2-404.7,128-784,0C355.2,97.7,341.6,78.3,235,50,86.6,10.6-41.8,6.9-127,10"></path>
+        </g>
+        <g class="b">
+            <path class="d" d="M1979,462-155,446V106C251.8,20.2,576.6,15.9,805,30c167.4,10.3,322.3,32.9,680,56,207,13.4,378,20.3,494,24"></path>
+        </g>
+        <g class="b">
+            <path class="d" d="M1998,484H-243V100c445.8,26.8,794.2-4.1,1035-39,141-20.4,231.1-40.1,378-45,349.6-11.6,636.7,73.8,828,150"></path>
+        </g>
+    </svg>
+      </header>
+
+    <div class="container">
+      <div class="row" style=" background-color:rgba(59, 175, 218, 0.89);">
+        <div class="col-md-12" id="content-col">
+        <hr style="width:25%;margin-left:50; margin-right:50; height:4px; border:none; color:red; background-color:#fff;">
+       <div class="row">
+
+<div class="col-md-12 col-sm-6" ><h2 class="" style="color: #FFF; font-size: 40px; text-align: center;">God still speaks
+</h2><br><h3 style="color: #FFF; font-size: 24px; text-align: center;">by Tobi Popogbe</h3>
+        <hr style="width:25%;margin-left:50; margin-right:50; height:4px; border:none; color:red; background-color:#fff;">
+
+<div class="col-md-12 col-sm-6" style="background-color: #fff; font-family: sans-serif; line-height: 1.8; font-style: normal; font-weight: 200; font-size: 16px;"><br>
+<p>I thank God for the power in His word and for the work of the Holy Spirit in making men believe His word. I am ever grateful to God for looking down in mercy to save my soul while in secondary school. I had two distinct experiences on how God speaks while I was a teenager –one in the hospital while being treated for a broken leg after a car accident, and the other on my way home from an errand, when God spoke using an outdoor film show on the restitution of Zacchaeus. These experiences were my earliest memories of the fact that God speaks and these built in me an endless personal relationship with Him. </p>
+<p>There have been many things I have had to wait on God for – what school to attend; what course to study; career switch from Telecommunications to Consulting etc., but none of these was as breath-taking as waiting on Him on the subject of who and when to marry. One thing worked for me and it is that I never wanted anything outside of God’s will and He always saw that I was desperate to have His will done. So, I prayed until I was emptied of self and had sweet peace. This has been my long route of knowing God’s will – emptying self, finding sweet peace and then taking the decision. </p>
+
+<hr style="width:25%;margin-left:50; margin-right:50; height:4px; border:none; color:red; background-color:#50b7de;">
+
+<p>I had been blessed with so many great friends at various stages of my life, but I had not always considered marriage with any, because of a personal belief that a relationship will only be considered when I have an established long-term vision and direction for my life. I had attempted crossing the line of my personal belief sometimes, and I regret I ever did. That long-term vision was neither established after NYSC, nor upon qualification as a Chartered Accountant, nor in my two years of working with a telecommunications giant. However, a desire to gain international financial reporting skills prompted a long-term career move to consulting. It was within this move that God saw the need for a ‘helpmate’ and that was the first thing God did on my first morning in Deloitte, unknown to me. <br>I did not have to bring many of my friends before God to ask “who?”; though I had one on my mind that shared faith and communications with me. However, since my way of knowing God’s will was a long route, it took me months to know it was not her and in fact, she was to get married a few months before me.</p>
+<p>With the highest-ranked friend amongst my peers out of the way, I began to notice the diligence and meticulousness of my wife, who at that time had been working with me in church for about a year. I began to like her and had to let it pass through the long route of knowing God’s will. As each day passed, I loved her the more, but I had not yet gotten a response. I was not having time to consecrate and pray due to work pressure, frequent travels and multiple examinations. In the week of one of my exams, I had a huge burden to pray and God required me to forfeit the exams and to wait on Him as I would be returning to work thereafter. This I did and found the sweet peace I needed. </p>
+<hr style="width:25%;margin-left:50; margin-right:50; height:4px; border:none; color:red; background-color:#50b7de;">
+<p>I discussed with the marriage counselor, and he asked that I go back to seek re-assurances. So, I tarried in Anthony for two days to enable me clear that before resuming to work, and this, God honored. I had asked for signs I never got, but then God spoke to me just like he did when I was a teenager and reminded me of the first person I had communicated with, the first morning I resumed at Deloitte. I argued with God – I never had communication links to my wife, not until recently, and my phone had also been changed since I resumed at Deloitte. But then, God asked me to check my social media platform messages. I did, and observed that I had responded to her “friend request” and sent congratulatory messages on her convocation. This was a shock and joy to me, as I was in awe as to how God had led.  I met the marriage counselor the same day and he asked me to inform her. We met in the evening of the same day, but I could only tell her over the phone that night as I resumed work the next day. That was the most fulfilling “leave” period I had ever had. </p>
+<p>My wife will have her pray through experience to share because it took her six months to respond. But, we did have a good relationship, hence I was not under pressure as to what Her response will be. When she accepted, we were advised by the DS to jointly go and seek assurances and be willing to let go, in case all the necessary boxes were not ticked. This was our interpretation of what he said and our knowledge of the books we had read and planned to read. As such, our courtship was a very cautious one as we kept on hoping it was indeed His will if He allowed it to scale through. In that period, we began to keep a diary of assurances on almost all matters for the future and had lots of good time to know each other. </p>
+<p>In the month before our wedding, the devil hit me with loads of doubts to the point that I had called off the wedding in my mind; this I saw as being willing to let go. But, as I approached the office where I intended to seek counsel, the spirit of God came and gave me more than enough flashbacks of assurances that outweighed the doubts. With this final check, I committed to God and my wife on October 16, 2014, and since then God has kept His every word. </p>
+<br>
+          <div class="col-md-12 col-sm-6 ">
+
+                        <div class="post-media col-md-4 col-sm-3">
+                            <div class="post-media"><img src="../../../wp-content/uploads/sites/13/2015/01/brotobi.png" class="post-thumb wp-post-image"/></div>                            </div>
+                        <div class="post-media col-md-4 col-sm-3">
+                            
+<h3>Tobi Popogbe is the WeCA youth leader of the Apostolic faith church.</h3>
+                        </div>
+          </div>
+              <p style="color: #000; font-size: 40px; text-align: right;"><a href="../../../youthresources/testimonies/testimonies-home.html" class="basic-link">Other Testimonies <i class="fa fa-angle-right"></i></a></p>
+
+</div>
+
+
+    </div>
+  </div>
+
+
+        <hr class="">
+
+
+        <div class="clearfix"></div> 
+  </div>
+
+</div>
+</div>
+
+				<!-- footer -->
+                <section id="footer" class=" wow slideInUp" data-wow-duration="4s">
+                    <div class="container">
+                        <div class="row text-center text-xs-center text-sm-left text-md-left">
+                            <div class="col-xs-12 col-sm-4 col-md-4">
+                                
+                              <div class="footer-left-content">
+                                <div class="logo-colored">
+                                  <img src="images/Poster 6.jpg" height="70" alt="AideOne">
+                                </div>
+                                <div>
+                                  <p class="margin-bottom-30 margin-top-30">
+                                    26 Shittu Animashaun Street, <br>Off Jogunomi Street, Gbagada phase II,<br> Lagos State, Nigeria
+                                  </p>
+                                  <p>+2348032006438 / +2348032015510</p>
+                                  <p>info@aideone.com.ng</p>
+            
+                        <div class="row"><!-- 
+                            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5"> -->
+                                <ul class="list-unstyled list-inline social text-center">
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                                </ul><!-- 
+                            </div> -->
+                            <hr>
+                        </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4">
+                                <h5>Quick links</h5>
+                                <ul class="list-unstyled quick-links">
+                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                                    <li><a href="about.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Services</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Careers</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Insights</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4">
+                                <h5>Quick links</h5>
+                                <ul class="list-unstyled quick-links">
+                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Industries</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Products</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Contact Us</a></li>
+                                    <li><a href="#" title="Design and developed by iDear Concepts"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+                                </ul>
+                            </div>
+                        </div><!-- 
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                                <ul class="list-unstyled list-inline social text-center">
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                            <hr>
+                        </div> -->	
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                                <p class="m-0 text-center text-black">Copyright &copy; <a href="#"><span class="span text-violat ">AideOne Consult </span></a><script> document.write(new Date().getFullYear());</script></p>
+                            </div>
+                            <hr>
+                        </div>	
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                                <p><a style="color: #6f5f23;" href="https://github.com/Oluwafemi-iDEAR" target="_blank">Designed by iDEAR Concept </a></p>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </section>
+                                            <!-- ./Footer ends -->
+
+
+<!-- scroll up script-->
+<script>
+    $(document).ready(function(){
+        $('body').append('<div id="toTop" class="btn btn-info"><span class="glyphicon glyphicon-chevron-up"></span> <i class="fa fa-angle-up fa-2x text-dark"></i> </div>');
+        $(window).scroll(function () {
+        if ($(this).scrollTop() != 0) {
+          $('#toTop').fadeIn();
+        } else {
+          $('#toTop').fadeOut();
+        }
+      }); 
+      $('#toTop').click(function(){
+          $("html, body").animate({ scrollTop: 0 }, 600);
+          return false;
+      });
+  });
+  
+  </script>
+  <!-- scroll up script ends-->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+      window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+      formbutton("create", {action: "https://formspree.io/mgepwneb"})
+    </script>
+      <!-- page content ends -->
+  
+      <script src="js/services.js"></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+      <script src="js/client.js"></script>
+      <script src="js/counter.js"></script>
+      <!-- 
+      <script src="vendor/bootstrap/js/bootstrap.min.js"></script> -->
+      <script src="js/script.js"></script>
+  
+      <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script> -->
+   
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/aos.js"></script>
+      <script src="js/jquery.sticky.js"></script>
+      <script src="js/main.js"></script>
+  
+      <script>
+        $(window).scroll(function(){
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 150);});
+        
+      </script>
+  
+  <script type="text/javascript">
+    $().ready(function(){
+        $('[rel="tooltip"]').tooltip();
+  
+        $('a.scroll-down').click(function(e){
+            e.preventDefault();
+            scroll_target = $(this).data('href');
+             $('html, body').animate({
+                 scrollTop: $(scroll_target).offset().top - 60
+             }, 1000);
+        });
+  
+    });
+  
+    function rotateCard(btn){
+        var $card = $(btn).closest('.card-container');
+        console.log($card);
+        if($card.hasClass('hover')){
+            $card.removeClass('hover');
+        } else {
+            $card.addClass('hover');
+        }
+    }
+  
+  
+  </script>
+</body>
+</html>
