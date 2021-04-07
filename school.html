@@ -8,11 +8,11 @@
     <meta name="robots" content="contact, follow">
     <meta name="author" content="">
     <link href="images/aideone.jpg" rel="icon" type="image/png">
-    <title>AideOne - Contact</title>
+    <title>AideOne - Academy</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
                   <!--Icon Fonts - Font Awesome Icons-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-   
+  <script src="js/jquery-1.11.1.min.js"></script>
                 <!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="js/bootstrap.min.js"></script>
@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700,700i,900">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i">
     
+	  <script src="js/typewriter.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
     <link rel="stylesheet" href="css/style.css">
@@ -272,10 +273,6 @@
 </head>
 <body>
 
-
-
-
-  <div>
     <div class="header-blue">
       <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-default bg-light fixed-top">
@@ -289,18 +286,10 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"> <a class="nav-link" href="index.html">Home </a> </li>
           <li class="nav-item"><a class="nav-link" href="about.html"> About Us </a></li>
-          <li class="nav-item dropdown">
-              <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Services</a>
-            	<ul class="dropdown-menu dropdown-menu-right wow slideInDown" data-wow-duration="1s">
-                  <li><a class="dropdown-item" href="services.html">Bookkeeping and Accounting Services</a></li>
-              	  <li><a class="dropdown-item" href="services.html"> Tax Compliance and Advisory</a></li>
-              	  <li><a class="dropdown-item" href="services.html"> Accounting Process Review and Transformation</a></li>
-              	  <li><a class="dropdown-item" href="services.html"> Finance function resourcing and outsourcing </a></li>
-              	  <li><a class="dropdown-item" href="services.html"> Human Resource and Payroll Services</a></li>
-              	  <li><a class="dropdown-item" href="services.html"> Audit and Assurance Service</a></li>
-              	  <li><a class="dropdown-item" href="school.html">Aideone School of Finance and Tax</a></li>
-            	</ul>
-        	</li>
+          
+          <li class="nav-item">
+            <a class="nav-link active"> Services </a>
+          </li>
            
           <li class="nav-item dropdown">
             <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> Careers </a>
@@ -316,7 +305,7 @@
               <li><a class="dropdown-item" href="#"> Updates </a></li>
             </ul>
         </li>
-          <li class="nav-item active"><a class="nav-link" href="#"> Contact Us </a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html"> Contact Us </a></li>
         </ul>
         </div><!-- end row -->
       </div>
@@ -327,10 +316,9 @@
             <div class="row">
                 <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
                     <h1>Aideone School of Finance and Tax</h1>
-                    <p> Aideone Academy is a leading learning solution provider with various training products ranging from: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                      consequat.<br></p> <button class="btn btn-light btn-lg action-button" type="button">Learn More<i class="fa fa-long-arrow-right ml-2"></i></button>
+                    <p> Aideone Academy is a leading learning solution provider with various training products ranging from:
+                       General Board administration Training, General Finance and Operations Management Trainings e.t.c.
+                      Sign up today and start the journey to accomplishing your dreams.<br></p> 
                 </div>
                 <div class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block phone-holder">
                   <div class="iphone-mockup"><img src="images/phone.svg" class="device">
@@ -346,8 +334,60 @@
             </div>
         </div>
     </div>
-</div>
 
+    <section class="academy_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="about_content">
+              <div class="background_layer"></div>
+                <div class="layer_content wow fadeIn" data-wow-duration="6s">
+                  <div class="section_title"><!-- 
+                    <h5> Academy </h5> -->
+                    <h2>Aideone School of<strong>Finance and Tax</strong>
+                    </h2>
+                    <div class="heading_line"><span></span></div>
+                    <p>Aideone Academy is a leading learning solution provider with various training products ranging from:</p>
+                          <ul>
+                            <li>
+                              International financial reporting standards ((IFRS) Training)
+                            </li>
+                            <li>Tax Regulatory and Economy Update Courses</li>
+                            <li>General Finance and Operations Management Trainings</li>
+                            <li>General Board administration Training</li>
+                          </ul>
+                         <p>Aiding the fulfillment of your career goals with finesse and a professional touch.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+                  <div class="col-lg-5">
+
+                      <div class="academy_box">
+                          <div class="academy_container">
+                              <div class="background_layer"></div>
+                              <div class="layer_content">
+                                  <div class="testimonial_owlCarousel owl-carousel">
+                                      <div class="academy"> 
+                                          <div class="section_title">
+                                  <div class="heading_line"><span></span></div>
+                                  <h2><p class="typewrite" data-period="2000" data-type='[ "Focus on the goal; not the noise.", " We aid your business goals.", "We can best Aid you..." ]'> 
+                        <span class="wrap"></span>
+                        </p></h2>
+                        <!-- <p>Learn the fastest and secure way to grow business with the leader in Professional Services.</p>  --> 
+                        <img class=" img-fluid" src="images/smiling-4654734-removebg-preview.png" alt="card image">
+
+                              </div>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  
 
 
 
@@ -356,12 +396,12 @@
            <div class="row">
               <div class="col-xl-6 mx-auto text-center">
                  <div class="section-title mb-100">
-                    <h4>Contact Us</h4>
+                    <h4>Register!</h4>
                  </div>
               </div>
            </div>
            <div class="row text-center">
-                 <div class="col-md-8 form"><form action="#" class="contact-form">
+                 <div class="col-md-8 form mb-5"><form action="#" class="contact-form">
                        <div class="row">
                           <div class="col-xl-6">
                              <input type="text" placeholder="name">
@@ -384,6 +424,7 @@
                  </div>
                  <div class="col-md-4 details">
                     <div class="single-contact">
+                      <h4>Contact us now!</h4><br>
                        <i class="fa fa-map-marker"></i>
                        <h5>Address</h5>
                        <p>26 Shittu Animashaun Street,
@@ -406,11 +447,6 @@
      </section>
 
 
-<section class="map">
-   
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.8011705361955!2d3.38771453025922!3d6.546771910061188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d0d3d2895b3%3A0x7b11e8d91f8a8094!2s26%20Shittu%20Animashaun%20St%2C%20Bariga%2C%20Lagos!5e0!3m2!1sen!2sng!4v1601070795743!5m2!1sen!2sng" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-     
-</section>
 
 				<!-- footer -->
 <footer class="page-footer font-small elegant-color  wow slideInUp" data-wow-duration="4s" id="footer">
@@ -474,6 +510,7 @@
 			</div>
   <!-- Copyright -->
 </footer>
+
 
                                             <!-- ./Footer ends -->
              
