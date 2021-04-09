@@ -11,6 +11,7 @@
     <script src="js/jquery-1.11.1.min.js"></script>
 	  <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   	<script src="js/bootstrap.min.js"></script>
+	  <script src="js/typewriter.js"></script>
     <script src='main.js'></script>
     <style type="text/css">
         body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; font-family: 'Overpass', sans-serif; letter-spacing: 0px; font-size: 17px; color: #8d8f90; font-weight: 400; line-height: 32px; background-color: #edefef; }
@@ -34,8 +35,11 @@
         .page-title { font-size: 46px; line-height: 1; color: #fff; font-weight: 600; text-align: center; }
 
         .card-section { position: relative; bottom: 60px; }
-        .card-block { padding: 80px; }
-        .section-title { margin-bottom: 60px; }
+        .card { padding: 40px;  transition: 0.3s; border-radius: 10px; background-color: rgba(14, 14, 138, 0.75)!important;}
+        .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+        }
+        .section-title { margin-bottom: 30px; }
     </style>
 </head>
 <body>
@@ -52,7 +56,7 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"> <a class="nav-link" href="index.html">Home </a> </li>
             <li class="nav-item dropdown">
-                <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> About Us </a>
+                <a class="nav-link" href="#" data-toggle="dropdown"> About Us </a>
                 <ul class="dropdown-menu dropdown-menu-right">
                   <li><a class="dropdown-item" href="about.html"> Overview</a></li>
                   <li><a class="dropdown-item" href="about_partner.html"> Meet Our Partners </a></li>
@@ -63,14 +67,14 @@
                 <a class="nav-link active"> Services </a>
               </li>
             <li class="nav-item dropdown">
-              <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> Careers </a>
+              <a class="nav-link" href="#" data-toggle="dropdown"> Careers </a>
               <ul class="dropdown-menu dropdown-menu-right">
                 <li><a class="dropdown-item" href="careers.html"> Drop CV</a></li>
                 <li><a class="dropdown-item" href="careers.html"> Join Our Team </a></li>
               </ul>
           </li>	
             <li class="nav-item dropdown">
-              <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> Insights </a>
+              <a class="nav-link" href="#" data-toggle="dropdown"> Insights </a>
               <ul class="dropdown-menu dropdown-menu-right">
                 <li><a class="dropdown-item" href="#"> Newsletters</a></li>
                 <li><a class="dropdown-item" href="#"> Updates </a></li>
@@ -84,6 +88,7 @@
            <!-- navbar-collapse.// -->
       <!-- Navigation ends -->
 
+   
     <!-- Demo header-->
     <header>
         <!-- <div class="overlay">
@@ -105,12 +110,13 @@
         <!-- news -->
         <div class="card-section">
             <div class="container">
-                <div class="card-block bg-white mb30">
+                <div class="card mb10 shadow">
                     <div class="row">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                             <!-- section-title -->
                             <div class="section-title mb-0 text-center">
-                                <h2>All about Aiding you better...</h2>
+                                <h2 class="lead text-light typewrite" data-period="2000" data-type='[ "For Your Accounting Services.", "Business & Financial Advisory Services.", "Tax Services.", "Audit & Assurance Services.", " We aid your business goals.", "All about Aiding you better..." ]'><span class="wrap"></span>
+                                </h2>
                             </div>
                             <!-- /.section-title -->
                         </div>
@@ -124,10 +130,41 @@
             </div>
         </div>
       </header>
+      <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+      </div>
 
-
-<section class="py-5 header">
-    <div class="container py-4">
+<section class="py-2 header">
+    <div class="container py-1">
         
 
         <div class="row">
@@ -168,7 +205,7 @@
                     <div class="tab-pane fade shadow rounded bg-white show active p-5" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                       <div class="col-md-12">
                         <h4 class="font-italic mb-4">Bookkeeping and Accounting Services.</h4>
-                        <p class="font-italic text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="font-italic text-muted mb-2">
                         
                         <ul>
                             <li>
@@ -195,7 +232,7 @@
                             <li>
                                 Management Reporting through budgeting, forecasting and variance analysis
                             </li>
-                        </ul>
+                        </ul></p>
                     
                       
                       </div>
@@ -203,7 +240,7 @@
                     
                     <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-tca" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                         <h4 class="font-italic mb-4">Tax Compliance and Advisory.</h4>
-                        <p class="font-italic text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="font-italic text-muted mb-2">
                         <ul>
                             <li>
                                 Tax planning and structuring
@@ -229,7 +266,7 @@
                             <li>
                                 Transfer Pricing documentation
                             </li>
-                        </ul>
+                        </ul></p>
                     </div>
                     
                     <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-aprt" role="tabpanel" aria-labelledby="v-pills-messages-tab">
@@ -272,7 +309,7 @@
                     
                     <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-hrps" role="tabpanel" aria-labelledby="v-pills-settings-tab">
                         <h4 class="font-italic mb-4">Human Resource and Payroll Services.</h4>
-                        <p class="font-italic text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="font-italic text-muted mb-2">
                         <ul>
                             <li>
                             	Payroll management
@@ -292,7 +329,7 @@
                             <li>
                                 Staff Training support
                             </li>
-                        </ul>
+                        </ul></p>
                     </div>
                 </div>
             </div>
@@ -317,12 +354,12 @@
               <!-- Social buttons -->
               <ul class="list-unstyled list-inline mb-0 social text-center quick-links">
                 <li class="list-inline-item">
-                  <a class="btn-floating btn-fb mx-1">
+                  <a class="btn-floating btn-fb mx-1" href="#" target="blank">
                     <i class="fa fa-facebook-f"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a class="btn-floating btn-tw mx-1">
+                  <a class="btn-floating btn-tw mx-1" href="#" target="blank">
                     <i class="fa fa-twitter"></i>
                   </a>
                 </li>
@@ -332,7 +369,7 @@
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a class="btn-floating btn-gplus mx-1">
+                  <a class="btn-floating btn-gplus mx-1" href="https://www.linkedin.com/company/aideone-consulting/" target="blank">
                     <i class="fa fa-linkedin-square"></i>
                   </a>
                 </li>

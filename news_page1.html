@@ -11,7 +11,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/testimonials.js"></script>
-
+<!--     
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
 
 	
     <!-- Bootstrap core CSS -->
@@ -49,6 +51,11 @@
       this.parentNode.insertBefore(section, this);
     };
     </script>
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+      });
+      </script>
 	<!-- head slider script ends -->
   </head>
 
@@ -184,18 +191,18 @@ h1, h2, h3, h4, h5, h6 {
   
     <div class="nav-scroller py-1 mb-2">
       <nav class="nav d-flex justify-content-between">
-        <a class="p-2 text-muted" href="#">World</a>
-        <a class="p-2 text-muted" href="#">U.S.</a>
-        <a class="p-2 text-muted" href="#">Technology</a>
-        <a class="p-2 text-muted" href="#">Design</a>
-        <a class="p-2 text-muted" href="#">Culture</a>
-        <a class="p-2 text-muted" href="#">Business</a>
-        <a class="p-2 text-muted" href="#">Politics</a>
-        <a class="p-2 text-muted" href="#">Opinion</a>
-        <a class="p-2 text-muted" href="#">Science</a>
-        <a class="p-2 text-muted" href="#">Health</a>
-        <a class="p-2 text-muted" href="#">Style</a>
-        <a class="p-2 text-muted" href="#">Travel</a>
+        <a class="p-2 text-muted" onclick="alert('This section is still under construction, Please bear with us.');" href="#">World</a>
+        <a class="p-2 text-muted" onclick="alert('This section is still under construction, Please bear with us.');" href="#">U.S.</a>
+        <a class="p-2 text-muted" onclick="alert('This section is still under construction, Please bear with us.');" href="#">Technology</a>
+        <a class="p-2 text-muted" onclick="alert('This section is still under construction, Please bear with us.');" href="#">Design</a>
+        <a class="p-2 text-muted" onclick="alert('This section is still under construction, Please bear with us.');" href="#">Culture</a>
+        <a class="p-2 text-muted" onclick="alert('This section is still under construction, Please bear with us.');" href="#">Business</a>
+        <a class="p-2 text-muted" onclick="alert('This section is still under construction, Please bear with us.');" href="#">Politics</a>
+        <a class="p-2 text-muted" onclick="alert('This section is still under construction, Please bear with us.');" href="#">Opinion</a>
+        <a class="p-2 text-muted" onclick="alert('This section is still under construction, Please bear with us.');" href="#">Science</a>
+        <a class="p-2 text-muted" onclick="alert('This section is still under construction, Please bear with us.');" href="#">Health</a>
+        <a class="p-2 text-muted" onclick="alert('This section is still under construction, Please bear with us.');" href="#">Style</a>
+        <a class="p-2 text-muted" onclick="alert('This section is still under construction, Please bear with us.');" href="#">Travel</a>
       </nav>
     </div>
   
@@ -208,7 +215,7 @@ h1, h2, h3, h4, h5, h6 {
       </div>
     </div>
 
-    <div class="p-4 p-md-5 mb-4 text-dark rounded bg-light animated bounceInDown">
+    <div class="p-4 p-md-5 mb-4 text-dark rounded bg-light animated wow fadeIn" data-wow-duration="3s">
       <div class=" row col-md-12">
         <div class="col-md-6 px-0">
           <article class="blog-post">
@@ -228,9 +235,9 @@ h1, h2, h3, h4, h5, h6 {
              I do not see how this laudable purpose on paper can be achieved with the same old way of planning and budgeting.</p>
           </article>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-6">
           
-          <img src="images/IK_banner2.jpg" alt="AideOne" class='img-responsive'>
+          <img src="images/IK_banner2.jpg" alt="AideOne" class='hidden-xs hidden-sm'>
         </div>
         <div class="col-auto d-none d-lg-block">
           <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->

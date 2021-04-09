@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Financial Audit Consult Firm Website">
+    <meta name="description" content="Financial Audit Consult Firm Website">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="">
+    <title>AideOne Consultants  |  About Us</title>
+    <link href="images/aideone.jpg" rel="icon" type="image/png">
+    
+    <!--Icon Fonts - Font Awesome Icons-->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+	  <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	  <script src="js/bootstrap.min.js"></script>
+	  <script src="js/typewriter.js"></script>
+
+         
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+    
+                <!-- Google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700,700i,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i">
+ 
+    <!-- for head slider -->
+    <script>
+        wow = new WOW(
+     {
+       animateClass: 'animated',
+       offset:       100,
+       callback:     function(box) {
+         console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+       }
+     }
+   );
+   wow.init();
+   document.getElementById('moar').onclick = function() {
+     var section = document.createElement('section');
+     section.className = 'section--purple wow fadeInDown';
+     this.parentNode.insertBefore(section, this);
+   };
+   </script>
+
+
+ <!-- head slider script ends -->
+   <link rel="stylesheet" href="css/services.css">
+   <link rel="stylesheet" href="css/style.css">
+
+   <style>
+       /* Teams _ About us */
+
+.team{
+  padding:75px 0;
+}
+h6.description{
+font-weight: bold;
+letter-spacing: 2px;
+color: #999;
+border-bottom: 1px solid rgba(0, 0, 0,0.1);
+padding-bottom: 5px;
+}
+.profile{
+margin-top: 25px;
+}
+.profile h1{
+font-weight: normal;
+font-size: 20px;
+margin:10px 0 0 0;
+}
+.profile h2{
+font-size: 14px;
+font-weight: lighter;
+margin-top: 5px;
+}
+.profile .img-box{
+opacity: 1;
+display: block;
+position: relative;
+}
+.profile .img-box:after{
+content:"";
+opacity: 0;
+background-color: rgba(0, 0, 0, 0.75);
+position: absolute;
+right: 0;
+left: 0;
+top: 0;
+bottom: 0;
+}
+.img-box ul{
+position: absolute;
+z-index: 2;
+bottom: 50px;
+text-align: center;
+width: 100%;
+padding-left: 0px;
+height: 0px;
+margin:0px;
+opacity: 0;
+}
+.profile .img-box:after, .img-box ul, .img-box ul li{
+-webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+.img-box ul i{
+font-size: 20px;
+letter-spacing: 10px;
+}
+.img-box ul li{
+width: 30px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #88C425;
+  margin: 2px;
+  padding: 5px;
+display: inline-block;
+}
+.img-box a{
+color:#fff;
+}
+.img-box:hover:after{
+opacity: 1;
+}
+.img-box:hover ul{
+opacity: 1;
+}
+.img-box ul a{
+-webkit-transition: all 0.3s ease-in-out 0s;
+-moz-transition: all 0.3s ease-in-out 0s;
+transition: all 0.3s ease-in-out 0s;
+}
+.img-box a:hover li{
+border-color: #fff;
+color: #88C425;
+}
+a{
+  color:#88C425;
+}
+a:hover{
+  text-decoration:none;
+  color:#519548;
+}
+i.red{
+  color:#BC0213;
+}
+
+/* Teams _ About us Ends*/
+
+   .image-aboutus-banner {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("https://images.pexels.com/photos/673649/pexels-photo-673649.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    padding-top: 110px;
+    padding-bottom:110px;
+ }
+ 
+  .image-aboutus-sm-banner {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("https://images.pexels.com/photos/631008/pexels-photo-631008.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom:30px;
+ }
+.lg-text {
+    font-size:52px;
+    font-weight: 600;
+    text-transform: none;
+    color:#fff;
+}
+.paddingTB60 {
+    padding-top:60px;
+    padding-bottom:60px;
+}
+   </style>
+ </head>
+ <body>
+    <nav class="navbar navbar-expand-lg navbar-default bg-light fixed-top">
+      <div class="container">
+	    <a class="navbar-brand" href="index.html"><img src="images/aideone.png" alt="AideOne" height="50" class='img-responsive'></a>
+     	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+        
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"> <a class="nav-link" href="index.html">Home </a> </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" data-toggle="dropdown"> About Us </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li><a class="dropdown-item" href="about.html"> Overview</a></li>
+              <li><a class="dropdown-item" href="about_partner.html"> Meet Our Partners </a></li>
+              <li><a class="dropdown-item" href="about_team.html"> Meet Our Team </a></li>
+            </ul>
+        </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link" href="#" data-toggle="dropdown">Services</a>
+            	<ul class="dropdown-menu dropdown-menu-right">
+                  <li><a class="dropdown-item" href="services.html">Bookkeeping and Accounting Services</a></li>
+              	  <li><a class="dropdown-item" href="services.html"> Tax Compliance and Advisory</a></li>
+              	  <li><a class="dropdown-item" href="services.html"> Accounting Process Review and Transformation</a></li>
+              	  <li><a class="dropdown-item" href="services.html"> Finance function resourcing and outsourcing </a></li>
+              	  <li><a class="dropdown-item" href="services.html"> Human Resource and Payroll Services</a></li>
+              	  <li><a class="dropdown-item" href="services.html"> Audit and Assurance Service</a></li>
+              	  <li><a class="dropdown-item" href="school.html">Aideone School of Finance and Tax</a></li>
+            	</ul>
+        	</li>
+           
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" data-toggle="dropdown"> Careers </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li><a class="dropdown-item" href="careers.html"> Drop CV</a></li>
+              <li><a class="dropdown-item" href="careers.html"> Join Our Team </a></li>
+            </ul>
+        </li>	
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" data-toggle="dropdown"> Insights </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li><a class="dropdown-item" href="#"> Newsletters</a></li>
+              <li><a class="dropdown-item" href="#"> Updates </a></li>
+            </ul>
+        </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html"> Contact Us </a></li>
+        </ul>
+        </div><!-- end row -->
+      </div>
+    </nav>
+         <!-- navbar-collapse.// -->
+    <!-- Navigation ends -->
+    <div class="main">
+    <section class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark" style="height:60vh; background-image: url(images/pageheader.jpg);">
+     <div class="container-fluid">
+      <div class="row  justify-content-center align-items-center d-flex text-center h-100">
+        <div class="col-12 col-md-8  h-50 ">
+            <h1 class="display-2  text-light mb-2 mt-5"><strong>AideOne</strong> </h1>
+            <h2>
+              <p class="lead  text-light typewrite" data-period="2000" data-type='[ "Accounting Services.", "Business & Financial Advisory Services.", "Tax Services.", "Audit & Assurance Services.", "Keep focused on the goal; not the noise.", " We aid your business goals.", "We can best Aid you..." ]'><span class="wrap"></span>
+              </p>
+            </h2>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <div class="bread-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-8">
+                      <ol class="breadcrumb">
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="about.html">Abou Us</a></li>
+                          <li class="active">Meet Our Partners</li>
+                      </ol>
+                </div>
+                  <div class="col-md-4 col-sm-6 col-xs-4">
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="space-200"></div>
+      
+        <!-- Teams -->
+        <div class="container">
+        <section class="team">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                  <div class="col-lg-12">
+                    <h6 class="description">OUR TEAM</h6>
+                    <div class="row pt-md">
+                      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                        <div class="img-box">
+                          <img src="http://nabeel.co.in/files/bootsnipp/team/1.jpg" class="img-responsive">
+                          <ul class="text-center">
+                            <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                            <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                          </ul>
+                        </div>
+                        <h1>Marrie Doi</h1>
+                        <h2>Co-founder/ Operations</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                        <div class="img-box">
+                          <img src="http://nabeel.co.in/files/bootsnipp/team/2.jpg" class="img-responsive">
+                          <ul class="text-center">
+                            <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                            <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                          </ul>
+                        </div>
+                        <h1>Christopher Di</h1>
+                        <h2>Co-founder/ Projects</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                        <div class="img-box">
+                          <img src="http://nabeel.co.in/files/bootsnipp/team/3.jpg" class="img-responsive">
+                          <ul class="text-center">
+                            <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                            <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                          </ul>
+                        </div>
+                        <h1>Heather H</h1>
+                        <h2>Co-founder/ Marketing</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                        <div class="img-box">
+                          <img src="http://nabeel.co.in/files/bootsnipp/team/4.jpg" class="img-responsive">
+                          <ul class="text-center">
+                            <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                            <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                          </ul>
+                        </div>
+                        <h1>John Doe</h1>
+                        <h2>Designer</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                        <div class="img-box">
+                          <img src="http://nabeel.co.in/files/bootsnipp/team/5.jpg" class="img-responsive">
+                          <ul class="text-center">
+                            <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                            <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                          </ul>
+                        </div>
+                        <h1>Peter John</h1>
+                        <h2>Web Developer</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                        <div class="img-box">
+                          <img src="http://nabeel.co.in/files/bootsnipp/team/6.jpg" class="img-responsive">
+                          <ul class="text-center">
+                            <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                            <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                          </ul>
+                        </div>
+                        <h1>Cherry John</h1>
+                        <h2>Fullstack Developer</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                        <div class="img-box">
+                          <img src="http://nabeel.co.in/files/bootsnipp/team/7.jpg" class="img-responsive">
+                          <ul class="text-center">
+                            <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                            <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                          </ul>
+                        </div>
+                        <h1>Frank Martin</h1>
+                        <h2>Co-founder/ Operations</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                        <div class="img-box">
+                          <img src="http://nabeel.co.in/files/bootsnipp/team/8.jpg" class="img-responsive">
+                          <ul class="text-center">
+                            <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                            <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                          </ul>
+                        </div>
+                        <h1>Christopher Di</h1>
+                        <h2>Co-founder/ Projects</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                        <div class="img-box">
+                          <img src="http://nabeel.co.in/files/bootsnipp/team/9.jpg" class="img-responsive">
+                          <ul class="text-center">
+                            <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                            <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                          </ul>
+                        </div>
+                        <h1>Heather H</h1>
+                        <h2>Co-founder/ Marketing</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                        <div class="img-box">
+                          <img src="http://nabeel.co.in/files/bootsnipp/team/10.jpg" class="img-responsive">
+                          <ul class="text-center">
+                            <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                            <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                          </ul>
+                        </div>
+                        <h1>Nancy Doe</h1>
+                        <h2>Designer</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                        <div class="img-box">
+                          <img src="http://nabeel.co.in/files/bootsnipp/team/11.jpg" class="img-responsive">
+                          <ul class="text-center">
+                            <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                            <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                          </ul>
+                        </div>
+                        <h1>Stella John</h1>
+                        <h2>Web Developer</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                        <div class="img-box">
+                          <img src="http://nabeel.co.in/files/bootsnipp/team/12.jpg" class="img-responsive">
+                          <ul class="text-center">
+                            <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                            <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                          </ul>
+                        </div>
+                        <h1>Cherry John</h1>
+                        <h2>Fullstack Developer</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+          <!-- Teams Ends-->
+
+              <!-- footer -->
+      <footer class="page-footer font-small elegant-color  wow slideInUp" data-wow-duration="4s" id="footer">
+          <!-- Footer Links -->
+          <div class="container">
+            <div class="row">
+              <!--Grid column-->
+              <div class="col my-5">
+                <!-- Social buttons -->
+                <ul class="list-unstyled list-inline mb-0 social text-center quick-links">
+                    <li class="list-inline-item">
+                      <a class="btn-floating btn-fb mx-1" href="#" target="blank">
+                        <i class="fa fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="btn-floating btn-tw mx-1" href="#" target="blank">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="btn-floating btn-instagram mx-1" href="https://www.instagram.com/aideone_consult/" target="blank">
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="btn-floating btn-gplus mx-1" href="https://www.linkedin.com/company/aideone-consulting/" target="blank">
+                        <i class="fa fa-linkedin-square"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="btn-floating btn-envelope mx-1" target="_blank">
+                        <i class="fa fa-envelope"></i>
+                      </a>
+                    </li>
+                  </ul>
+                <!-- Social buttons -->
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Footer Links -->
+          <!-- Copyright -->	
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white py-3">
+                            <p class="m-0 text-center text-black">Copyright &copy; <script> document.write(new Date().getFullYear());</script> <a href="#"><span class="span text-violat ">AideOne Consult </span></a></p>
+                        </div>
+                        <hr>
+                        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                            <h6><a style="color: #6f5f23; font-size: small;" href="https://github.com/Oluwafemi-iDEAR" target="_blank">Designed by iDEAR Concept </a></h6>
+                        </div>
+                        <hr>
+                    </div>
+          <!-- Copyright -->
+        </footer>
+        
+                <!-- ./Footer ends -->
+      
+    </div>
+
+
+<!-- scroll up script-->
+<script>
+  $(document).ready(function(){
+      $('body').append('<div id="toTop" class="btn btn-info"><span class="glyphicon glyphicon-chevron-up"></span> <i class="fa fa-angle-up fa-2x text-dark"></i> </div>');
+      $(window).scroll(function () {
+      if ($(this).scrollTop() != 0) {
+        $('#toTop').fadeIn();
+      } else {
+        $('#toTop').fadeOut();
+      }
+    }); 
+    $('#toTop').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+});
+
+</script>
+<!-- scroll up script ends-->
+  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+  <script>
+    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+    formbutton("create", {action: "https://formspree.io/mgepwneb"})
+  </script>
+    <!-- page content ends -->
+
+    <script src="js/services.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="js/client.js"></script>
+    <script src="js/counter.js"></script>
+   
+    <!-- Script for navbar -->
+   <script>
+        $(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+    </script>
+ <!-- Script for navbar ends-->
+
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      $(window).scroll(function(){
+      $('nav').toggleClass('scrolled', $(this).scrollTop() > 150);});
+      
+    </script>
+
+<script type="text/javascript">
+  $().ready(function(){
+      $('[rel="tooltip"]').tooltip();
+
+      $('a.scroll-down').click(function(e){
+          e.preventDefault();
+          scroll_target = $(this).data('href');
+           $('html, body').animate({
+               scrollTop: $(scroll_target).offset().top - 60
+           }, 1000);
+      });
+
+  });
+
+  function rotateCard(btn){
+      var $card = $(btn).closest('.card-container');
+      console.log($card);
+      if($card.hasClass('hover')){
+          $card.removeClass('hover');
+      } else {
+          $card.addClass('hover');
+      }
+  }
+
+
+</script>
+</body>
+</html>
