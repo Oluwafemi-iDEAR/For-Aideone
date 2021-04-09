@@ -8,11 +8,11 @@
     <meta name="robots" content="contact, follow">
     <meta name="author" content="">
     <link href="images/aideone.jpg" rel="icon" type="image/png">
-    <title>AideOne - Contact</title>
+    <title>AideOne - Academy</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
                   <!--Icon Fonts - Font Awesome Icons-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-   
+  <script src="js/jquery-1.11.1.min.js"></script>
                 <!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="js/bootstrap.min.js"></script>
@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700,700i,900">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i">
     
+	  <script src="js/typewriter.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
     <link rel="stylesheet" href="css/style.css">
@@ -43,39 +44,40 @@
 
     <style>
       .header-blue {
-  background:linear-gradient(135deg, #172a74, #fff);
-  background-color:#184e8e;
-  padding-bottom:80px;
-  font-family:'Source Sans Pro', sans-serif;
-}
+      background:linear-gradient(135deg, #172a74, #fff);
+      background-color:#184e8e;
+      padding-bottom:80px;
+      padding-top:80px;
+      font-family:'Source Sans Pro', sans-serif;
+    }
 
-@media (min-width:768px) {
-  .header-blue {
-    padding-bottom:120px;
-  }
-}
+    @media (min-width:768px) {
+      .header-blue {
+        padding-bottom:120px;
+      }
+    }
 
- .navbar {
-  background:transparent;
-  padding-top:.75rem;
-  padding-bottom:.75rem;
-  color:#fff;
-  border-radius:0;
-  box-shadow:none;
-  border:none;
-}
+    .navbar {
+      background:transparent;
+      padding-top:.75rem;
+      padding-bottom:.75rem;
+      color:#fff;
+      border-radius:0;
+      box-shadow:none;
+      border:none;
+    }
 
-@media (min-width:768px) {
-   .navbar {
-    padding-top:1rem;
-    padding-bottom:1rem;
-  }
-}
+    @media (min-width:768px) {
+      .navbar {
+        padding-top:1rem;
+        padding-bottom:1rem;
+      }
+    }
 
- .navbar .navbar-brand {
-  font-weight:bold;
-  color:inherit;
-}
+    .navbar .navbar-brand {
+      font-weight:bold;
+      color:inherit;
+    }
 
  .navbar .navbar-brand:hover {
   color:#f0f0f0;
@@ -83,7 +85,7 @@
 
  .navbar .navbar-collapse {
   border-top:1px solid rgba(255,255,255,0.3);
-  margin-top:.5rem;
+
 }
 
 @media (min-width:768px) {
@@ -142,9 +144,7 @@
   color:#37434d;
 }
 
- .navbar .dropdown-menu .dropdown-item:focus,  .navbar .dropdown-menu .dropdown-item:hover {
-  background:#ebeff1;
-}
+
 
 .header-blue .action-button,  .action-button:not(.disabled):active {
   border:1px solid rgba(255,255,255,0.7);
@@ -161,28 +161,6 @@
 .header-blue .action-button:hover {
   color:#fff;
 }
-
- .navbar .form-inline label {
-  color:#d9d9d9;
-}
-
- .navbar .form-inline .search-field {
-  display:inline-block;
-  width:80%;
-  background:none;
-  border:none;
-  border-bottom:1px solid transparent;
-  border-radius:0;
-  color:#ccc;
-  box-shadow:none;
-  color:inherit;
-  transition:border-bottom-color 0.3s;
-}
-
- .navbar .form-inline .search-field:focus {
-  border-bottom:1px solid #ccc;
-}
-
  .hero {
   margin-top:20px;
   text-align:center;
@@ -262,8 +240,6 @@
   transform:rotate(-19deg);
   opacity:0.2;
 }
-
-
     </style>
 
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
@@ -272,10 +248,6 @@
 </head>
 <body>
 
-
-
-
-  <div>
     <div class="header-blue">
       <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-default bg-light fixed-top">
@@ -287,13 +259,13 @@
         <div class="collapse navbar-collapse" id="main_nav">
         
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"> <a class="nav-link" href="index.html">Home </a> </li>
+          <li class="nav-item active"> <a class="nav-link" href="index.html">Home </a> </li>
           <li class="nav-item dropdown">
             <a class="nav-link" href="#" data-toggle="dropdown"> About Us </a>
             <ul class="dropdown-menu dropdown-menu-right">
               <li><a class="dropdown-item" href="about.html"> Overview</a></li>
               <li><a class="dropdown-item" href="about_partner.html"> Meet Our Partners </a></li>
-              <li><a class="dropdown-item" href="about_team.html"> Meet Our Team </a></li>
+              <li><a class="dropdown-item" href="#"> Meet Our Team </a></li>
             </ul>
         </li>
           <li class="nav-item dropdown">
@@ -323,7 +295,7 @@
               <li><a class="dropdown-item" href="#"> Updates </a></li>
             </ul>
         </li>
-          <li class="nav-item active"><a class="nav-link" href="#"> Contact Us </a></li>
+          <li class="nav-item"><a class="nav-link"> Contact Us </a></li>
         </ul>
         </div><!-- end row -->
       </div>
@@ -449,7 +421,7 @@
                               </a>
                             </li>
                             <li class="list-inline-item">
-                              <a class="btn-floating btn-envelope mx-1" target="_blank">
+                              <a class="btn-floating btn-envelope mx-1" href="mailto:info@aideone.com.ng" target="_blank">
                                 <i class="fa fa-envelope"></i>
                               </a>
                             </li>
