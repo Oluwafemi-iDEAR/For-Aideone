@@ -5,12 +5,13 @@ body {
     background-repeat: no-repeat;
     /* margin-top:200px; */
 }
-a{
+/* a{
   color: rgb(102, 102, 102);
 }
 a:link {
   text-decoration: none;
-}/* mouse over link */
+} */
+/* mouse over link */
 a:hover {
   color: hotpink;
 }
@@ -1379,7 +1380,7 @@ figure img{width:300px;}
   width: auto;
   margin-right: -200px;
   right: 0;
-  background-image: url(../images/map.png);
+  /* background-image: url(../images/map.png); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1836,7 +1837,7 @@ textarea {
 
 @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
 /* Demo Purpose Only*/
-.demo {
+/* .demo {
   font-family: 'Raleway', sans-serif;
 	color:#fff;
     display: block;
@@ -1847,12 +1848,18 @@ textarea {
 .demo a{
   font-family: 'Raleway', sans-serif;
 color: #000;		
-}
+} */
 
 /* -----------------------Services1 Homepage Ends------------------------------- */
 
 
 /* -------------------------Services HomePage-----------------------------*/
+/* #content-desktop {display: block;}
+#content-mobile {display: none;}
+
+@media all and (min-width: 992px) { */
+
+
 .nav-pills-custom .nav-link {
   color: #aaa;
   background: #fff;
@@ -1887,8 +1894,6 @@ color: #000;
 .nav-pills-custom .nav-link.active::before {
   opacity: 1;
 }
-
-
 
 
 /* -------------------------Services HomePage Ends----------------------------- */
@@ -1997,6 +2002,22 @@ section .section-title {
 /*--------------------------------Footer ends--------------------------*/
 
 
+.hero {
+	height: 100%;
+	background: linear-gradient(45deg, rgba(5,42,89,.7), rgba(0,135,187,.7),  rgba(52,219,216,.7), rgba(219, 21, 54, 0.7), rgba(52,219,216,.7), rgba(98, 26, 180, 0.7), rgba(221, 19, 120, 0.7), rgba(20, 30, 48, 0.7)) 0 0 / 1000% no-repeat, url(../images/443-2000x1200-grayscale.jpg) 0 0 / cover no-repeat;
+	-webkit-animation: gradientAnimation 40s ease infinite;
+	animation: gradientAnimation 40s ease infinite;
+}
+@-webkit-keyframes gradientAnimation {
+	0%   { background-position: 0% 30%, 0 0;}
+	50%  { background-position: 100% 70%, 0 0;}
+	100% { background-position: 0% 30%, 0 0;}
+}
+@keyframes gradientAnimation {
+	0%   { background-position: 0% 30%, 0 0;}
+	50%  { background-position: 100% 70%, 0 0;}
+	100% { background-position: 0% 30%, 0 0;}
+}
 /*--------------------------------Footer glow--------------------------*/
 
 
