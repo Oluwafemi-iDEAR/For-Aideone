@@ -44,39 +44,39 @@
 
     <style>
       .header-blue {
-      background:linear-gradient(135deg, #172a74, #fff);
-      background-color:#184e8e;
-      padding-bottom:80px;
-      padding-top:80px;
-      font-family:'Source Sans Pro', sans-serif;
-    }
+  background:linear-gradient(135deg, #172a74, #fff);
+  background-color:#184e8e;
+  padding-bottom:80px;
+  font-family:'Source Sans Pro', sans-serif;
+}
 
-    @media (min-width:768px) {
-      .header-blue {
-        padding-bottom:120px;
-      }
-    }
+@media (min-width:768px) {
+  .header-blue {
+    padding-bottom:120px;
+  }
+}
 
-    .navbar {
-      background:transparent;
-      padding-top:.75rem;
-      padding-bottom:.75rem;
-      border-radius:0;
-      box-shadow:none;
-      border:none;
-    }
+ .navbar {
+  background:transparent;
+  padding-top:.75rem;
+  padding-bottom:.75rem;
+  color:#fff;
+  border-radius:0;
+  box-shadow:none;
+  border:none;
+}
 
-    @media (min-width:768px) {
-      .navbar {
-        padding-top:1rem;
-        padding-bottom:1rem;
-      }
-    }
+@media (min-width:768px) {
+   .navbar {
+    padding-top:1rem;
+    padding-bottom:1rem;
+  }
+}
 
-    .navbar .navbar-brand {
-      font-weight:bold;
-      color:inherit;
-    }
+ .navbar .navbar-brand {
+  font-weight:bold;
+  color:inherit;
+}
 
  .navbar .navbar-brand:hover {
   color:#f0f0f0;
@@ -84,7 +84,7 @@
 
  .navbar .navbar-collapse {
   border-top:1px solid rgba(255,255,255,0.3);
-
+  margin-top:.5rem;
 }
 
 @media (min-width:768px) {
@@ -131,19 +131,21 @@
   }
 }
 
- /* .navbar .navbar-nav > li > .dropdown-menu {
+ .navbar .navbar-nav > li > .dropdown-menu {
   margin-top:-5px;
   box-shadow:0 4px 8px rgba(0,0,0,.1);
   background-color:#fff;
   border-radius:2px;
-} */
+}
 
  .navbar .dropdown-menu .dropdown-item:focus,  .navbar .dropdown-menu .dropdown-item {
   line-height:2;
   color:#37434d;
 }
 
-
+ .navbar .dropdown-menu .dropdown-item:focus,  .navbar .dropdown-menu .dropdown-item:hover {
+  background:#ebeff1;
+}
 
 .header-blue .action-button,  .action-button:not(.disabled):active {
   border:1px solid rgba(255,255,255,0.7);
@@ -160,6 +162,28 @@
 .header-blue .action-button:hover {
   color:#fff;
 }
+
+ .navbar .form-inline label {
+  color:#d9d9d9;
+}
+
+ .navbar .form-inline .search-field {
+  display:inline-block;
+  width:80%;
+  background:none;
+  border:none;
+  border-bottom:1px solid transparent;
+  border-radius:0;
+  color:#ccc;
+  box-shadow:none;
+  color:inherit;
+  transition:border-bottom-color 0.3s;
+}
+
+ .navbar .form-inline .search-field:focus {
+  border-bottom:1px solid #ccc;
+}
+
  .heros {
   margin-top:20px;
   text-align:center;
@@ -239,6 +263,8 @@
   transform:rotate(-19deg);
   opacity:0.2;
 }
+
+
     </style>
 
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
@@ -277,25 +303,24 @@
                     <li><a class="dropdown-item" href="services.html">Finance function resourcing and outsourcing</a></li>
                     <li><a class="dropdown-item" href="services.html">Audit and Assurance Service</a></li>
                     <li><a class="dropdown-item" href="services.html">Human Resource and Payroll Services</a></li>
-                      <li><a class="dropdown-item" href="school.html">Aideone School of Finance and Tax</a></li>
+                    <li><a class="dropdown-item">Aideone School of Finance and Tax</a></li>
                   </ul>
               </li>
-            <li class="nav-item active"><a class="nav-link"> Contact Us </a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html"> Contact Us </a></li>
             <li class="nav-item"><a class="nav-link" href="careers.html">Careers </a></li>
           </ul>
           </div><!-- end row -->
         </div>
       </nav>
-     <!-- navbar-collapse.// -->
+             <!-- navbar-collapse.// -->
 <!-- Navigation ends -->
         <div class="container heros">
             <div class="row">
                 <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
                     <h1>Aideone School of Finance and Tax</h1>
-                    <p> Aideone Academy is a leading learning solution provider with various training products ranging from: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                      consequat.<br></p> <button class="btn btn-light btn-lg action-button" type="button">Learn More<i class="fa fa-long-arrow-right ml-2"></i></button>
+                    <p> Aideone Academy is a leading learning solution provider with various training products ranging from:
+                       General Board administration Training, General Finance and Operations Management Trainings e.t.c.
+                      Sign up today and start the journey to accomplishing your dreams.<br></p> 
                 </div>
                 <div class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block phone-holder">
                   <div class="iphone-mockup"><img src="images/phone.svg" class="device">
@@ -311,8 +336,60 @@
             </div>
         </div>
     </div>
-</div>
 
+    <section class="academy_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="about_content">
+              <div class="background_layer"></div>
+                <div class="layer_content wow fadeIn" data-wow-duration="6s">
+                  <div class="section_title"><!-- 
+                    <h5> Academy </h5> -->
+                    <h2>Aideone School of<strong>Finance and Tax</strong>
+                    </h2>
+                    <div class="heading_line"><span></span></div>
+                    <p>Aideone Academy is a leading learning solution provider with various training products ranging from:</p>
+                          <ul>
+                            <li>
+                              International financial reporting standards ((IFRS) Training)
+                            </li>
+                            <li>Tax Regulatory and Economy Update Courses</li>
+                            <li>General Finance and Operations Management Trainings</li>
+                            <li>General Board administration Training</li>
+                          </ul>
+                         <p>Aiding the fulfillment of your career goals with finesse and a professional touch.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+                  <div class="col-lg-5">
+
+                      <div class="academy_box">
+                          <div class="academy_container">
+                              <div class="background_layer"></div>
+                              <div class="layer_content">
+                                  <div class="testimonial_owlCarousel owl-carousel">
+                                      <div class="academy"> 
+                                          <div class="section_title">
+                                  <div class="heading_line"><span></span></div>
+                                  <h2><p class="typewrite" data-period="2000" data-type='[ "Focus on the goal; not the noise.", " We aid your business goals.", "We can best Aid you..." ]'> 
+                        <span class="wrap"></span>
+                        </p></h2>
+                        <!-- <p>Learn the fastest and secure way to grow business with the leader in Professional Services.</p>  --> 
+                        <img class=" img-fluid" src="images/smiling-4654734-removebg-preview.png" alt="card image">
+
+                              </div>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  
 
 
 
@@ -321,13 +398,13 @@
            <div class="row">
               <div class="col-xl-6 mx-auto text-center">
                  <div class="section-title mb-100">
-                    <h4>Contact Us</h4>
+                    <h4>Register!</h4>
                  </div>
               </div>
            </div>
            <div class="row text-center">
-                 <div class="col-md-8 form">
-                   <form action="#" class="contact-form">
+                 <div class="col-md-8 form mb-5">
+                   <form action="contact.php" method="post" id="form" class="contact-form">
                        <div class="row">
                           <div class="col-xl-4">
                              <input type="text" required placeholder="name" name=”cf_name”>
@@ -347,6 +424,7 @@
                  </div>
                  <div class="col-md-4 details">
                     <div class="single-contact">
+                      <h4>Contact us now!</h4><br>
                        <i class="fa fa-map-marker"></i>
                        <h5>Address</h5>
                        <p>26 Shittu Animashaun Street,
@@ -369,67 +447,62 @@
      </section>
 
 
-<section class="map">
-   
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.8011705361955!2d3.38771453025922!3d6.546771910061188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d0d3d2895b3%3A0x7b11e8d91f8a8094!2s26%20Shittu%20Animashaun%20St%2C%20Bariga%2C%20Lagos!5e0!3m2!1sen!2sng!4v1601070795743!5m2!1sen!2sng" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-     
-</section>
 
-			            <!-- footer -->
-                  <footer class="page-footer font-small elegant-color  wow slideInUp" data-wow-duration="4s" id="footer">
-                    <!-- Footer Links -->
-                    <div class="container">
-                      <div class="row">
-                        <!--Grid column-->
-                        <div class="col my-5">
-                          <!-- Social buttons -->
-                          <ul class="list-unstyled list-inline mb-0 social text-center quick-links">
-                            <li class="list-inline-item">
-                              <a class="btn-floating btn-fb mx-1" href="#" target="blank">
-                                <i class="fa fa-facebook-f"></i>
-                              </a>
-                            </li>
-                            <li class="list-inline-item">
-                              <a class="btn-floating btn-tw mx-1" href="#" target="blank">
-                                <i class="fa fa-twitter"></i>
-                              </a>
-                            </li>
-                            <li class="list-inline-item">
-                              <a class="btn-floating btn-instagram mx-1" href="https://www.instagram.com/aideone_consult/" target="blank">
-                                <i class="fa fa-instagram"></i>
-                              </a>
-                            </li>
-                            <li class="list-inline-item">
-                              <a class="btn-floating btn-gplus mx-1" href="https://www.linkedin.com/company/aideone-consulting/" target="blank">
-                                <i class="fa fa-linkedin-square"></i>
-                              </a>
-                            </li>
-                            <li class="list-inline-item">
-                              <a class="btn-floating btn-envelope mx-1" href="mailto:info@aideone.com.ng" target="_blank">
-                                <i class="fa fa-envelope"></i>
-                              </a>
-                            </li>
-                          </ul>
-                          <!-- Social buttons -->
+            <!-- footer -->
+            <footer class="page-footer font-small elegant-color  wow slideInUp" data-wow-duration="4s" id="footer">
+              <!-- Footer Links -->
+              <div class="container">
+                <div class="row">
+                  <!--Grid column-->
+                  <div class="col my-5">
+                    <!-- Social buttons -->
+                    <ul class="list-unstyled list-inline mb-0 social text-center quick-links">
+                      <li class="list-inline-item">
+                        <a class="btn-floating btn-fb mx-1" href="#" target="blank">
+                          <i class="fa fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="btn-floating btn-tw mx-1" href="#" target="blank">
+                          <i class="fa fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="btn-floating btn-instagram mx-1" href="https://www.instagram.com/aideone_consult/" target="blank">
+                          <i class="fa fa-instagram"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="btn-floating btn-gplus mx-1" href="https://www.linkedin.com/company/aideone-consulting/" target="blank">
+                          <i class="fa fa-linkedin-square"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="btn-floating btn-envelope mx-1" href="mailto:info@aideone.com.ng" target="_blank">
+                          <i class="fa fa-envelope"></i>
+                        </a>
+                      </li>
+                    </ul>
+                    <!-- Social buttons -->
+                  </div>
+                  <!--Grid column-->
+                </div>
+                <!--Grid row-->
+              </div>
+              <!-- Footer Links -->
+              <!-- Copyright -->	
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white py-3">
+                                <p class="m-0 text-center text-black">Copyright &copy; <script> document.write(new Date().getFullYear());</script> <a href="#"><span class="span text-violat ">AideOne Consult </span></a></p>
+                            </div>
+                            <hr>
+                            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                                <h6><a style="color: #6f5f23; font-size: small;" href="https://github.com/Oluwafemi-iDEAR" target="_blank">Designed by iDEAR Concept </a></h6>
+                            </div>
+                            <hr>
                         </div>
-                        <!--Grid column-->
-                      </div>
-                      <!--Grid row-->
-                    </div>
-                    <!-- Footer Links -->
-                    <!-- Copyright -->	
-                              <div class="row">
-                                  <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white py-3">
-                                      <p class="m-0 text-center text-black">Copyright &copy; <script> document.write(new Date().getFullYear());</script> <a href="#"><span class="span text-violat ">AideOne Consult </span></a></p>
-                                  </div>
-                                  <hr>
-                                  <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-                                      <h6><a style="color: #6f5f23; font-size: small;" href="https://github.com/Oluwafemi-iDEAR" target="_blank">Designed by iDEAR Concept </a></h6>
-                                  </div>
-                                  <hr>
-                              </div>
-                    <!-- Copyright -->
-                  </footer>
+              <!-- Copyright -->
+            </footer>
 
                                             <!-- ./Footer ends -->
              

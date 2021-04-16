@@ -3,335 +3,307 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name="keywords" content="Financial Audit Consult Firm Website">
-    <meta name="description" content="Financial Audit Consult Firm Website">
-    <meta name="robots" content="contact, follow">
-    <meta name="author" content="">
-    <link href="images/aideone.jpg" rel="icon" type="image/png">
-    <title>AideOne - Academy</title>
+    <title>Services</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-                  <!--Icon Fonts - Font Awesome Icons-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-  <script src="js/jquery-1.11.1.min.js"></script>
-                <!-- Bootstrap core CSS -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="js/bootstrap.min.js"></script>
-                <!-- Google font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700,700i,900">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i">
-    
+    <link href="images/aideone.jpg" rel="icon" type="image/png">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/services.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src="js/jquery-1.11.1.min.js"></script>
+	  <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  	<script src="js/bootstrap.min.js"></script>
 	  <script src="js/typewriter.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script>
-         wow = new WOW(
-      {
-        animateClass: 'animated',
-        offset:       100,
-        callback:     function(box) {
-          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-        }
-      }
-    );
-    wow.init();
-    document.getElementById('moar').onclick = function() {
-      var section = document.createElement('section');
-      section.className = 'section--purple wow fadeInDown';
-      this.parentNode.insertBefore(section, this);
-    };
-    </script>
-
+    <script src='main.js'></script>
     <style>
-      .header-blue {
-  background:linear-gradient(135deg, #172a74, #fff);
-  background-color:#184e8e;
-  padding-bottom:80px;
-  font-family:'Source Sans Pro', sans-serif;
-}
+        
 
-@media (min-width:768px) {
-  .header-blue {
-    padding-bottom:120px;
-  }
-}
-
- .navbar {
-  background:transparent;
-  padding-top:.75rem;
-  padding-bottom:.75rem;
-  color:#fff;
-  border-radius:0;
-  box-shadow:none;
-  border:none;
-}
-
-@media (min-width:768px) {
-   .navbar {
-    padding-top:1rem;
-    padding-bottom:1rem;
-  }
-}
-
- .navbar .navbar-brand {
-  font-weight:bold;
-  color:inherit;
-}
-
- .navbar .navbar-brand:hover {
-  color:#f0f0f0;
-}
-
- .navbar .navbar-collapse {
-  border-top:1px solid rgba(255,255,255,0.3);
-  margin-top:.5rem;
-}
-
-@media (min-width:768px) {
-   .navbar .navbar-collapse {
-    border-color:transparent;
-    margin:0;
-  }
-}
-
- .navbar .navbar-collapse span .login {
-  color:#d9d9d9;
-  margin-right:.5rem;
-  text-decoration:none;
-}
-
- .navbar .navbar-collapse span .login:hover {
-  color:#fff;
-}
-
- .navbar .navbar-toggler {
-  border-color:rgba(255,255,255,0.3);
-}
-
- .navbar .navbar-toggler:hover,  .navbar-toggler:focus {
-  background:none;
-}
-
- .navbar .navbar-nav a.active,  .navbar .navbar-nav > .show .dropdown-item {
-  background:none;
-  box-shadow:none;
-}
-
-@media (min-width: 768px) {
-   .navbar-nav .nav-link {
-    padding-left:.7rem;
-    padding-right:.7rem;
-  }
-}
-
-@media (min-width: 992px) {
-   .navbar-nav .nav-link {
-    padding-left:1.2rem;
-    padding-right:1.2rem;
-  }
-}
-
- .navbar .navbar-nav > li > .dropdown-menu {
-  margin-top:-5px;
-  box-shadow:0 4px 8px rgba(0,0,0,.1);
-  background-color:#fff;
-  border-radius:2px;
-}
-
- .navbar .dropdown-menu .dropdown-item:focus,  .navbar .dropdown-menu .dropdown-item {
-  line-height:2;
-  color:#37434d;
-}
-
- .navbar .dropdown-menu .dropdown-item:focus,  .navbar .dropdown-menu .dropdown-item:hover {
-  background:#ebeff1;
-}
-
-.header-blue .action-button,  .action-button:not(.disabled):active {
-  border:1px solid rgba(255,255,255,0.7);
-  border-radius:40px;
-  color:#ebeff1;
-  box-shadow:none;
-  text-shadow:none;
-  padding:.3rem .8rem;
-  background:transparent;
-  transition:background-color 0.25s;
-  outline:none;
-}
-
-.header-blue .action-button:hover {
-  color:#fff;
-}
-
- .navbar .form-inline label {
-  color:#d9d9d9;
-}
-
- .navbar .form-inline .search-field {
-  display:inline-block;
-  width:80%;
-  background:none;
-  border:none;
-  border-bottom:1px solid transparent;
-  border-radius:0;
-  color:#ccc;
-  box-shadow:none;
-  color:inherit;
-  transition:border-bottom-color 0.3s;
-}
-
- .navbar .form-inline .search-field:focus {
-  border-bottom:1px solid #ccc;
-}
-
- .heros {
-  margin-top:20px;
-  text-align:center;
-}
-
-@media (min-width:768px) {
-   .heros {
-    margin-top:60px;
-    text-align:left;
-  }
-}
-
- .heros h1 {
-  color:#fff;
-  font-size:40px;
-  margin-top:0;
-  margin-bottom:15px;
-  font-weight:300;
-  line-height:1.4;
-}
-
-@media (min-width:992px) {
-   .heros h1 {
-    margin-top:190px;
-    margin-bottom:24px;
-    line-height:1.2;
-  }
-}
-
- .heros p {
-  color:rgba(255,255,255,0.8);
-  font-size:20px;
-  margin-bottom:30px;
-  font-weight:300;
-}
-
- .phone-holder {
-  text-align:right;
-}
-
- div.iphone-mockup {
-  position:relative;
-  max-width:300px;
-  margin:20px;
-  display:inline-block;
-}
-
- .iphone-mockup img.device {
-  width:100%;
-  height:90%;
+.masthead {
+  padding: 3rem 0 7rem;
+  position: relative;
+  background-image: url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, #e91c58 0%, #d22f23 100%);
+  background-size: cover;
+  z-index: 0;
   margin-top: 30px;
 }
 
- .iphone-mockup .screen {
-  position:absolute;
-  width:88%;
-  height:77%;
-  top:12.3%;
-  border-radius:2px;
-  left:6%;
-  border:1px solid #444;
-  background-color:#aaa;
-  overflow:hidden;
-  background:url(../../assets/img/screen-content-iphone-6.jpg);
-  background-size:cover;
-  background-position:center;
+.masthead svg.wave {
+  position: absolute;
+  bottom: -1px;
+  left: 0
 }
 
- .iphone-mockup .screen:before {
-  content:'';
-  background-color:#fff;
-  position:absolute;
-  width:70%;
-  height:140%;
-  top:-12%;
-  right:-60%;
-  transform:rotate(-19deg);
-  opacity:0.2;
+.masthead h1 {
+  color: #000;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.1;
+  z-index: 1
 }
 
+.masthead h2 {
+  color: rgba(255, 255, 255, .6);
+  font-weight: 600;
+  z-index: 1;
+  font-size: 1.2rem
+}
+
+.masthead a {
+  color: rgba(255, 255, 255, .8);
+  text-decoration: underline;
+  z-index: 1
+}
+
+.masthead a:hover {
+  color: #fff
+}
+
+.masthead a:active {
+  text-decoration: none
+}
+
+@media(min-width:992px) {
+  .masthead h1 {
+      font-size: 3rem
+  }
+  .masthead h2 {
+      font-size: 1.5rem
+  }
+}
+
+.masthead .masthead-cards {
+  position: relative;
+  z-index: 1
+}
+
+.masthead .masthead-cards .shape {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .3);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 30% 70% 70% 30%/30% 30% 70% 70%
+}
+
+.masthead .masthead-cards .card {
+  opacity: 1;
+  font-size: .8rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: .05rem;
+  color: #212529;
+  transition: .15s all
+}
+
+.masthead .masthead-cards .card:hover {
+  margin-top: -.25rem;
+  margin-bottom: .25rem
+}
+
+.masthead .masthead-cards .card:active {
+  margin-top: inherit;
+  margin-bottom: inherit
+}
+
+.masthead .masthead-cards .card.border-bottom-blue:hover {
+  color: #2092ed
+}
+
+/* .masthead .masthead-cards .card.border-bottom-green:hover {
+  color: #28a745
+} */
+
+.masthead .masthead-cards .card.border-bottom-red:hover {
+  color: #dd3d31
+}
+
+/* .masthead .masthead-cards .card.border-bottom-yellow:hover {
+  color: #ffc107
+} */
+
+.masthead-page {
+  padding: 1rem 0 4rem
+}
+
+@media(min-width:992px) {
+  .masthead-page h1 {
+      font-size: 2.5rem
+  }
+}
+
+/* .border-bottom-yellow {
+  border-color: #ffc107!important;
+} */
+
+.border-bottom-red {
+  border-color: #dd3d31!important;
+}
+
+.border-bottom-blue {
+  border-color: #2092ed!important;
+}
+
+/* .border-bottom-green {
+  border-color: #28a745!important;
+} */
+
+.border-bottom-blue, /*.border-bottom-green,*/ .border-bottom-red /*,.border-bottom-yellow */{
+  border-bottom: .4rem solid!important;
+}
+.shadow-lg {
+  box-shadow: 0 2rem 1.5rem -1.5rem rgba(33,37,41,.15),0 0 1.5rem .5rem rgba(33,37,41,.05)!important;
+}
+.border-0 {
+  border: 0!important;
+}
 
     </style>
-
-    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
-    <script src='script.js'></script>
-    
 </head>
 <body>
 
-    <div class="header-blue">
-      <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg navbar-default bg-light fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="index.html"><img src="images/aideone.png" alt="AideOne" height="50" class='img-responsive'></a>
-             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          <div class="collapse navbar-collapse" id="main_nav">
-          
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"> <a class="nav-link" href="#">Home </a> </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#" data-toggle="dropdown"> About Us </a>
+  <nav class="navbar navbar-expand-lg navbar-default bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="images/aideone.png" alt="AideOne" height="50" class='img-responsive'></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="main_nav">
+      
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"> <a class="nav-link" href="index.html">Home </a> </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" data-toggle="dropdown"> About Us </a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li><a class="dropdown-item" href="about.html"> Overview</a></li>
+            <li><a class="dropdown-item" href="about_partner.html"> Meet Our Partners </a></li>
+            <li><a class="dropdown-item" href="about_team.html"> Meet Our Team </a></li>
+          </ul>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="newsletters.html">Insights </a></li>
+        <li class="nav-item dropdown">
+            <a class="nav-link" href="#" data-toggle="dropdown">Services</a>
               <ul class="dropdown-menu dropdown-menu-right">
-                <li><a class="dropdown-item" href="about.html"> Overview</a></li>
-                <li><a class="dropdown-item" href="about_partner.html"> Meet Our Partners </a></li>
-                <li><a class="dropdown-item" href="about_team.html"> Meet Our Team </a></li>
+                <li><a class="dropdown-item" href="services.html">Bookkeeping and Accounting Services</a></li>
+                <li><a class="dropdown-item" href="services.html">Tax Compliance and Advisory</a></li>
+                <li><a class="dropdown-item" href="services.html">Accounting Process Review and Transformation</a></li>
+                <li><a class="dropdown-item" href="services.html">Finance function resourcing and outsourcing</a></li>
+                <li><a class="dropdown-item" href="services.html">Audit and Assurance Service</a></li>
+                <li><a class="dropdown-item" href="services.html">Human Resource and Payroll Services</a></li>
+                  <li><a class="dropdown-item" href="school.html">Aideone School of Finance and Tax</a></li>
               </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="newsletters.html">Insights </a></li>
-            <li class="nav-item dropdown">
-                <a class="nav-link" href="#" data-toggle="dropdown">Services</a>
-                  <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a class="dropdown-item" href="services.html">Services</a></li>
-                      <li><a class="dropdown-item" href="school.html">Aideone School of Finance and Tax</a></li>
-                  </ul>
-              </li>
-            <li class="nav-item"><a class="nav-link" href="contact.html"> Contact Us </a></li>
-            <li class="nav-item"><a class="nav-link" href="careers.html">Careers </a></li>
-          </ul>
-          </div><!-- end row -->
-        </div>
-      </nav>
-     <!-- navbar-collapse.// -->
-<!-- Navigation ends -->
-        <div class="container heros">
-            <div class="row">
-                <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
-                    <h1>Aideone School of Finance and Tax</h1>
-                    <p> Aideone Academy is a leading learning solution provider with various training products ranging from:
-                       General Board administration Training, General Finance and Operations Management Trainings e.t.c.
-                      Sign up today and start the journey to accomplishing your dreams.<br></p> 
-                </div>
-                <div class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block phone-holder">
-                  <div class="iphone-mockup"><img src="images/phone.svg" class="device">
-                    <div class="screen">
-                      <img class=" img-fluid" src="images/aideone.com.jpg" alt="card image">
-                      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" height="160" width="285">
-                      <source src="images/welcome.mp4" type="video/mp4">
-                    </video><img class=" img-fluid" src="images/academy.jpg" alt="card image">
+        <li class="nav-item"><a class="nav-link" href="contact.html"> Contact Us </a></li>
+        <li class="nav-item active"><a class="nav-link">Careers </a></li>
+      </ul>
+      </div><!-- end row -->
+    </div>
+  </nav>
+         <!-- navbar-collapse.// -->
+      <!-- Navigation ends -->
+<div style="background-color: #020d29;">
+    <!-- Demo header-->
+<div class="masthead">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 py-5">
+                <h1 class="mb-4">Aideone School of
+                  Finance and Tax!</h1>
+                <h2 class="m-0">Aideone Academy is a leading learning solution provider with various training products ranging from:
+                   General Board administration Training, General Finance and Operations Management Trainings e.t.c.</h2>
+            </div>
+            <div class="col-lg-5">
+                <div class="py-5 px-4 masthead-cards">
+                    <div class="d-flex">
+                        <a href="school.html" class="w-50 pr-3 pb-4">
+                            <div class="card border-0 border-bottom-blue shadow-lg shadow-hover">
+                                <div class="card-body text-center">
+                                    <div class="text-center">
+                                        <i class="fa fa-pencil fa-4x my-2"></i>
+                                    </div>
+                                    Register
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="w-50 pl-3 pb-4">
+                            <div class="card border-0 border-bottom-red shadow-lg shadow-hover">
+                                <div class="card-body text-center">
+                                    <div class="text-center">
+                                        <i class="fa fa-th fa-4x my-2"></i>
+                                    </div>
+                                    FAQ
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    
+                    <div class="d-flex">
+                        <a href="services.html" class="w-50 pr-3">
+                            <div class="card border-0 border-bottom-blue shadow-lg shadow-hover">
+                                <div class="card-body text-center">
+                                    <div class="text-center">
+                                        <i class="fa fa-4x fa-list my-2"></i>
+                                    </div>
+                                    Other Services
+                                </div>
+                            </div>
+                        </a>
+                        <a href="index.html" class="w-50 pl-3">
+                            <div class="card border-0 border-bottom-red shadow-lg shadow-hover">
+                                <div class="card-body text-center">
+                                    <div class="text-center">
+                                        <i class="fa fa-4x fa-home my-2"></i>
+                                    </div>
+                                    Home
+                                </div>
+                            </div>
+                        </a>
                     </div>
+                    <div class="shape"></div>
                 </div>
             </div>
         </div>
     </div>
-
+    <svg style="pointer-events: none" class="wave" width="100%" height="50px" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 75">
+        <defs>
+            <style>
+                .a {
+                    fill: none;
+                }
+                
+                .b {
+                    clip-path: url(#a);
+                }
+                
+                .c,
+                .d {
+                    fill: #020d29;
+                }
+                
+                .d {
+                    opacity: 0.5;
+                    isolation: isolate;
+                }
+            </style>
+            <clipPath id="a">
+                <rect class="a" width="1920" height="75"></rect>
+            </clipPath>
+        </defs>
+        <title>wave</title>
+        <g class="b">
+            <path class="c" d="M1963,327H-105V65A2647.49,2647.49,0,0,1,431,19c217.7,3.5,239.6,30.8,470,36,297.3,6.7,367.5-36.2,642-28a2511.41,2511.41,0,0,1,420,48"></path>
+        </g>
+        <g class="b">
+            <path class="d" d="M-127,404H1963V44c-140.1-28-343.3-46.7-566,22-75.5,23.3-118.5,45.9-162,64-48.6,20.2-404.7,128-784,0C355.2,97.7,341.6,78.3,235,50,86.6,10.6-41.8,6.9-127,10"></path>
+        </g>
+        <g class="b">
+            <path class="d" d="M1979,462-155,446V106C251.8,20.2,576.6,15.9,805,30c167.4,10.3,322.3,32.9,680,56,207,13.4,378,20.3,494,24"></path>
+        </g>
+        <g class="b">
+            <path class="d" d="M1998,484H-243V100c445.8,26.8,794.2-4.1,1035-39,141-20.4,231.1-40.1,378-45,349.6-11.6,636.7,73.8,828,150"></path>
+        </g>
+    </svg>
+      </div>
+      
     <section class="academy_section">
       <div class="container">
         <div class="row">
@@ -384,10 +356,11 @@
               </div>
           </div>
       </section>
-  
+    </div>
 
 
-
+    <div class="container">
+    
     <section class="contact pt-100 pb-100 wow fadeIn" data-wow-duration="5s" id="contact">
         <div class="container">
            <div class="row">
@@ -398,23 +371,21 @@
               </div>
            </div>
            <div class="row text-center">
-                 <div class="col-md-8 form mb-5"><form action="#" class="contact-form">
+                 <div class="col-md-8 form mb-5">
+                   <form action="contact.php" method="post" id="form" class="contact-form">
                        <div class="row">
-                          <div class="col-xl-6">
-                             <input type="text" placeholder="name">
+                          <div class="col-xl-4">
+                             <input type="text" required placeholder="name" name=”cf_name”>
                           </div>
-                          <div class="col-xl-6">
-                             <input type="text" placeholder="email">
+                          <div class="col-xl-4">
+                             <input type="email" required placeholder="email" name=”cf_email”>
                           </div>
-                          <div class="col-xl-6">
-                             <input type="text" placeholder="subject">
-                          </div>
-                          <div class="col-xl-6">
-                             <input type="text" placeholder="telephone">
+                          <div class="col-xl-4">
+                             <input type="text" required placeholder="telephone" name=”cf_telephone”>
                           </div>
                           <div class="col-xl-12">
-                             <textarea placeholder="message" cols="30" rows="10"></textarea>
-                             <input type="submit" value="send message">
+                             <textarea placeholder="message" cols="30" rows="10" name=”cf_message”></textarea>
+                             <input class="mb-3" type="submit" value="send message">
                           </div>
                        </div>
                     </form>
@@ -443,142 +414,174 @@
         </div>
      </section>
 
+      
+    </div>
 
 
-            <!-- footer -->
-            <footer class="page-footer font-small elegant-color  wow slideInUp" data-wow-duration="4s" id="footer">
-              <!-- Footer Links -->
-              <div class="container">
-                <div class="row">
-                  <!--Grid column-->
-                  <div class="col my-5">
-                    <!-- Social buttons -->
-                    <ul class="list-unstyled list-inline mb-0 social text-center quick-links">
-                      <li class="list-inline-item">
-                        <a class="btn-floating btn-fb mx-1" href="#" target="blank">
-                          <i class="fa fa-facebook-f"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a class="btn-floating btn-tw mx-1" href="#" target="blank">
-                          <i class="fa fa-twitter"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a class="btn-floating btn-instagram mx-1" href="https://www.instagram.com/aideone_consult/" target="blank">
-                          <i class="fa fa-instagram"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a class="btn-floating btn-gplus mx-1" href="https://www.linkedin.com/company/aideone-consulting/" target="blank">
-                          <i class="fa fa-linkedin-square"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a class="btn-floating btn-envelope mx-1" href="mailto:info@aideone.com.ng" target="_blank">
-                          <i class="fa fa-envelope"></i>
-                        </a>
-                      </li>
-                    </ul>
-                    <!-- Social buttons -->
-                  </div>
-                  <!--Grid column-->
-                </div>
-                <!--Grid row-->
-              </div>
-              <!-- Footer Links -->
-              <!-- Copyright -->	
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white py-3">
-                                <p class="m-0 text-center text-black">Copyright &copy; <script> document.write(new Date().getFullYear());</script> <a href="#"><span class="span text-violat ">AideOne Consult </span></a></p>
-                            </div>
-                            <hr>
-                            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-                                <h6><a style="color: #6f5f23; font-size: small;" href="https://github.com/Oluwafemi-iDEAR" target="_blank">Designed by iDEAR Concept </a></h6>
-                            </div>
-                            <hr>
+    <div class="mb-5 wow fadeIn" data-wow-duration="3s" data-wow-delay="3s">
+      <!-- divider -->
+                 <svg class="editorial"
+                 xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 viewBox="0 24 150 28 "
+                 preserveAspectRatio="none">
+             <defs>
+             <path id="gentle-wave"
+             d="M-160 44c30 0 
+                58-18 88-18s
+                58 18 88 18 
+                58-18 88-18 
+                58 18 88 18
+                v44h-352z" />
+              </defs>
+              <g class="parallax1">
+               <use xlink:href="#gentle-wave" x="50" y="3" fill="#f461c1"/>
+              </g>
+                <g class="parallax2">
+               <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2"/>
+                </g>
+                  <g class="parallax3">
+               <use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1"/>
+               </g>
+                <g class="parallax4">
+               <use xlink:href="#gentle-wave" x="50" y="6" fill="#020d29"/>  
+              </g>
+            </svg>
+            
+                 <!-- divider ends -->
+             </div>
+			            <!-- footer -->
+                  <footer class="page-footer font-small elegant-color  wow slideInUp" data-wow-duration="4s" id="footer">
+                    <!-- Footer Links -->
+                    <div class="container">
+                      <div class="row">
+                        <!--Grid column-->
+                        <div class="col my-5">
+                          <!-- Social buttons -->
+                          <ul class="list-unstyled list-inline mb-0 social text-center quick-links">
+                            <li class="list-inline-item">
+                              <a class="btn-floating btn-fb mx-1" href="#" target="blank">
+                                <i class="fa fa-facebook-f"></i>
+                              </a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a class="btn-floating btn-tw mx-1" href="#" target="blank">
+                                <i class="fa fa-twitter"></i>
+                              </a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a class="btn-floating btn-instagram mx-1" href="https://www.instagram.com/aideone_consult/" target="blank">
+                                <i class="fa fa-instagram"></i>
+                              </a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a class="btn-floating btn-linkedin mx-1" href="https://www.linkedin.com/company/aideone-consulting/" target="blank">
+                                <i class="fa fa-linkedin-square"></i>
+                              </a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a class="btn-floating btn-envelope mx-1" href="mailto:info@aideone.com.ng" target="_blank">
+                                <i class="fa fa-envelope"></i>
+                              </a>
+                            </li>
+                          </ul>
+                          <!-- Social buttons -->
                         </div>
-              <!-- Copyright -->
-            </footer>
-
+                        <!--Grid column-->
+                      </div>
+                      <!--Grid row-->
+                    </div>
+                    <!-- Footer Links -->
+                    <!-- Copyright -->	
+                              <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white py-3">
+                                      <p class="m-0 text-center text-black">Copyright &copy; <script> document.write(new Date().getFullYear());</script> <a href="#"><span class="span text-violat ">AideOne Consult </span></a></p>
+                                  </div>
+                                  <hr>
+                                  <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                                      <h6><a style="color: #6f5f23; font-size: small;" href="https://github.com/Oluwafemi-iDEAR" target="_blank">Designed by iDEAR Concept </a></h6>
+                                  </div>
+                                  <hr>
+                              </div>
+                    <!-- Copyright -->
+                  </footer>
                                             <!-- ./Footer ends -->
-             
+
 
 <!-- scroll up script-->
 <script>
-  $(document).ready(function(){
-      $('body').append('<div id="toTop" class="btn btn-info"><span class="glyphicon glyphicon-chevron-up"></span> <i class="fa fa-angle-up fa-2x text-dark"></i> </div>');
-      $(window).scroll(function () {
-      if ($(this).scrollTop() != 0) {
-        $('#toTop').fadeIn();
-      } else {
-        $('#toTop').fadeOut();
-      }
-    }); 
-    $('#toTop').click(function(){
-        $("html, body").animate({ scrollTop: 0 }, 600);
-        return false;
-    });
-});
-
-</script>
-<!-- scroll up script ends-->
-  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
-  <script>
-    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
-    formbutton("create", {action: "https://formspree.io/mgepwneb"})
-  </script>
-    <!-- page content ends -->
-
-    <script src="js/services.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    <script src="js/client.js"></script>
-    <script src="js/counter.js"></script>
-    <!-- 
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script> -->
-    <script src="js/script.js"></script>
-
-    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script> -->
- 
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/main.js"></script>
-
-    <script>
-      $(window).scroll(function(){
-      $('nav').toggleClass('scrolled', $(this).scrollTop() > 150);});
-      
-    </script>
-
-<script type="text/javascript">
-  $().ready(function(){
-      $('[rel="tooltip"]').tooltip();
-
-      $('a.scroll-down').click(function(e){
-          e.preventDefault();
-          scroll_target = $(this).data('href');
-           $('html, body').animate({
-               scrollTop: $(scroll_target).offset().top - 60
-           }, 1000);
+    $(document).ready(function(){
+        $('body').append('<div id="toTop" class="btn btn-info"><span class="glyphicon glyphicon-chevron-up"></span> <i class="fa fa-angle-up fa-2x text-dark"></i> </div>');
+        $(window).scroll(function () {
+        if ($(this).scrollTop() != 0) {
+          $('#toTop').fadeIn();
+        } else {
+          $('#toTop').fadeOut();
+        }
+      }); 
+      $('#toTop').click(function(){
+          $("html, body").animate({ scrollTop: 0 }, 600);
+          return false;
       });
-
   });
-
-  function rotateCard(btn){
-      var $card = $(btn).closest('.card-container');
-      console.log($card);
-      if($card.hasClass('hover')){
-          $card.removeClass('hover');
-      } else {
-          $card.addClass('hover');
-      }
-  }
-
-
-</script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>                               
+  
+  </script>
+  <!-- scroll up script ends-->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+      window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+      formbutton("create", {action: "https://formspree.io/mgepwneb"})
+    </script>
+      <!-- page content ends -->
+  
+      <script src="js/services.js"></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+      <script src="js/client.js"></script>
+      <script src="js/counter.js"></script>
+      <!-- 
+      <script src="vendor/bootstrap/js/bootstrap.min.js"></script> -->
+      <script src="js/script.js"></script>
+  
+      <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script> -->
+   
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/aos.js"></script>
+      <script src="js/jquery.sticky.js"></script>
+      <script src="js/main.js"></script>
+  
+      <script>
+        $(window).scroll(function(){
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 150);});
+        
+      </script>
+  
+  <script type="text/javascript">
+    $().ready(function(){
+        $('[rel="tooltip"]').tooltip();
+  
+        $('a.scroll-down').click(function(e){
+            e.preventDefault();
+            scroll_target = $(this).data('href');
+             $('html, body').animate({
+                 scrollTop: $(scroll_target).offset().top - 60
+             }, 1000);
+        });
+  
+    });
+  
+    function rotateCard(btn){
+        var $card = $(btn).closest('.card-container');
+        console.log($card);
+        if($card.hasClass('hover')){
+            $card.removeClass('hover');
+        } else {
+            $card.addClass('hover');
+        }
+    }
+  
+  
+  </script>
 </body>
 </html>
