@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Financial Audit Consult Firm Website">
+    <meta name="description" content="Financial Audit Consult Firm Website">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="">
+    <title>AideOne Consultants  |  About Us</title>
+    <link href="images/aideone.jpg" rel="icon" type="image/png">
+    
+    <!--Icon Fonts - Font Awesome Icons-->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+	  <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	  <script src="js/bootstrap.min.js"></script>
+	  <script src="js/typewriter.js"></script>
+
+         
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+    
+                <!-- Google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700,700i,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i">
+ 
+    <!-- for head slider -->
+    <script>
+        wow = new WOW(
+     {
+       animateClass: 'animated',
+       offset:       100,
+       callback:     function(box) {
+         console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+       }
+     }
+   );
+   wow.init();
+   document.getElementById('moar').onclick = function() {
+     var section = document.createElement('section');
+     section.className = 'section--purple wow fadeInDown';
+     this.parentNode.insertBefore(section, this);
+   };
+   </script>
+
+
+ <!-- head slider script ends -->
+   <link rel="stylesheet" href="css/services.css">
+   <link rel="stylesheet" href="css/style.css">
+
+   <style>
+       
+   .image-aboutus-banner {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("https://images.pexels.com/photos/673649/pexels-photo-673649.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    padding-top: 110px;
+    padding-bottom:110px;
+ }
+ 
+  .image-aboutus-sm-banner {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("https://images.pexels.com/photos/631008/pexels-photo-631008.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom:30px;
+ }
+.lg-text {
+    font-size:52px;
+    font-weight: 600;
+    text-transform: none;
+    color:#fff;
+}
+.paddingTB60 {
+    padding-top:60px;
+    padding-bottom:60px;
+}
+
+/* ------meet our partner modal-------- */
+
+/*--choice modal1--*/
+
+.openbtn{
+    margin-top:20px;
+}
+.modal-header {
+    padding: 15px;
+     border-bottom: none;
+}
+.modal-title{
+	font-weight:bold;
+}
+.modal-body.choice-modal{
+    position: relative;
+    padding: 0px;
+
+}
+
+.row.inner-scroll {
+    height: 445px;
+    overflow: auto;
+}
+
+.mycard-footer {
+    height: 25px;
+    background: #333333;
+    font-size: 15px;
+    text-indent: 10px;
+   /* border-radius: 0 0px 4px 4px;*/
+}
+
+.gallery-card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+	    height: 132px;
+		margin-bottom:14px;
+}
+.gallery-card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    /*padding: 1.25rem;*/
+}
+.gallery-card img {
+    height: 100px;
+    width: 100%;
+}
+label{
+    margin-bottom: 0 !important;
+}
+/*--checkbox--*/
+
+.block-check {
+    display: block;
+    position: relative;
+   
+   
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.block-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+	cursor: pointer;
+}
+
+/* On mouse-over, add a grey background color */
+.block-check:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.block-check input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.block-check input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.block-check .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+.s-link {
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    -webkit-transform: translateY(45%);
+    -ms-transform: translateY(45%);
+    transform: translateY(45%);
+    -webkit-transition: all 0.3s 0.2s;
+    transition: all 0.3s 0.2s;
+    font-size: 35px;
+}
+ .s-link a {
+    text-align: center;
+    color: #222 !important;
+}
+.s-link a {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+/*--meet our partner modal css end--*/
+   </style>
+ </head>
+ <body class="hero"><nav class="navbar navbar-expand-lg navbar-default bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="images/aideone.png" alt="AideOne" height="50" class='img-responsive'></a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="main_nav">
+    
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"> <a class="nav-link" href="index.html">Home </a> </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#" data-toggle="dropdown"> About Us </a>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li><a class="dropdown-item" href="about.html"> Overview</a></li>
+          <li><a class="dropdown-item" href="about_partner.html"> Meet Our Partners </a></li>
+          <li><a class="dropdown-item"> Meet Our Team </a></li>
+        </ul>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="newsletters.html">Insights </a></li>
+      <li class="nav-item dropdown">
+          <a class="nav-link" href="#" data-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li><a class="dropdown-item" href="services.html">Bookkeeping and Accounting Services</a></li>
+              <li><a class="dropdown-item" href="services.html">Tax Compliance and Advisory</a></li>
+              <li><a class="dropdown-item" href="services.html">Accounting Process Review and Transformation</a></li>
+              <li><a class="dropdown-item" href="services.html">Finance function resourcing and outsourcing</a></li>
+              <li><a class="dropdown-item" href="services.html">Audit and Assurance Service</a></li>
+              <li><a class="dropdown-item" href="services.html">Human Resource and Payroll Services</a></li>
+                <li><a class="dropdown-item" href="school.html">Aideone School of Finance and Tax</a></li>
+            </ul>
+        </li>
+      <li class="nav-item"><a class="nav-link" href="contact.html"> Contact Us </a></li>
+      <li class="nav-item"><a class="nav-link" href="careers.html">Careers </a></li>
+    </ul>
+    </div><!-- end row -->
+  </div>
+</nav>
+       <!-- navbar-collapse.// -->
+    <!-- Navigation ends -->
+    <div class="main">
+    <section class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark" style="height:60vh; background-image: url(images/pageheader.jpg);">
+     <div class="container-fluid">
+      <div class="row  justify-content-center align-items-center d-flex text-center h-100">
+        <div class="col-12 col-md-8  h-50 ">
+            <h1 class="display-2  text-light mb-2 mt-5"><strong>AideOne</strong> </h1>
+            <h2>
+              <p class="lead  text-light typewrite" data-period="2000" data-type='[ "Accounting Services.", "Business & Financial Advisory Services.", "Tax Services.", "Audit & Assurance Services.", "Keep focused on the goal; not the noise.", " We aid your business goals.", "We can best Aid you..." ]'><span class="wrap"></span>
+              </p>
+            </h2>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <div class="bread-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-8">
+                      <ol class="breadcrumb">
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="about.html">Abou Us</a></li>
+                          <li class="active">Our Teams</li>
+                      </ol>
+                </div>
+              </div>
+          </div>
+      </div>
+        <div class="container-fluid px-2 px-md-4 py-5 mx-auto">
+          <div class="heading-title text-center">
+            <h2 class="text-uppercase">Our Teams <hr style="width:10%; height:3px; border:none; color:red; background-color:#e91c58;"></h2>
+            <div class="space-200"></div>
+                    <div class="row">
+                                <div class="col-md-6">
+                                  <img class=" img-fluid wow fadeIn" data-wow-duration="9s" src="images/img_4.jpg" alt="card image">
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                  <p class="p-top-30 half-txt lead"><strong><em>“
+                                    “Great things in business are never done by one person; they’re done by a team of people.”</em> – Steve Jobs</strong></p>
+                                        <p class="lead">At AideOne, our core philosophy is people over process. More specifically, we have great people 
+                                          working together as a dream team. With this approach, we are a more flexible, 
+                                          fun, stimulating, creative, collaborative and successful organization.</p>
+                                </div>
+                    </div>
+            
+        </div>
+              
+      <div class="space-200"></div>
+      
+      
+      
+        <!-- Testimonials --><div class="d-flex justify-content-center">
+                  <div class="col-md-10 col-lg-9 col-xl-8 col-sm-6 col-xs-4">
+                    <div class="row">
+                    <!--team-1-->
+    <div class="col-lg-4 wow flipInX" data-wow-duration="2s">
+      <div class="our-team-main">
+      
+      <div class="team-front">
+      <img src="images/Beta man.png" class="img-fluid" />
+      <h3>Ikechi Nwankwo</h3>
+      <p>Associate</p>
+      </div>
+      
+      <div class="team-back">
+      <span>
+        A seasoned Consultant, Coach, and Creator. He is an expert in Accounting, Financial, 
+        Business and Tax Advisory with special skills for Business process development.
+      <div class="openbtn text-center">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            Learn more
+          </button>
+         </div>
+      
+      </span>
+      </div>
+      
+      </div>
+      </div>
+      <!--team-1-->
+      
+      <!--team-2-->
+      <div class="col-lg-4 wow bounceInUp" data-wow-duration="2s" data-wow-delay="1s">
+      <div class="our-team-main">
+      
+      <div class="team-front">
+      <img src="images/Beta man.png" class="img-fluid" />
+      <h3>Grace Sobande</h3>
+      <p>Associate | AAT &<br> ACA</p>
+      </div>
+      
+      <div class="team-back">
+      <span>
+      Here Is Just a bit of information about me,.. You can click the button below to know more and then follow me on my social media platforms
+      <div class="openbtn text-center">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
+            Learn more
+          </button>
+         </div>
+      </span>
+      </div>
+      
+      </div>
+      </div>
+      <!--team-2-->
+      <div class="col-lg-4 wow flipInY" data-wow-duration="2s" data-wow-delay="2s">
+        <div class="our-team-main">
+        
+        <div class="team-front">
+        <img src="images/Beta man.png" class="img-fluid" />
+        <h3>Abraham Popogbe</h3>
+        <p>Partner | Business &<br> Financial Advisory</p>
+        </div>
+        
+        <div class="team-back">
+        <span>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis 
+        natoque penatibus et magnis dis parturient montes,
+        <div class="openbtn text-center">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+              Learn more
+            </button>
+           </div>
+        
+        </span>
+        </div>
+        
+        </div>
+        </div>
+        <!--team-3-->
+        <div class="col-lg-4 wow flipInX" data-wow-duration="2s" data-wow-delay="3s">
+          <div class="our-team-main">
+          
+          <div class="team-front">
+          <img src="images/Beta man.png" class="img-fluid" />
+          <h3>Abraham Popogbe</h3>
+          <p>Partner | Business &<br> Financial Advisory</p>
+          </div>
+          
+          <div class="team-back">
+          <span>
+            A seasoned Consultant, Coach, and Creator. He is an expert in Accounting, Financial, 
+            Business and Tax Advisory with special skills for Business process development.
+          <div class="openbtn text-center">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                Learn more
+              </button>
+             </div>
+          
+          </span>
+          </div>
+          
+          </div>
+          </div>
+          <!--team-4-->
+          
+          <!--team-5-->
+          <div class="col-lg-4 wow bounceInUp" data-wow-duration="2s" data-wow-delay="4s">
+          <div class="our-team-main">
+          
+          <div class="team-front">
+          <img src="images/Beta man.png" class="img-fluid" />
+          <h3>Olajide Yesufu</h3>
+          <p>Partner | FCA &<br> FCTI</p>
+          </div>
+          
+          <div class="team-back">
+          <span>
+          Here Is Just a bit of information about me,.. You can click the button below to know more and then follow me on my social media platforms
+          <div class="openbtn text-center">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
+                Learn more
+              </button>
+             </div>
+          </span>
+          </div>
+          
+          </div>
+          </div>
+          <!--team-6-->
+          <div class="col-lg-4 wow flipInY" data-wow-duration="2s" data-wow-delay="5s">
+            <div class="our-team-main">
+            
+            <div class="team-front">
+            <img src="images/Beta man.png" class="img-fluid" />
+            <h3>Abraham Popogbe</h3>
+            <p>Partner | Business &<br> Financial Advisory</p>
+            </div>
+            
+            <div class="team-back">
+            <span>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis 
+            natoque penatibus et magnis dis parturient montes,
+            <div class="openbtn text-center">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                  Learn more
+                </button>
+               </div>
+            
+            </span>
+            </div>
+            
+            </div>
+            </div>
+            <!--team-6-->
+      </div>
+  <!-- view modal -->
+  <!-- Button to Open the Modal -->
+  
+  
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg">
+   
+        <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Meet Abraham </h4>
+         <button type="button" class="close" data-dismiss="modal">×</button>
+        
+      </div>
+      <div class="modal-body choice-modal" >
+         <div class="container-fluid">
+          <div class="row inner-scroll" >
+                <div class="col-md-4">
+                  <div class="gallery-card">
+                    <div class="card-body">
+                     <img src="images/Beta man.png" class="img-responsive" />
+                    </div>
+                  </div>
+                </div>
+                    <div class="col-md-8">
+                      <p>Abraham Popogbe is a seasoned Consultant, Coach, and Creator. An expert in Accounting, 
+                        Financial, Business, and Tax Advisory with special skills for Business process development. Before joining Deloitte
+                         & Touche in April 2012, He was in the Financial Reporting and Tax unit of MTN Nigeria for more than Two (2) years. <br>
+                         As a Consultant, He solved many advisory issues for Multinationals, Listed Companies, Public Companies in Energy and
+                          Power,</p>
+                       
+        </div>
+             <p class="mx-4"> Automobile, Manufacturing, Transport, Real Estate, Telecommunications, Hospitality, Media and Entertainment
+                           Sectors, and Public Sector entities and International Donor Agencies. As a Coach, He has guided many Professionals, Company Executives, and Professional Accounting 
+                 Firm Owners on many exciting discoveries in accounting and business.  He also led the Deliotte Africa Private 
+                 Initiative that focused on building advisory solutions for small and medium scale business. In Partnership with 
+                 Deloitte Spain, a generic software was developed and deployed for Africa use. Deloitte also partnered with Tony 
+                 Elumelu Foundation to mentor and help business owners, He was part of those in the mentoring team and has kept 
+                 relationship with the foundation. </p><br>
+                 <p class="mx-4">As a Co-Creator, in partnership with Electrode, He developed a dedicated accounting solution
+                      for media content production; a process He designed with the help of His project team during His Four (4) years
+                       of advisory with Multichoice/M-Net Africa. Sometimes in 2016, He began to find joy and fulfillment ‘helping’ 
+                       small/medium businesses and start-ups to build lasting finance structures for their businesses and individuals 
+                       who want to ‘act right’. In April 2020, He left Deloitte and joined to start fully Aideone Consulting, 
+                       to wholly give time to feed this passion.</p>
+      </div>
+      <div class="modal-footer">
+        <ul class="list-inline mb-0 social text-center text-black quick-links">
+          <li class="list-inline-item">
+            <a class="btn-floating btn-fb mx-2" href="#" target="blank">
+              <i class="fa fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-tw mx-2" href="#" target="blank">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-instagram mx-2" href="https://www.instagram.com/aideone_consult/" target="blank">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-gplus mx-2" href="https://www.linkedin.com/in/popogbe-abraham-oluwatobi-24362137/" target="blank">
+              <i class="fa fa-linkedin-square"></i>
+            </a>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Exit</button>
+      </div>
+    </div>
+  
+  </div>
+  </div>
+    </div>
+  </div>
+  
+     <!-- The Modal -->
+     <div class="modal fade" id="myModal1">
+      <div class="modal-dialog modal-lg">
+     
+          <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Meet Jide </h4>
+           <button type="button" class="close" data-dismiss="modal">×</button>
+          
+        </div>
+        <div class="modal-body choice-modal" >
+           <div class="container-fluid">
+            <div class="row inner-scroll" >
+                  <div class="col-md-4">
+                    <div class="gallery-card">
+                      <div class="card-body">
+                       <img src="images/Beta man.png" class="img-responsive" />
+                      </div>
+                    </div>
+                  </div>
+                      <div class="col-md-8">
+                        <p>Jide Yesufu is a seasoned Consultant, Coach, and Creator. An expert in Accounting, 
+                          Financial, Business, and Tax Advisory with special skills for Business process development. Before joining Deloitte
+                           & Touche in April 2012, He was in the Financial Reporting and Tax unit of MTN Nigeria for more than Two (2) years. <br>
+                           As a Consultant, He solved many advisory issues for Multinationals, Listed Companies, Public Companies in Energy and
+                            Power,</p>
+                         
+          </div>
+               <p class="mx-4"> Automobile, Manufacturing, Transport, Real Estate, Telecommunications, Hospitality, Media and Entertainment
+                             Sectors, and Public Sector entities and International Donor Agencies. As a Coach, He has guided many Professionals, Company Executives, and Professional Accounting 
+                   Firm Owners on many exciting discoveries in accounting and business.  He also led the Deliotte Africa Private 
+                   Initiative that focused on building advisory solutions for small and medium scale business. In Partnership with 
+                   Deloitte Spain, a generic software was developed and deployed for Africa use. Deloitte also partnered with Tony 
+                   Elumelu Foundation to mentor and help business owners, He was part of those in the mentoring team and has kept 
+                   relationship with the foundation. </p><br>
+                   <p class="mx-4">As a Co-Creator, in partnership with Electrode, He developed a dedicated accounting solution
+                        for media content production; a process He designed with the help of His project team during His Four (4) years
+                         of advisory with Multichoice/M-Net Africa. Sometimes in 2016, He began to find joy and fulfillment ‘helping’ 
+                         small/medium businesses and start-ups to build lasting finance structures for their businesses and individuals 
+                         who want to ‘act right’. In April 2020, He left Deloitte and joined to start fully Aideone Consulting, 
+                         to wholly give time to feed this passion.</p>
+        </div>
+        <div class="modal-footer">
+          <ul class="list-inline mb-0 social text-center text-black quick-links">
+            <li class="list-inline-item">
+              <a class="btn-floating btn-fb mx-2" href="#" target="blank">
+                <i class="fa fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-tw mx-2" href="#" target="blank">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-instagram mx-2" href="https://www.instagram.com/aideone_consult/" target="blank">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-gplus mx-2" href="https://www.linkedin.com/company/aideone-consulting/" target="blank">
+                <i class="fa fa-linkedin-square"></i>
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Exit</button>
+        </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+      </div>
+    </div>
+  
+                    
+                  </div>
+                  </div>
+              </div>
+        </div>
+
+
+
+
+
+              <!-- footer -->
+      <footer class="page-footer font-small elegant-color  wow slideInUp" data-wow-duration="4s" id="footer">
+          <!-- Footer Links -->
+          <div class="container">
+            <div class="row">
+              <!--Grid column-->
+              <div class="col my-5">
+                <!-- Social buttons -->
+                <ul class="list-unstyled list-inline mb-0 social text-center quick-links">
+                  <li class="list-inline-item">
+                    <a class="btn-floating btn-fb mx-1" href="#" target="blank">
+                      <i class="fa fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1" href="#" target="blank">
+                      <i class="fa fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="btn-floating btn-instagram mx-1" href="https://www.instagram.com/aideone_consult/" target="blank">
+                      <i class="fa fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="btn-floating btn-gplus mx-1" href="https://www.linkedin.com/company/aideone-consulting/" target="blank">
+                      <i class="fa fa-linkedin-square"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="btn-floating btn-envelope mx-1" href="mailto:info@aideone.com.ng" target="_blank">
+                      <i class="fa fa-envelope"></i>
+                    </a>
+                  </li>
+                </ul>
+                <!-- Social buttons -->
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Footer Links -->
+          <!-- Copyright -->	
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white py-3">
+                            <p class="m-0 text-center text-black">Copyright &copy; <script> document.write(new Date().getFullYear());</script> <a href="#"><span class="span text-violat ">AideOne Consult </span></a></p>
+                        </div>
+                        <hr>
+                        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                            <h6><a style="color: #6f5f23; font-size: small;" href="https://github.com/Oluwafemi-iDEAR" target="_blank">Designed by iDEAR Concept </a></h6>
+                        </div>
+                        <hr>
+                    </div>
+          <!-- Copyright -->
+        </footer>
+        
+                <!-- ./Footer ends -->
+      
+    </div>
+
+
+<!-- scroll up script-->
+<script>
+  $(document).ready(function(){
+      $('body').append('<div id="toTop" class="btn btn-info"><span class="glyphicon glyphicon-chevron-up"></span> <i class="fa fa-angle-up fa-2x text-dark"></i> </div>');
+      $(window).scroll(function () {
+      if ($(this).scrollTop() != 0) {
+        $('#toTop').fadeIn();
+      } else {
+        $('#toTop').fadeOut();
+      }
+    }); 
+    $('#toTop').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+});
+
+</script>
+<!-- scroll up script ends-->
+  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+  <script>
+    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+    formbutton("create", {action: "https://formspree.io/mgepwneb"})
+  </script>
+    <!-- page content ends -->
+
+    <script src="js/services.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="js/client.js"></script>
+    <script src="js/counter.js"></script>
+   
+    <!-- Script for navbar -->
+   <script>
+        $(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+    </script>
+ <!-- Script for navbar ends-->
+
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      $(window).scroll(function(){
+      $('nav').toggleClass('scrolled', $(this).scrollTop() > 150);});
+      
+    </script>
+
+</body>
+</html>

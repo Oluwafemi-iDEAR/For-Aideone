@@ -50,6 +50,53 @@
         .section-title { margin-bottom: 30px; }
 
 
+        /* -------------------------Services HomePage-----------------------------*/
+#content-desktop {display: block;}
+#content-mobile {display: none;}
+
+@media all and (min-width: 992px) {
+
+
+.nav-pills-custom .nav-link {
+  color: #aaa !important;
+  background: #fff !important;
+  position: relative !important;
+}
+
+.nav-pills-custom .nav-link.active {
+  color: #041b50 !important;
+  /* background: rgb(119, 105, 250) !important; */
+  background: rgba(14, 14, 138, 0.45) !important;
+  border: 4px solid #e91c58 !important;
+  border-radius: 5px !important;
+}
+
+
+/* Add indicator arrow for the active tab */
+@media (min-width: 992px) {
+  .nav-pills-custom .nav-link::before {
+      content: '' !important;
+      display: block !important;
+      border-top: 8px solid transparent !important;
+      border-left: 10px solid transparent !important;
+      border-bottom: 8px solid transparent !important;
+      position: absolute !important;
+      top: 50% !important;
+      right: -10px !important;
+      transform: translateY(-50%) !important;
+      opacity: 0 !important;
+  }
+}
+
+.nav-pills-custom .nav-link.active::before {
+  opacity: 1 !important;
+}
+}
+
+
+/* -------------------------Services HomePage Ends----------------------------- */
+
+
 /*for mobile view*/
 @media screen and (max-width: 768px) {
 
