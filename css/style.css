@@ -2151,7 +2151,7 @@ section .section-title {
   border-radius: 20px;
 }
 
-.pc {
+/* .pc {
   z-index: 2;
   position: absolute;
   bottom: 115px;
@@ -2168,9 +2168,9 @@ section .section-title {
   content: '';
   width: 24px;
   height: 24px;
-  border-radius: 50%;
+  border-radius: 50%; */
   /* background-color: #b5b7ba; */
-  background-image: url(images/pc.jpg);
+  /* background-image: url(images/pc.jpg) !important;
   position: absolute;
   top: 51%;
   left: 50%;
@@ -2187,7 +2187,7 @@ section .section-title {
   height: calc(100% - 4px);
   background-color: #d1d3d5;
   border-radius: 2px;
-}
+} */
 
 .guy {
   width: 174px;
@@ -2310,7 +2310,7 @@ section .section-title {
 .eye {
   width: 12px;
   height: 12px;
-  background-color: #533d34;
+  background: linear-gradient(185deg,rgba(250, 251, 252, 0.95) 35%,rgba(16, 17, 17, 0.74) 65%);
   position: absolute;
   left: 15px;
   top: 14px;

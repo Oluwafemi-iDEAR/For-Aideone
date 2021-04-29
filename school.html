@@ -24,6 +24,45 @@
   z-index: 1;
   border-radius: 20px;
 }
+
+.pc {
+  z-index: 2;
+  position: absolute;
+  bottom: 115px;
+  width: 142px;
+  height: 90px;
+  background-color: #c0c0c2;
+  border-radius: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.pc:after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  /* background-color: #b5b7ba; */
+  background-image: url(images/pc.jpg) !important;
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.pc:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 0;
+  right: 0;
+  height: calc(100% - 4px);
+  background-color: #d1d3d5;
+  border-radius: 2px;
+}
+
 /* for young guy section ends*/
 
         /* .contain {
@@ -543,7 +582,7 @@
                     <!-- Copyright -->	
                               <div class="row">
                                   <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white py-3">
-                                      <p class="m-0 text-center text-black">Copyright &copy; <script> document.write(new Date().getFullYear());</script> <a href="#"><span class="span text-violat ">AideOne Consult </span></a></p>
+                                      <p class="m-0 text-center text-black">Copyright &copy; <script> document.write(new Date().getFullYear());</script> <a href="#"><span class="span text-violat ">AideOne Consulting </span></a></p>
                                   </div>
                                   <hr>
                                   <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
@@ -577,9 +616,9 @@
   <!-- scroll up script ends-->
     <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
     <script>
-      window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
-      formbutton("create", {action: "https://formspree.io/mgepwneb"})
-    </script>
+    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+    formbutton("create", {action: "https://formspree.io/f/xwkavlbk"})
+  </script>
       <!-- page content ends -->
   
       <script src="js/services.js"></script>
