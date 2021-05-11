@@ -93,6 +93,15 @@ header .overlay {
   text-align: center;
   transform: translateY(-50%);
 }
+.text-boxs {
+   position: absolute;
+  top: 50%;
+  left: 15%;
+  right: 50%;
+  color: #fff;
+  text-align: left;
+  transform: translateY(-50%);
+}
 
 /*-----------------head slider ends-------------*/
 
@@ -1709,7 +1718,7 @@ a {
 .section-title h4 {
 	font-size: 40px;
 	font-weight: 600;
-	text-transform: capitalize;
+	text-transform: capitalize !important;
 	position: relative;
 	padding-bottom: 20px;
 	display: inline-block;
@@ -1755,7 +1764,7 @@ textarea {
   border: 1px solid #ff4da6;
   border-radius: 5px;
 	padding: 5px 10px;
-	text-transform: capitalize;
+	text-transform: initial;
 	margin-top: 15px;
 	background-color: transparent;
 	color: #000;
@@ -1844,6 +1853,40 @@ textarea {
   font-family: 'Raleway', sans-serif;
 color: #000;		
 } */
+.nav-pills-custom .nav-link {
+  color: #aaa;
+  background: #fff;
+  position: relative;
+}
+
+.nav-pills-custom .nav-link.active {
+  color: #041b50 !important;
+  /* background: rgb(119, 105, 250) !important; */
+  background: #fff !important;
+  border: 4px solid #e91c58;
+  border-radius: 5px;
+}
+
+
+/* Add indicator arrow for the active tab */
+@media (min-width: 992px) {
+  .nav-pills-custom .nav-link::before {
+      content: '';
+      display: block;
+      border-top: 8px solid transparent;
+      border-left: 10px solid #e91c58;
+      border-bottom: 8px solid transparent;
+      position: absolute;
+      top: 50%;
+      right: -10px;
+      transform: translateY(-50%);
+      opacity: 0;
+  }
+}
+
+.nav-pills-custom .nav-link.active::before {
+  opacity: 1;
+}
 
 /* -----------------------Services1 Homepage Ends------------------------------- */
 
@@ -2115,10 +2158,10 @@ section .section-title {
 	transition:0.5s;
 }
 
-/*our-team-main*/
+/*-------------our-team-main----------------------*/
 
-
-  
+/* Services Homepage */
+/* ----------Contact Boy section--------------- */
 * {
   box-sizing: border-box;
 }
@@ -2391,7 +2434,7 @@ section .section-title {
 }
 
 .hat {
-  background-color: #5e3919;
+  background-color: #082872;
   height: 42px;
   width: 78px;
   top: 4px;
@@ -2406,7 +2449,7 @@ section .section-title {
 .hat:before {
   height: 6px;
   width: 10px;
-  background-color: #5e3919;
+  background-color: #020d26;
   position: absolute;
   content: '';
   border-radius: 50px 50px 0 0;
@@ -2535,7 +2578,7 @@ section .section-title {
   width: 28px;
   height: 10px;
   border-radius: 0 100px 100px 0;
-  background-color: #834917;
+  background-color: #020d26;
 }
 
 .mouth {

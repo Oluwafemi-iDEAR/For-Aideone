@@ -15,34 +15,14 @@
 	  <script src="js/typewriter.js"></script>
     <script src='main.js'></script>
     <style type="text/css">
-        body { -webkit-font-smoothing: antialiased;
-             text-rendering: optimizeLegibility;
-             font-family: 'Overpass', sans-serif; 
-             letter-spacing: 0px; font-size: 17px; 
-             color: #8d8f90; font-weight: 400; 
-             line-height: 32px; 
-             background-color: #edefef; 
-            }
-        h1, h2, h3, h4, h5, h6 { color: #25292a; margin: 0px 0px 10px 0px; font-family: 'Overpass', sans-serif; font-weight: 700; letter-spacing: -1px; line-height: 1; }
-        h1 { font-size: 34px; }
-        h2 { font-size: 28px; line-height: 38px; }
-        h3 { font-size: 22px; line-height: 32px; }
-        h4 { font-size: 20px; }
-        h5 { font-size: 17px; }
-        h6 { font-size: 12px; }
-        p { margin: 0 0 20px; line-height: 1.7; }
-        p:last-child { margin: 0px; }
-        ul, ol { }
-        a { text-decoration: none; color: #8d8f90; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
-        a:focus, a:hover { text-decoration: none; color: #f85759; }
-
-
+     
+       
         /* image credit : https://easetemplate.com/free-website-templates/hike/images/pageheader.jpg */
         .page-header { background: url(images/pageheader.jpg)no-repeat; position: relative; background-size: cover; }
         .page-caption { padding-top: 170px; padding-bottom: 174px; }
         .page-title { font-size: 46px; line-height: 1; color: #fff; font-weight: 600; text-align: center; }
 
-        .card-section { position: relative; bottom: 60px; }
+        .card-section { position: relative; bottom: 40px; }
         .card { padding: 40px;  transition: 0.3s; border-radius: 10px; background-color: rgba(14, 14, 138, 0.75)!important;}
         .card:hover {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
@@ -50,12 +30,38 @@
         .section-title { margin-bottom: 30px; }
 
 
-        /* -------------------------Services HomePage-----------------------------*/
-#content-desktop {display: block;}
+       /* -------------------------Services Desktop HomePage-----------------------------*/
+       #content-desktop {display: block;}
 #content-mobile {display: none;}
 
-@media all and (min-width: 992px) {
+@media all and (min-width: 768px) {
 
+    /* h2{
+  color:#000;
+  text-align:center;
+  font-size:2em;
+}
+.warpper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.panel{
+  display:none;
+  animation: fadein .8s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.panel-title{
+  font-size:1.5em;
+  font-weight:bold
+} */
 
 .nav-pills-custom .nav-link {
   color: #aaa !important;
@@ -72,27 +78,27 @@
 }
 
 
+
 /* Add indicator arrow for the active tab */
 @media (min-width: 992px) {
   .nav-pills-custom .nav-link::before {
-      content: '' !important;
-      display: block !important;
-      border-top: 8px solid transparent !important;
-      border-left: 10px solid transparent !important;
-      border-bottom: 8px solid transparent !important;
-      position: absolute !important;
-      top: 50% !important;
-      right: -10px !important;
-      transform: translateY(-50%) !important;
-      opacity: 0 !important;
+      content: '';
+      display: block;
+      border-top: 8px solid transparent;
+      border-left: 10px solid #e91c58;
+      border-bottom: 8px solid transparent;
+      position: absolute;
+      top: 50%;
+      right: -10px;
+      transform: translateY(-50%);
+      opacity: 0;
   }
 }
 
 .nav-pills-custom .nav-link.active::before {
-  opacity: 1 !important;
+  opacity: 1;
 }
 }
-
 
 /* -------------------------Services HomePage Ends----------------------------- */
 
@@ -322,7 +328,7 @@ h4.panel-title{margin:10px 0px !important;}
 
 		    <div class="wow fadeIn" data-wow-duration="3s">
 		    <div id="content-desktop">
-            <div class="row">		
+            <div class="row wrapper">		
               
             <div class="col-md-3">
                 <!-- Tabs nav -->
@@ -357,8 +363,11 @@ h4.panel-title{margin:10px 0px !important;}
 
             <div class="col-md-9">
                 <!-- Tabs content -->
-                <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade shadow rounded bg-white show active p-5" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <div class="card card-main">
+                    <div class="card-body">		
+                       
+                <div class="tab-content panels" id="v-pills-tabContent">
+                    <div class="tab-pane panel fade rounded bg-white show active p-5" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                       <div class="col-md-12">
                         <h4 class="font-italic mb-4">Bookkeeping and Accounting Services.</h4>
                         <p class="font-italic text-muted mb-2">
@@ -394,7 +403,7 @@ h4.panel-title{margin:10px 0px !important;}
                       </div>
                     </div>
                     
-                    <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-tca" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <div class="tab-pane panel fade rounded bg-white p-5" id="v-pills-tca" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                         <h4 class="font-italic mb-4">Tax Compliance and Advisory.</h4>
                         <p class="font-italic text-muted mb-2">
                         <ul>
@@ -426,7 +435,7 @@ h4.panel-title{margin:10px 0px !important;}
                     </p>
                     </div>
                     
-                    <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-aprt" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    <div class="tab-pane panel fade rounded bg-white p-5" id="v-pills-aprt" role="tabpanel" aria-labelledby="v-pills-messages-tab">
                         <h4 class="font-italic mb-4">Accounting Process Review and Transformation.</h4>
                         <p class="font-italic text-muted mb-2">Our Accounting Process review and transformation is a very detailed approach involving the following procedures:</p>
                         <ul>
@@ -454,17 +463,17 @@ h4.panel-title{margin:10px 0px !important;}
                         </ul>
                     </div>
                     
-                    <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-ffro" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                    <div class="tab-pane panel fade rounded bg-white p-5" id="v-pills-ffro" role="tabpanel" aria-labelledby="v-pills-settings-tab">
                         <h4 class="font-italic mb-4">Finance function resourcing and outsourcing.</h4>
                         <p class="font-italic text-muted mb-2">We offer a full range of accounting services that cut across your day-to-day operations and ensuring compliance with relevant accounting, tax, and regulatory requirements at all stages in your business life cycle. These functions could be wholly outsourced to us or you could require us to second human resources to meet your needs. We offer both full finance outsourcing and secondment services. Whichever works for your business model. </p>
                     </div>
                     
-                    <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-aas" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                    <div class="tab-pane panel fade rounded bg-white p-5" id="v-pills-aas" role="tabpanel" aria-labelledby="v-pills-settings-tab">
                         <h4 class="font-italic mb-4">Audit and Assurance Service.</h4>
                         <p class="font-italic text-muted mb-2">Our independent audit service is carried out without compromising the principle of independence and is done in compliance with the International Financial Reporting Standards. With our risk-oriented approach, we offer you more than merely auditing the correctness of your accounts, we offer a comprehensive review of your systems and controls as part of the Audit engagement. </p>
                     </div>
                     
-                    <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-hrps" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                    <div class="tab-pane panel fade rounded bg-white p-5" id="v-pills-hrps" role="tabpanel" aria-labelledby="v-pills-settings-tab">
                         <h4 class="font-italic mb-4">Human Resource and Payroll Services.</h4>
                         <p class="font-italic text-muted mb-2">
                         <ul>
@@ -491,6 +500,7 @@ h4.panel-title{margin:10px 0px !important;}
                 </div>
             </div>
         </div>
+        </div></div>
     </div>
             <!-- services Desktop view section Ends-->
 
@@ -700,45 +710,73 @@ h4.panel-title{margin:10px 0px !important;}
 </div>
 
 
+<div class="space-400"></div> 
     </div>
 </section>
 
-
-
-				<!-- footer -->
-              
-
-                <footer class="page-footer font-small elegant-color  wow slideInUp" data-wow-duration="4s" id="footer">
-
-                             <!-- footer -->
-      <footer class="page-footer font-small elegant-color  wow slideInUp" data-wow-duration="4s" id="footer">
-        <!-- Footer Links -->
-        <div class="container">
-          <div class="row">
-            <!--Grid column-->
-            <div class="col my-5">
-              <!-- Social buttons -->
-              <ul class="list-unstyled list-inline mb-0 social text-center quick-links">
-                <li class="list-inline-item">
-                  <a class="btn-floating btn-fb mx-1" href="#" target="blank">
-                    <i class="fa fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn-floating btn-tw mx-1" href="#" target="blank">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn-floating btn-instagram mx-1" href="https://www.instagram.com/aideone_consult/" target="blank">
-                    <i class="fa fa-instagram"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn-floating btn-gplus mx-1" href="https://www.linkedin.com/company/aideone-consulting/" target="blank">
-                    <i class="fa fa-linkedin-square"></i>
-                  </a>
-                </li>
+    <!-- <div class="contain"> -->
+        <div class="mb-5 wow fadeIn ocean" data-wow-duration="3s" data-wow-delay="3s">
+            <!-- divider -->
+                       <svg class="editorial"
+                       xmlns="http://www.w3.org/2000/svg"
+                       xmlns:xlink="http://www.w3.org/1999/xlink"
+                       viewBox="0 24 150 28 "
+                       preserveAspectRatio="none">
+                   <defs>
+                   <path id="gentle-wave"
+                   d="M-160 44c30 0 
+                      58-18 88-18s
+                      58 18 88 18 
+                      58-18 88-18 
+                      58 18 88 18
+                      v44h-352z" />
+                    </defs>
+                    <g class="parallax1">
+                     <use xlink:href="#gentle-wave" x="50" y="3" fill="#f461c1"/>
+                    </g>
+                      <g class="parallax2">
+                     <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2"/>
+                      </g>
+                        <g class="parallax3">
+                     <use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1"/>
+                     </g>
+                      <g class="parallax4">
+                     <use xlink:href="#gentle-wave" x="50" y="6" fill="#020d29"/>  
+                    </g>
+                  </svg>
+                  
+                       <!-- divider ends -->
+                   </div>
+                  <!-- </div> -->
+                              <!-- footer -->
+                        <footer class="page-footer font-small elegant-color  wow slideInUp" data-wow-duration="4s" id="footer">
+                          <!-- Footer Links -->
+                          <div class="container">
+                            <div class="row">
+                              <!--Grid column-->
+                              <div class="col my-5">
+                                <!-- Social buttons -->
+                                <ul class="list-unstyled list-inline mb-0 social text-center quick-links">
+                                  <li class="list-inline-item">
+                                    <a class="btn-floating btn-fb mx-1" href="#" target="blank">
+                                      <i class="fa fa-facebook-f"></i>
+                                    </a>
+                                  </li>
+                                  <li class="list-inline-item">
+                                    <a class="btn-floating btn-tw mx-1" href="#" target="blank">
+                                      <i class="fa fa-twitter"></i>
+                                    </a>
+                                  </li>
+                                  <li class="list-inline-item">
+                                    <a class="btn-floating btn-instagram mx-1" href="https://www.instagram.com/aideone_consult/" target="blank">
+                                      <i class="fa fa-instagram"></i>
+                                    </a>
+                                  </li>
+                                  <li class="list-inline-item">
+                                    <a class="btn-floating btn-linkedin mx-1" href="https://www.linkedin.com/company/aideone-consulting/" target="blank">
+                                      <i class="fa fa-linkedin-square"></i>
+                                    </a>
+                                  </li>
                 <li class="list-inline-item">
                   <a class="btn-floating btn-envelope mx-1" href="mailto:info@aideone.com.ng" target="_blank">
                     <i class="fa fa-envelope"></i>
