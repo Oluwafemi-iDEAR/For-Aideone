@@ -104,6 +104,127 @@ header .overlay {
 }
 
 /*-----------------head slider ends-------------*/
+/* ----------------menu toggle------------------ */
+@media screen and (max-width: 769px) {
+  #webapp_cover {
+    display: none;
+  }
+
+  #webapp_cover
+{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 39px;
+    margin: 0 auto;
+    transform: translateY(-50%) scale(2);
+}
+
+#menu_button
+{
+    width: 39px;
+    overflow: hidden;
+}
+
+#menu_checkbox
+{
+    display: none;
+}
+
+#menu_label
+{
+    position: relative;
+    display: block;
+    height: 29px;
+    cursor: pointer;
+}
+
+#menu_label:before, #menu_label:after, #menu_text_bar
+{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+}
+
+#menu_label:before, #menu_label:after
+{
+    content: '';
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55) left;
+}
+
+#menu_label:before
+{
+    top: 0;
+}
+
+#menu_label:after
+{
+    top: 12px;
+}
+
+#menu_text_bar
+{
+    top: 24px;
+}
+
+#menu_text_bar:before
+{
+    content: 'MENU';
+    position: absolute;
+    top: 5px;
+    right: 0;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#menu_checkbox:checked + #menu_label:before
+{
+    left: -39px;
+}
+
+#menu_checkbox:checked + #menu_label:after
+{
+    left: 39px;
+}
+
+#menu_checkbox:checked + #menu_label #menu_text_bar:before
+{
+    animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
+}
+
+@keyframes moveUpThenDown
+{
+    0%{ top:0; }
+    50%{ top:-27px;}
+    100%{ top:-14px; }
+}
+
+@keyframes shakeWhileMovingUp
+{
+    0%{ transform: rotateZ(0); }
+    25%{ transform:rotateZ(-10deg); }
+    50%{ transform:rotateZ(0deg); }
+    75%{ transform:rotateZ(10deg); }
+    100%{ transform:rotateZ(0); }
+}
+
+@keyframes shakeWhileMovingDown
+{
+    0%{ transform:rotateZ(0); }
+    80%{ transform:rotateZ(3deg); }
+    90%{ transform:rotateZ(-3deg); }
+    100%{ transform:rotateZ(0); }
+}
+}
+
+/* ----------------menu toggle ends------------------ */
 
 .space{
   margin-top: 130px !important;
@@ -118,7 +239,16 @@ header .overlay {
   margin-bottom: 50px !important;
 }
 /*------------Loader--------------*/
- #circle {
+#load_screen{
+  background: #000;
+  opacity: 1;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  width: 100%;
+  height: 1600px;
+}
+ .circle {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1689,6 +1819,84 @@ figure img{width:300px;}
 } */
 
 /* --------------------------Careers Home Ends------------------------------------- */
+/* --------------------------Careers Accordion-------------------------------------- */
+
+#accordionrecruitment .panel{
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  margin-bottom: 15px;
+}
+#accordionrecruitment .panel-heading{
+  padding: 0;
+  border-radius: 0;
+  border: none;
+}
+#accordionrecruitment .panel-title a{
+  display: block;
+  padding: 20px 30px 20px 50px;
+  background: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  color: #20457c;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  border: 1px solid #20457c;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+#accordionrecruitment .panel-title a:hover{
+background: #ecabab;
+color: #fff;
+}
+
+#accordionrecruitment .panel-title a.collapsed{
+  background: #fff;
+  color: #696969;
+  border: 1px solid #20457c;
+  border-radius: 5px;
+}
+#accordionrecruitment .panel-title a:after,
+#accordionrecruitment .panel-title a.collapsed:after{
+  content: "\f106";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 25%;
+  left: -13px;
+  background: #a91739;
+}
+#accordionrecruitment .panel-title a.collapsed:after{
+  content: "\f107";
+  background: #e94c6f;
+}
+#accordionrecruitment .panel-title a.collapsed:hover{
+  background: #ecabab;
+  color: #fff;
+}
+#accordionrecruitment .panel-body{
+  font-size: 14px;
+  color: #fff;
+  line-height: 25px;
+  background: #E94C6F;
+  padding: 15px 15px 15px 50px;
+  border: none;
+  transition: all 0.5s ease 0s;
+}
+
+/* --------------------------Careers Accordion- Ends------------------------------------- */
+
+/* ----------------------------Careers Marquee---------------------------------------- */
+
+/* ----------------------------Careers Marquee- ends--------------------------------------- */
 
 /* ------------------------------Contact Homepage------------------------------------------ */
 
@@ -2085,7 +2293,11 @@ section .section-title {
 	100% { background-position: 0% 30%, 0 0;}
 }
 /*--------------------------------meet our partner--------------------------*/
-
+.liner {
+  height: 10px;
+  padding: 2px 6px;
+  margin: 0 2px 2px 0 !important;
+}
 
 
 .our-team-main

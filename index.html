@@ -80,8 +80,9 @@
 	  <div style="display:none;" id="myDiv" class="animate-bottom"> -->
 
 		<!-- loader -->
-    <!-- 		<div id="circle">
-		  <div class="loader">
+    <div id="load_screen">
+    		<div class="circle" >
+		  <div class="loader" id="loading">
 		    <div class="loader">
 		        <div class="loader">
 		           <div class="loader">
@@ -90,12 +91,16 @@
 		        </div>
 		    </div>
 		  </div>
-		</div> --> 
+		</div> 
+  </div>
 		<!-- loader ends -->
     <nav class="navbar navbar-expand-lg navbar-default bg-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.html"><img src="images/aideone.png" alt="AideOne" height="50" class='img-responsive'></a>
-           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+           <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         <div class="collapse navbar-collapse" id="main_nav">
@@ -406,7 +411,7 @@
 		                  <img class=" img-fluid" src="images/kindpng_473551.png" alt="card image">
 		                  <p class="mb-5" style="margin-top: 40px;">
 		    				<div class="wow slideInLeft" data-wow-duration="4s">We offer a full range of services that cut across your day-to-day operations and ensuring compliance with relevant accounting, tax, and regulatory requirements at all stages in your business life cycle.</p>
-		                  	<p><a href="#" target="_blank" class="btn btn-outline-light py-3 px-5">Learn more</a></p>
+		                  	<p><a href="services.html" target="_blank" class="btn btn-outline-light py-3 px-5">Learn more</a></p>
 		                  </div>
 		                </div>
 				      </div>
@@ -662,10 +667,101 @@
                     <li data-target="#blogCarousel" data-slide-to="1"></li>
                     <li data-target="#blogCarousel" data-slide-to="2"></li>
                     <li data-target="#blogCarousel" data-slide-to="3"></li>
+                    <li data-target="#blogCarousel" data-slide-to="4"></li>
                   </ol>
                   <!-- Carousel items -->
                   <div class="carousel-inner">
                     <div class="carousel-item active">
+                      <div class="row">
+                        <div class="col-md-4" >
+                          <div class="item-box-blog">
+                            <div class="item-box-blog-image">
+                              <!--Date-->
+                              <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Jul 12, 2021</span> </div>
+                              <!--Image-->
+                              <figure> <img alt="" src="images/1626055012774.jpeg"> </figure>
+                            </div>
+                            <div class="item-box-blog-body">
+                              <!--Heading-->
+                              <div class="item-box-blog-heading">
+                                <a href="news_page13.html" tabindex="0">
+                                  <h5>BUDGET IMPLEMENTATION: A BANE IN THE NIGERIAN ECONOMY</h5>
+                                </a>
+                              </div>
+                              <!--Data-->
+                              <!--<div class="item-box-blog-data" style="padding: px 15px;">
+                                <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                              </div>-->
+                              <!--Text-->
+                              <div class="item-box-blog-text">
+                                <p>One of the major reasons for the under-development in Nigeria is the lag in a faithful implementation of...</p>
+                              </div>
+                              <div class="mt"> <a href="news_page13.html" tabindex="0" class="btn bg-blue-ui white read">read more</a> </div>
+                              <!--Read More Button-->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4" >
+                          <div class="item-box-blog">
+                            <div class="item-box-blog-image">
+                              <!--Date-->
+                              <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Jun 18, 2021</span> </div>
+                              <!--Image-->
+                              <figure> <img alt="" src="images/1624006584003.jpeg"> </figure>
+                            </div>
+                            <div class="item-box-blog-body">
+                              <!--Heading-->
+                              <div class="item-box-blog-heading">
+                                <a href="news_page14.html" tabindex="0">
+                                  <h5>THE SECERT OF MINIMIZING YOUR TAX EXPOSURE</h5>
+                                </a>
+                              </div>
+                              <!--Data-->
+                              <!--<div class="item-box-blog-data" style="padding: px 15px;">
+                                <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                              </div>-->
+                              <!--Text-->
+                              <div class="item-box-blog-text">
+                                <p>The Nigerian law recognizes the right of taxpayers to arrange their affairs in such a manner as...</p>
+                              </div>
+                              <div class="mt"> <a href="news_page14.html" tabindex="0" class="btn bg-blue-ui white read">read more</a> </div>
+                              <!--Read More Button-->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4" >
+                          <div class="item-box-blog">
+                            <div class="item-box-blog-image">
+                              <!--Date-->
+                              <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Feb 22, 2017</span> </div>
+                              <!--Image-->
+                              <figure> <img alt="" src="images/ik_banner.jpg"> </figure>
+                            </div>
+                            <div class="item-box-blog-body">
+                              <!--Heading-->
+                              <div class="item-box-blog-heading">
+                                <a href="news_page3.html" tabindex="0">
+                                  <h5>Nigeria's Proposed 2021 Budget: Budget of economic recovery and resilience</h5>
+                                </a>
+                              </div>
+                              <!--Data-->
+                              <!--<div class="item-box-blog-data" style="padding: px 15px;">
+                                <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                              </div>-->
+                              <!--Text-->
+                              <div class="item-box-blog-text">
+                                <p>Diversifying the revenue-generating options of the country is what all the democratic governments in this country have always proposed but none has taken action.</p>
+                              </div>
+                              <div class="mt"> <a href="news_page3.html" tabindex="0" class="btn bg-blue-ui white read">read more</a> </div>
+                              <!--Read More Button-->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--.row-->
+                    </div>
+                    <!--.item-->
+                    <div class="carousel-item">
                       <div class="row">
                         <div class="col-md-4" >
                           <div class="item-box-blog">
@@ -1186,7 +1282,12 @@
                     </footer>
                                               <!-- ./Footer ends -->
   
-  
+  <script>
+    window.addEventListener("load", function(){
+      let load_screen = document.getElementById("load_screen");
+      document.body.removeChild(load_screen);
+    });
+  </script>
 
 <!-- 
 <script>
