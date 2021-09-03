@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>AideOne Academy</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link href="images/aideone.jpg" rel="icon" type="image/png">
+    <link href="images/aideOne.jpg" rel="icon" type="image/png">
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <script src="js/jquery-1.11.1.min.js"></script>
@@ -14,6 +14,57 @@
 	  <script src="js/typewriter.js"></script>
     <style>
         
+/* for young guy section */
+.table {
+  position: absolute;
+  bottom: 92px;
+  width: 100%;
+  height: 8px;
+  background-color: #caa17f;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.pc {
+  z-index: 2;
+  position: absolute;
+  bottom: 115px;
+  width: 142px;
+  height: 90px;
+  background-color: #c0c0c2;
+  border-radius: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.pc:after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  /* background-color: #b5b7ba; */
+  background-image: url(images/pc.jpg) !important;
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.pc:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 0;
+  right: 0;
+  height: calc(100% - 4px);
+  background-color: #d1d3d5;
+  border-radius: 2px;
+}
+
+/* for young guy section ends*/
+
         /* .contain {
   background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
   overflow: hidden;
@@ -176,7 +227,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-default bg-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="images/aideone.png" alt="AideOne" height="50" class='img-responsive'></a>
+      <a class="navbar-brand" href="index.html"><img src="images/aideOne.png" alt="AideOne" height="50" class='img-responsive'></a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -198,11 +249,11 @@
               <ul class="dropdown-menu dropdown-menu-right">
                 <li><a class="dropdown-item" href="services.html">Bookkeeping and Accounting Services</a></li>
                 <li><a class="dropdown-item" href="services.html">Tax Compliance and Advisory</a></li>
-                <li><a class="dropdown-item" href="services.html">Accounting Process Review and Transformation</a></li>
+                <li><a class="dropdown-item" href="services.html">Finance Transformation</a></li>
                 <li><a class="dropdown-item" href="services.html">Finance function resourcing and outsourcing</a></li>
                 <li><a class="dropdown-item" href="services.html">Audit and Assurance Service</a></li>
                 <li><a class="dropdown-item" href="services.html">Human Resource and Payroll Services</a></li>
-                  <li><a class="dropdown-item">Aideone School of Finance and Tax</a></li>
+                  <li><a class="dropdown-item">AideOne School of Finance and Tax</a></li>
               </ul>
           </li>
         <li class="nav-item"><a class="nav-link" href="contact.html"> Contact Us </a></li>
@@ -219,9 +270,9 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-7 py-5">
-                <h1 class="mb-4">Aideone School of
+                <h1 class="mb-4">AideOne School of
                   Finance and Tax!</h1>
-                <h2 class="m-0">Aideone Academy is a leading learning solution provider with various training products ranging from:
+                <h2 class="m-0">AideOne Academy is a leading learning solution provider with various training products ranging from:
                    General Board administration Training, General Finance and Operations Management Trainings e.t.c.</h2>
             </div>
             <div class="col-lg-5">
@@ -325,10 +376,10 @@
                 <div class="layer_content wow fadeIn" data-wow-duration="6s">
                   <div class="section_title"><!-- 
                     <h5> Academy </h5> -->
-                    <h2>Aideone School of<strong>Finance and Tax</strong>
+                    <h2>AideOne School of<strong>Finance and Tax</strong>
                     </h2>
                     <div class="heading_line"><span></span></div>
-                    <p>Aideone Academy is a leading learning solution provider with various training products ranging from:</p>
+                    <p>AideOne Academy is a leading learning solution provider with various training products ranging from:</p>
                           <ul>
                             <li>
                               International financial reporting standards ((IFRS) Training)
@@ -378,15 +429,55 @@
            <div class="row">
               <div class="col-xl-6 mx-auto text-center">
                  <div class="section-title mb-100">
-                    <h4>Register!</h4>
+                    <h4>Register</h4>
                  </div>
               </div>
            </div>
            <div class="row text-center">
-            <div class="col-md-4">
-             <img src="images/PinClipart.com_post-it-note-clip_792936.png" width="300" height="320" class='img-responsive'>
+            <div class="col-md-7">
+             <!-- <img src="images/PinClipart.com_post-it-note-clip_792936.png" width="300" height="320" class='img-responsive'> -->
+
+             <div class="stage">
+              <div class="table"></div>
+              <div class="pc"></div>
+              <div class="cup"></div>
+              <div class="cup-cover"></div>
+              <div class="clock">
+                <div class="marker-top"></div>
+                <div class="marker-right"></div>
+                <div class="marker-bottom"></div>
+                <div class="marker-left"></div>
+                <div class="pointer-min"></div>
+                <div class="pointer-hour"></div>
+                <div class="pointer"></div>
+              </div>
+              <div class="guy">
+                <div class="hat">
+                  <div class="hat-hair"></div>
+                  <div class="hat-close"></div>
+                </div>
+                <div class="hair-left"></div>
+                <div class="hair-middle"></div>
+                <div class="hair-right"></div>
+                <div class="ear-left"></div>
+                <div class="ear-right"></div>
+                <div class="face">
+                  <div class="eye"></div>
+                  <div class="eye"></div>
+                  <div class="nose"></div>
+                  <div class="mouth"></div>
+                </div>
+                <div class="neck"></div>
+                <div class="body"></div>
+              </div>
+              <div class="book one"></div>
+              <div class="book two"></div>
+              <div class="book three"></div>
             </div>
-                 <div class="col-md-8 form mb-5">
+
+
+            </div>
+                 <div class="col-md-5 form mb-5">
                    <form action="contact.php" method="post" id="form" class="contact-form">
                        <div class="row">
                           <div class="col-xl-4 mb-3">
@@ -466,17 +557,17 @@
                               </a>
                             </li>
                             <li class="list-inline-item">
-                              <a class="btn-floating btn-instagram mx-1" href="https://www.instagram.com/aideone_consult/" target="blank">
+                              <a class="btn-floating btn-instagram mx-1" href="https://www.instagram.com/aideOne_consult/" target="blank">
                                 <i class="fa fa-instagram"></i>
                               </a>
                             </li>
                             <li class="list-inline-item">
-                              <a class="btn-floating btn-linkedin mx-1" href="https://www.linkedin.com/company/aideone-consulting/" target="blank">
+                              <a class="btn-floating btn-linkedin mx-1" href="https://www.linkedin.com/company/aideOne-consulting/" target="blank">
                                 <i class="fa fa-linkedin-square"></i>
                               </a>
                             </li>
                             <li class="list-inline-item">
-                              <a class="btn-floating btn-envelope mx-1" href="mailto:info@aideone.com.ng" target="_blank">
+                              <a class="btn-floating btn-envelope mx-1" href="mailto:info@aideOne.com.ng" target="_blank">
                                 <i class="fa fa-envelope"></i>
                               </a>
                             </li>
@@ -491,7 +582,7 @@
                     <!-- Copyright -->	
                               <div class="row">
                                   <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white py-3">
-                                      <p class="m-0 text-center text-black">Copyright &copy; <script> document.write(new Date().getFullYear());</script> <a href="#"><span class="span text-violat ">AideOne Consult </span></a></p>
+                                      <p class="m-0 text-center text-black">Copyright &copy; <script> document.write(new Date().getFullYear());</script> <a href="#"><span class="span text-violat ">AideOne Consulting </span></a></p>
                                   </div>
                                   <hr>
                                   <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
@@ -525,9 +616,9 @@
   <!-- scroll up script ends-->
     <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
     <script>
-      window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
-      formbutton("create", {action: "https://formspree.io/mgepwneb"})
-    </script>
+    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+    formbutton("create", {action: "https://formspree.io/f/xwkavlbk"})
+  </script>
       <!-- page content ends -->
   
       <script src="js/services.js"></script>

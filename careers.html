@@ -1,246 +1,804 @@
 <!DOCTYPE html>
-<html>
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Services</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link href="images/aideone.jpg" rel="icon" type="image/png">
-    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    <script src="js/jquery-1.11.1.min.js"></script>
-	  <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  	<script src="js/bootstrap.min.js"></script>
-    <script src='js/typewriter.js'></script>
-    <style>
-        
-/* ------For the head section------ */
-body { -webkit-font-smoothing: antialiased;
-             text-rendering: optimizeLegibility;
-             font-family: 'Overpass', sans-serif; 
-             letter-spacing: 0px; font-size: 17px; 
-             color: #8d8f90; font-weight: 400; 
-             line-height: 32px; 
-             background-color: #edefef; 
-            }
-        h1, h2, h3, h4, h5, h6 { color: #25292a; margin: 0px 0px 10px 0px; font-family: 'Overpass', sans-serif; font-weight: 700; letter-spacing: -1px; line-height: 1; }
-        h1 { font-size: 34px; }
-        h2 { font-size: 28px; line-height: 38px; }
-        h3 { font-size: 22px; line-height: 32px; }
-        h4 { font-size: 20px; }
-        h5 { font-size: 17px; }
-        h6 { font-size: 12px; }
-        p { margin: 0 0 20px; line-height: 1.7; }
-        p:last-child { margin: 0px; }
-        ul, ol { }
-        a { text-decoration: none; color: #8d8f90; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
-        a:focus, a:hover { text-decoration: none; color: #f85759; }
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name="keywords" content="Financial Audit Consult Firm Website">
+  <meta name="description" content="Financial Audit Consult Firm Website">
+  <meta name="robots" content="contact, follow">
+  <meta name="author" content="">
+  <link href="images/aideone.jpg" rel="icon" type="image/png">
+  <title>AideOne - Academy</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+                <!--Icon Fonts - Font Awesome Icons-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<script src="js/jquery-1.11.1.min.js"></script>
+              <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="js/bootstrap.min.js"></script>
+              <!-- Google font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700,700i,900">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i">
+  
+  <script src="js/typewriter.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+       wow = new WOW(
+    {
+      animateClass: 'animated',
+      offset:       100,
+      callback:     function(box) {
+        console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+      }
+    }
+  );
+  wow.init();
+  document.getElementById('moar').onclick = function() {
+    var section = document.createElement('section');
+    section.className = 'section--purple wow fadeInDown';
+    this.parentNode.insertBefore(section, this);
+  };
+  </script>
+
+  <style>
+    .header-blue {
+    background:linear-gradient(135deg, #172a74, #fff);
+    background-color:#184e8e;
+    /* padding-bottom:80px; */
+    padding-top:80px;
+    font-family:'Source Sans Pro', sans-serif;
+  }
+
+  @media (min-width:768px) {
+    /* .header-blue {
+      padding-bottom:120px;
+    } */
+  }
+.header-blue .action-button,  .action-button:not(.disabled):active {
+border:1px solid rgba(255,255,255,0.7);
+border-radius:40px;
+color:#ebeff1;
+box-shadow:none;
+text-shadow:none;
+padding:.3rem .8rem;
+background:transparent;
+transition:background-color 0.25s;
+outline:none;
+}
+
+.header-blue .action-button:hover {
+color:#fff;
+}
+.heros {
+margin-top:20px;
+text-align:center;
+}
+
+@media (min-width:768px) {
+ .heros {
+  margin-top:60px;
+  text-align:left;
+}
+}
+
+.heros h1 {
+color:#fff;
+font-size:40px;
+margin-top:0;
+margin-bottom:15px;
+font-weight:300;
+line-height:1.4;
+}
+
+@media (min-width:992px) {
+ .heros h1 {
+  margin-top:190px;
+  margin-bottom:24px;
+  line-height:1.2;
+}
+}
+
+.heros p {
+color:rgba(255,255,255,0.8);
+font-size:20px;
+margin-bottom:30px;
+font-weight:300;
+}
+
+.phone-holder {
+text-align:right;
+}
+
+div.iphone-mockup {
+position:relative;
+max-width:300px;
+margin:20px;
+display:inline-block;
+}
+
+.iphone-mockup img.device {
+width:100%;
+height:90%;
+margin-top: 30px;
+}
+
+.iphone-mockup .screen {
+position:absolute;
+width:88%;
+height:77%;
+top:12.3%;
+border-radius:2px;
+left:6%;
+border:1px solid #444;
+background-color:#aaa;
+overflow:hidden;
+background:url(../../assets/img/screen-content-iphone-6.jpg);
+background-size:cover;
+background-position:center;
+}
+
+.iphone-mockup .screen:before {
+content:'';
+background-color:#fff;
+position:absolute;
+width:70%;
+height:140%;
+top:-12%;
+right:-60%;
+transform:rotate(-19deg);
+opacity:0.2;
+}
+
+/* for gallery */
 
 
-        /* image credit : https://easetemplate.com/free-website-templates/hike/images/pageheader.jpg */
-        .page-header { background: url(images/pageheader.jpg)no-repeat; position: relative; background-size: cover; }
-        .page-caption { padding-top: 170px; padding-bottom: 174px; }
-        .page-title { font-size: 46px; line-height: 1; color: #fff; font-weight: 600; text-align: center; }
+.b-0 {
+    bottom: 0;
+}
+.bg-shadow {
+    background: rgba(76, 76, 76, 0);
+}
+.top-indicator {
+    right: 0;
+    top: 1rem;
+    bottom: inherit;
+    left: inherit;
+    margin-right: 1rem;
+}
+.overflow {
+    position: relative;
+    overflow: hidden;
+}
+.zoom img {
+    transition: all 0.2s linear;
+}
+.zoom:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
 
-        .card-section { position: relative; bottom: 60px; }
-        .card { padding: 40px;  transition: 0.3s; border-radius: 10px; background-color: rgba(14, 14, 138, 0.75)!important;}
-        .card:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
-        }
-        .section-title { margin-bottom: 30px; }
+  </style>
 
-/* ---------Head section ends---------- */
-    </style>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+  <script src='script.js'></script>
+  
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-default bg-light fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="images/aideone.png" alt="AideOne" height="50" class='img-responsive'></a>
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      <div class="collapse navbar-collapse" id="main_nav">
-      
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"> <a class="nav-link" href="index.html">Home </a> </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="#" data-toggle="dropdown"> About Us </a>
-          <ul class="dropdown-menu dropdown-menu-right">
-            <li><a class="dropdown-item" href="about.html"> Overview</a></li>
-            <li><a class="dropdown-item" href="about_partner.html"> Meet Our Partners </a></li>
-            <li><a class="dropdown-item" href="about_team.html"> Meet Our Team </a></li>
-          </ul>
-      </li>
-      <li class="nav-item"><a class="nav-link" href="newsletters.html">Insights </a></li>
-        <li class="nav-item dropdown">
-            <a class="nav-link" href="#" data-toggle="dropdown">Services</a>
-              <ul class="dropdown-menu dropdown-menu-right">
-                <li><a class="dropdown-item" href="services.html">Bookkeeping and Accounting Services</a></li>
-                <li><a class="dropdown-item" href="services.html">Tax Compliance and Advisory</a></li>
-                <li><a class="dropdown-item" href="services.html">Accounting Process Review and Transformation</a></li>
-                <li><a class="dropdown-item" href="services.html">Finance function resourcing and outsourcing</a></li>
-                <li><a class="dropdown-item" href="services.html">Audit and Assurance Service</a></li>
-                <li><a class="dropdown-item" href="services.html">Human Resource and Payroll Services</a></li>
-                  <li><a class="dropdown-item" href="school.html">Aideone School of Finance and Tax</a></li>
-              </ul>
-          </li>
-        <li class="nav-item"><a class="nav-link" href="contact.html"> Contact Us </a></li>
-        <li class="nav-item active"><a class="nav-link">Careers </a></li>
-      </ul>
-      </div><!-- end row -->
+  <div class="header-blue">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-default bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/aideone.png" alt="AideOne" height="50" class='img-responsive'></a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+        
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"> <a class="nav-link" href="index.html">Home </a> </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" data-toggle="dropdown"> About Us </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li><a class="dropdown-item" href="about.html"> Overview</a></li>
+              <li><a class="dropdown-item" href="about_partner.html"> Meet Our Partners </a></li>
+              <li><a class="dropdown-item" href="about_team.html"> Meet Our Team </a></li>
+            </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="newsletters.html">Insights </a></li>
+          <li class="nav-item dropdown">
+              <a class="nav-link" href="#" data-toggle="dropdown">Services</a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a class="dropdown-item" href="services.html">Bookkeeping and Accounting Services</a></li>
+                  <li><a class="dropdown-item" href="services.html">Tax Compliance and Advisory</a></li>
+                  <li><a class="dropdown-item" href="services.html">Finance Transformation</a></li>
+                  <li><a class="dropdown-item" href="services.html">Finance function resourcing and outsourcing</a></li>
+                  <li><a class="dropdown-item" href="services.html">Audit and Assurance Service</a></li>
+                  <li><a class="dropdown-item" href="services.html">Human Resource and Payroll Services</a></li>
+                    <li><a class="dropdown-item" href="school.html">AideOne School of Finance and Tax</a></li>
+                </ul>
+            </li>
+          <li class="nav-item active"><a class="nav-link" href="contact.html"> Contact Us </a></li>
+          <li class="nav-item"><a class="nav-link">Careers </a></li>
+        </ul>
+        </div><!-- end row -->
+      </div>
+    </nav>
+   <!-- navbar-collapse.// -->
+<!-- Navigation ends -->
+
+<section class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark" style="height:60vh; background-image: url(images/pageheader.jpg);">
+  <div class="container-fluid">
+   <div class="row  justify-content-center align-items-center d-flex text-center h-100">
+     <div class="col-12 col-md-8  h-50 ">
+         <h1 class="display-2  text-light mb-2 mt-5"><strong>AideOne</strong> </h1>
+         <h2>
+           <p class="lead  text-light typewrite" data-period="2000" data-type='[ "Accounting Services.", "Business & Financial Advisory Services.", "Tax Services.", "Audit & Assurance Services.", "Keep focused on the goal; not the noise.", " We aid your business goals.", "We can best Aid you..." ]'><span class="wrap"></span>
+           </p>
+         </h2>
+     </div>
+   </div>
+ </div>
+ </section>
+
+ <div class="bread-bar">
+     <div class="container">
+         <div class="row">
+             <div class="col-md-8 col-sm-6 col-xs-8">
+                   <ol class="breadcrumb">
+                       <li><a href="index.html">Home</a></li>
+                       <li class="active">Careers</li>
+                   </ol>
+             </div>
+               <div class="col-md-4 col-sm-6 col-xs-4">
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <div class="container">
+    <div class="row">
+    <div class="alert alert-info alert-dismissible mt-3 container-fluid" role="alert">
+    <button type="button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+    <strong><i class="fa fa-warning"></i> Notice!</strong> <marquee scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();"><p style="font-family: Impact; font-size: 18pt">There are currently no openings available. Try again later. </p></marquee>
+  </div>
     </div>
-  </nav>
-         <!-- navbar-collapse.// -->
-      <!-- Navigation ends -->
+  </div>
 
-    <!-- Demo header-->
-    <header>
-       <div class="page-header">
-          <div class="container">
-              <div class="row">
-                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                      <div class="page-caption">
-                          <h1 class="page-title">AideOne</h1>
-                      </div>
-                  </div>
-              </div>
+   
+      <div class="container">
+      <div class="heading-title text-center">
+        <!-- <h2 class="text-uppercase">Careers<hr style="width:10%; height:3px; border:none; color:red; background-color:#e91c58;"></h2>
+    -->
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3 col-md-12">
+          <div class="bg-transparent mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden col-md-6">
+            <div class="my-3 py-3">
+              <h2 class="display-5">Careers at Aideone</h2>
+              <p class="lead">Wonderful opportunities awaits you.</p>
+            </div>
+            <div class="bg-transparent mx-auto" style="width: 300px; height: 400px; border-radius: 21px 21px 0 0;"><img class="img-fluid w-100" style="width: 300px; height: 400px; border-radius: 21px 21px 0 0;"
+              src="images/IMG-34 (1).png" alt="Bootstrap news template"><div class="liner hero"></div>
+            </div>
           </div>
-      </div>
-      <!-- /.page-header-->
-      <!-- news -->
-      <div class="card-section">
-          <div class="container">
-              <div class="card mb10 shadow">
-                  <div class="row">
-                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                          <!-- section-title -->
-                          <div class="section-title mb-0 text-center testimonial_owlCarousel">
-                              <h2 class="lead text-light typewrite" data-period="2000" data-type='[ "Check out other Services.", "You could also enroll in our academy", " Contact us today for more information", "All about Aiding you better..." ]'><span class="wrap"></span>
-                              </h2>
+          <!-- <div class="bg-light mr-md-3  pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden col-md-6">
+            <div class="my-3 p-3">
+              <h2 class="display-5">Another headline</h2>
+              <p class="lead">And an even wittier subheading.</p>
+            </div>
+            <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+          </div> -->
+          <div class="bg-transparent mr-md-3  pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden col-md-6">
+            <div class="my-3 p-3">
+              <h2 class="display-6">Explore</h2>
+              <p class="lead">Apply for a suitable position</p>
+            </div>
+            <div class="bg-transparent mt-3 mx-auto" style=" height: 300px; border-radius: 21px 21px 0 0;">
+            
+        <div class="container mt-10">
+                      <div class="panel-group" id="accordionrecruitment" role="tablist" aria-multiselectable="true">
+                          <div class="panel panel-default">
+                              <div class="panel-heading" role="tab" id="headingOnerecruitment">
+                                  <h4 class="panel-title">
+                                      <a role="button" data-toggle="collapse" data-parent="#accordionrecruitment" href="#collapseOnerecruitment" aria-expanded="true" aria-controls="collapseOnerecruitment">
+                                        Associate (NYSC) Recruitment
+                                      </a>
+                                  </h4>
+                              </div>
+                              <div id="collapseOnerecruitment" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOnerecruitment">
+                                  <div class="panel-body">
+                                      <p>Aideone Consulting is seeking to recruit two intern associates currently . If we consider your application okay, you will be sent a link for an online test within one week. If you don't get such invite, it means you were not considered. 
+
+                                        The final selection will be strictly based on merit after one or two interviews based on the current available space.</p>
+                                        <button style="cursor: not-allowed;" type="button" class="btn btn-primary disabled" data-toggle="modal" data-target="#exampleModalLong">
+                                          Apply
+                                        </button>
+                                        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                          <div class="modal-dialog modal-lg" role="document">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfAxEEtKbJUa8wreCygkl0q2EAanF9xL_4AyPTYLDxoFCVKSA/viewform?embedded=true" width="640" height="2100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                          
+                                  </div>
+                              </div>
+                          </div> 
+                          <div class="panel panel-default">
+                              <div class="panel-heading" role="tab" id="headingTworecruitment">
+                                  <h4 class="panel-title">
+                                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionrecruitment" href="#collapseTworecruitment" aria-expanded="false" aria-controls="collapseTworecruitment">
+                                        Associate (Normal) Recruitment
+                                      </a>
+                                  </h4>
+                              </div>
+                              <div id="collapseTworecruitment" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                  <div class="panel-body">
+                                    <p>Aideone Consulting is seeking to recruit urgently Two more Associates. If we consider your application okay, you will be sent a link for an online test within the next one week. If you don't get such invite, it means you were not considered. 
+
+                                      The final selection will be strictly based on merit after one or two interviews based on the current available space.</p>
+                                      <button style="cursor: not-allowed;" type="button" class="btn btn-primary"disabled data-toggle="modal" data-target="#exampleModalLong">
+                                        Apply
+                                      </button>
+                                      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                                            <div class="modal-body">
+                                              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfwIii8ao_ZVsCuJmA1-LQlX_V05lhSZ2FF2FZyqn7zHB6scg/viewform?embedded=true" width="640" height="2232" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  </div>
+                              </div>
                           </div>
-                          <!-- /.section-title -->
+                          <div class="panel panel-default">
+                              <div class="panel-heading" role="tab" id="headingThreerecruitment">
+                                  <h4 class="panel-title">
+                                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionrecruitment" href="#collapseThreerecruitment" aria-expanded="false" aria-controls="collapseThreerecruitment">
+                                          Analyst
+                                      </a>
+                                  </h4>
+                              </div>
+                              <div id="collapseThreerecruitment" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThreerecruitment">
+                                  <div class="panel-body">
+                                    <p>Aideone Consulting is seeking to recruit qualified Analysts. If we consider your application okay, you will be sent a link for an online test within the next one week. If you don't get such invite, it means you were not considered. 
+
+                                      The final selection will be strictly based on merit after one or two interviews based on the current available space.</p>
+                                      <button style="cursor: not-allowed;" type="button" class="btn btn-primary"disabled data-toggle="modal" data-target="#exampleModalLong">
+                                        Apply
+                                      </button>
+                                      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                                            <div class="modal-body">
+                                              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfwIii8ao_ZVsCuJmA1-LQlX_V05lhSZ2FF2FZyqn7zHB6scg/viewform?embedded=true" width="640" height="2232" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
                       </div>
-                  </div>
-              
-              </div>
-          </div>
       </div>
-    </header>
-
-    <div class="container">
-                    <div class="heading-title text-center">
-                      <h2 class="text-uppercase">Careers<hr style="width:10%; height:3px; border:none; color:red; background-color:#e91c58;"></h2>
-                  </div>
-      
-      
-        <!-- meet partner -->
-        <div class="d-flex justify-content-center">
-          <div class="card card-main">
-            <div class="card-body">
-                  <div class="paddingTB60">
-                    <div class="heading-title text-center">
-                      <h3 class="text-white">No vacancy available now,.. please check again later</h3>
-                      <div class="space-200"></div>                      
-                  </div>
-                  
-                    
-
-                  </div>
-                </div>
-              </div>       
+            </div>
+          </div>
         </div>
 
+<!-- Careers -->
+<div class="d-flex justify-content-center">
+<div class="card card-main">
+<!-- <div class="card-body">
+    <div class="paddingTB60">
+      <div class="heading-title text-center">
+        <div class="space-200"></div> 
+        <h3 class="text-dark">No vacancy available now,.. please check again later</h3>                     
     </div>
-    <div class="mb-5 wow fadeIn ocean" data-wow-duration="3s" data-wow-delay="4s">
-      <!-- divider -->
-                 <svg class="editorial"
-                 xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink"
-                 viewBox="0 24 150 28 "
-                 preserveAspectRatio="none">
-             <defs>
-             <path id="gentle-wave"
-             d="M-160 44c30 0 
-                58-18 88-18s
-                58 18 88 18 
-                58-18 88-18 
-                58 18 88 18
-                v44h-352z" />
-              </defs>
-              <g class="parallax1">
-               <use xlink:href="#gentle-wave" x="50" y="3" fill="#f461c1"/>
-              </g>
-                <g class="parallax2">
-               <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2"/>
-                </g>
-                  <g class="parallax3">
-               <use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1"/>
-               </g>
-                <g class="parallax4">
-               <use xlink:href="#gentle-wave" x="50" y="6" fill="#020d29"/>  
-              </g>
-            </svg>
-            </div>
+    </div>
+  </div>    -->
+  
+   <!--SECTION START-->
+   <section class="row">
+    <!--Start slider news-->
+    <div class="col-12 col-md-6 pb-0 pb-md-3 mt-5 pt-2 pr-md-1 pb-5">
+        <div id="featured" class="carousel slide carousel" data-ride="carousel">
+            <!--dots navigate-->
+            <ol class="carousel-indicators top-indicator">
+                <li data-target="#featured" data-slide-to="0" class="active"></li>
+                <li data-target="#featured" data-slide-to="1"></li>
+                <li data-target="#featured" data-slide-to="2"></li>
+                <li data-target="#featured" data-slide-to="3"></li>
+                <li data-target="#featured" data-slide-to="4"></li>
+                <li data-target="#featured" data-slide-to="5"></li>
+                <li data-target="#featured" data-slide-to="6"></li>
+                <li data-target="#featured" data-slide-to="7"></li>
+                <li data-target="#featured" data-slide-to="8"></li>
+                <li data-target="#featured" data-slide-to="9"></li>
+                <li data-target="#featured" data-slide-to="10"></li>
+                <li data-target="#featured" data-slide-to="11"></li>
+                <li data-target="#featured" data-slide-to="12"></li>
+            </ol>
             
-                 <!-- divider ends -->
-			            <!-- footer -->
-                  <footer class="page-footer font-small elegant-color  wow slideInUp" data-wow-duration="4s" id="footer">
-                    <!-- Footer Links -->
-                    <div class="container">
-                      <div class="row">
-                        <!--Grid column-->
-                        <div class="col my-5">
-                          <!-- Social buttons -->
-                          <ul class="list-unstyled list-inline mb-0 social text-center quick-links">
-                            <li class="list-inline-item">
-                              <a class="btn-floating btn-fb mx-1" href="#" target="blank">
-                                <i class="fa fa-facebook-f"></i>
-                              </a>
-                            </li>
-                            <li class="list-inline-item">
-                              <a class="btn-floating btn-tw mx-1" href="#" target="blank">
-                                <i class="fa fa-twitter"></i>
-                              </a>
-                            </li>
-                            <li class="list-inline-item">
-                              <a class="btn-floating btn-instagram mx-1" href="https://www.instagram.com/aideone_consult/" target="blank">
-                                <i class="fa fa-instagram"></i>
-                              </a>
-                            </li>
-                            <li class="list-inline-item">
-                              <a class="btn-floating btn-linkedin mx-1" href="https://www.linkedin.com/company/aideone-consulting/" target="blank">
-                                <i class="fa fa-linkedin-square"></i>
-                              </a>
-                            </li>
-                            <li class="list-inline-item">
-                              <a class="btn-floating btn-envelope mx-1" href="mailto:info@aideone.com.ng" target="_blank">
-                                <i class="fa fa-envelope"></i>
-                              </a>
-                            </li>
-                          </ul>
-                          <!-- Social buttons -->
+            <!--carousel inner-->
+            <div class="carousel-inner">
+                <!--Item slider-->
+                <div class="carousel-item active">
+                    <div class="card border-0 rounded-0 text-light overflow zoom">
+                        <div class="position-relative">
+                            <!--thumbnail img-->
+                            <div class="ratio_left-cover-1 image-wrapper">
+                                <a href="#">
+                                    <img class="img-fluid w-100"
+                                         src="images/gallery01.jpg"
+                                         alt="Bootstrap news template">
+                                </a>
+                            </div>
                         </div>
-                        <!--Grid column-->
-                      </div>
-                      <!--Grid row-->
                     </div>
-                    <!-- Footer Links -->
-                    <!-- Copyright -->	
-                              <div class="row">
-                                  <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white py-3">
-                                      <p class="m-0 text-center text-black">Copyright &copy; <script> document.write(new Date().getFullYear());</script> <a href="#"><span class="span text-violat ">AideOne Consult </span></a></p>
-                                  </div>
-                                  <hr>
-                                  <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-                                      <h6><a style="color: #6f5f23; font-size: small;" href="https://github.com/Oluwafemi-iDEAR" target="_blank">Designed by iDEAR Concept </a></h6>
-                                  </div>
-                                  <hr>
-                              </div>
-                    <!-- Copyright -->
-                  </footer>
-                                            <!-- ./Footer ends -->
+                </div>
+                
+                <!--Item slider-->
+                <div class="carousel-item">
+                  <div class="card border-0 rounded-0 text-light overflow zoom">
+                      <div class="position-relative">
+                          <!--thumbnail img-->
+                          <div class="ratio_left-cover-1 image-wrapper">
+                              <a href="#">
+                                  <img class="img-fluid w-100"
+                                       src="images/gallery1.jpg"
+                                       alt="Bootstrap news template">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                
+                <!--Item slider-->
+                <div class="carousel-item">
+                    <div class="card border-0 rounded-0 text-light overflow zoom">
+                        <div class="position-relative">
+                            <!--thumbnail img-->
+                            <div class="ratio_left-cover-1 image-wrapper">
+                                <a href="#">
+                                    <img class="img-fluid w-100"
+                                         src="images/gallery2.jpg"
+                                         alt="Bootstrap news theme">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Item slider-->
+                <div class="carousel-item">
+                    <div class="card border-0 rounded-0 text-light overflow zoom">
+                        <div class="position-relative">
+                            <!--thumbnail img-->
+                            <div class="ratio_left-cover-1 image-wrapper">
+                                <a href="#">
+                                    <img class="img-fluid w-100"
+                                         src="images/gallery3.jpg"
+                                         alt="Bootstrap blog template">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Item slider--> 
+                <!--Item slider-->
+                <div class="carousel-item">
+                  <div class="card border-0 rounded-0 text-light overflow zoom">
+                      <div class="position-relative">
+                          <!--thumbnail img-->
+                          <div class="ratio_left-cover-1 image-wrapper">
+                              <a href="#">
+                                  <img class="img-fluid w-100"
+                                       src="images/gallery4.jpg"
+                                       alt="Bootstrap news theme">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <!--Item slider-->
+              <div class="carousel-item">
+                  <div class="card border-0 rounded-0 text-light overflow zoom">
+                      <div class="position-relative">
+                          <!--thumbnail img-->
+                          <div class="ratio_left-cover-1 image-wrapper">
+                              <a href="#">
+                                  <img class="img-fluid w-100"
+                                       src="images/gallery5.jpg"
+                                       alt="Bootstrap blog template">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <!--Item slider--> 
+                <!--Item slider-->
+                <div class="carousel-item">
+                  <div class="card border-0 rounded-0 text-light overflow zoom">
+                      <div class="position-relative">
+                          <!--thumbnail img-->
+                          <div class="ratio_left-cover-1 image-wrapper">
+                              <a href="#">
+                                  <img class="img-fluid w-100"
+                                       src="images/gallery6.jpg"
+                                       alt="Bootstrap news theme">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <!--Item slider-->
+              <div class="carousel-item">
+                  <div class="card border-0 rounded-0 text-light overflow zoom">
+                      <div class="position-relative">
+                          <!--thumbnail img-->
+                          <div class="ratio_left-cover-1 image-wrapper">
+                              <a href="#">
+                                  <img class="img-fluid w-100"
+                                       src="images/gallery7.jpg"
+                                       alt="Bootstrap blog template">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <!--Item slider-->
+                <div class="carousel-item">
+                    <div class="card border-0 rounded-0 text-light overflow zoom">
+                        <div class="position-relative">
+                            <!--thumbnail img-->
+                            <div class="ratio_left-cover-1 image-wrapper">
+                                <a href="#">
+                                    <img class="img-fluid w-100"
+                                         src="images/gallery8.jpg"
+                                         alt="Bootstrap portal template">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end item slider-->
+                
+                <!--Item slider-->
+                <div class="carousel-item">
+                  <div class="card border-0 rounded-0 text-light overflow zoom">
+                      <div class="position-relative">
+                          <!--thumbnail img-->
+                          <div class="ratio_left-cover-1 image-wrapper">
+                              <a href="#">
+                                  <img class="img-fluid w-100"
+                                       src="images/gallery9.jpg"
+                                       alt="Bootstrap news template">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              
+                <!--Item slider-->
+                <div class="carousel-item">
+                  <div class="card border-0 rounded-0 text-light overflow zoom">
+                      <div class="position-relative">
+                          <!--thumbnail img-->
+                          <div class="ratio_left-cover-1 image-wrapper">
+                              <a href="#">
+                                  <img class="img-fluid w-100"
+                                       src="images/gallery10.png"
+                                       alt="Bootstrap news template">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!--Item slider-->
+              
+                <!--Item slider-->
+                <div class="carousel-item">
+                  <div class="card border-0 rounded-0 text-light overflow zoom">
+                      <div class="position-relative">
+                          <!--thumbnail img-->
+                          <div class="ratio_left-cover-1 image-wrapper">
+                              <a href="#">
+                                  <img class="img-fluid w-100"
+                                       src="images/gallery11.jpg"
+                                       alt="Bootstrap news template">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!--Item slider-->
+              
+                <!--Item slider-->
+                <div class="carousel-item">
+                  <div class="card border-0 rounded-0 text-light overflow zoom">
+                      <div class="position-relative">
+                          <!--thumbnail img-->
+                          <div class="ratio_left-cover-1 image-wrapper">
+                              <a href="#">
+                                  <img class="img-fluid w-100"
+                                       src="images/gallery12.jpg"
+                                       alt="Bootstrap news template">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!--Item slider-->
+            </div>
+            <!--end carousel inner-->
+        </div>
+        
+        <!--navigation-->
+        <a class="carousel-control-prev" href="#featured" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#featured" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!--End slider news-->
+    
+    <!--Start box news-->
+    <div class="col-12 col-md-6 pt-2 pl-md-1 mb-3 mb-lg-4 d-none d-lg-block phone-holder">
+            <!--news box-->
+        <div class="iphone-mockup"><img src="images/phone.svg" class="device">
+        <div class="screen">
+          <img class=" img-fluid" src="images/aideone.com.jpg" alt="card image">
+          <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" height="160" width="285">
+          <source src="images/welcome.mp4" type="video/mp4">
+        </video><img class=" img-fluid" src="images/academy.jpg" alt="card image">
+        </div>
+        
+        </div>
+            <!--end news box-->
+    </div>
+    <!--End box news-->
+</section>
+<!--END SECTION-->    
+</div>
 
+</div>
+         
+  <!--end code-->
+                
+              </div>
+          </div>
+          
+          <div class="mb-5 wow fadeIn ocean" data-wow-duration="3s" data-wow-delay="4s">
+            <!-- divider -->
+                       <svg class="editorial"
+                       xmlns="http://www.w3.org/2000/svg"
+                       xmlns:xlink="http://www.w3.org/1999/xlink"
+                       viewBox="0 24 150 28 "
+                       preserveAspectRatio="none">
+                   <defs>
+                   <path id="gentle-wave"
+                   d="M-160 44c30 0 
+                      58-18 88-18s
+                      58 18 88 18 
+                      58-18 88-18 
+                      58 18 88 18
+                      v44h-352z" />
+                    </defs>
+                    <g class="parallax1">
+                     <use xlink:href="#gentle-wave" x="50" y="3" fill="#f461c1"/>
+                    </g>
+                      <g class="parallax2">
+                     <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2"/>
+                      </g>
+                        <g class="parallax3">
+                     <use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1"/>
+                     </g>
+                      <g class="parallax4">
+                     <use xlink:href="#gentle-wave" x="50" y="6" fill="#020d29"/>  
+                    </g>
+                  </svg>
+                  </div>
+             <!-- divider ends -->
+              <!-- footer -->
+              <footer class="page-footer font-small elegant-color  wow slideInUp" data-wow-duration="4s" id="footer">
+                <!-- Footer Links -->
+                <div class="container">
+                  <div class="row">
+                    <!--Grid column-->
+                    <div class="col my-5">
+                      <!-- Social buttons -->
+                      <ul class="list-unstyled list-inline mb-0 social text-center quick-links">
+                        <li class="list-inline-item">
+                          <a class="btn-floating btn-fb mx-1" href="#" target="blank">
+                            <i class="fa fa-facebook-f"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="btn-floating btn-tw mx-1" href="#" target="blank">
+                            <i class="fa fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="btn-floating btn-instagram mx-1" href="https://www.instagram.com/aideone_consult/" target="blank">
+                            <i class="fa fa-instagram"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="btn-floating btn-linkedin mx-1" href="https://www.linkedin.com/company/aideone-consulting/" target="blank">
+                            <i class="fa fa-linkedin-square"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="btn-floating btn-envelope mx-1" href="mailto:info@aideone.com.ng" target="_blank">
+                            <i class="fa fa-envelope"></i>
+                          </a>
+                        </li>
+                      </ul>
+                      <!-- Social buttons -->
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row-->
+                </div>
+                <!-- Footer Links -->
+                <!-- Copyright -->	
+                          <div class="row">
+                              <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white py-3">
+                                  <p class="m-0 text-center text-black">Copyright &copy; <script> document.write(new Date().getFullYear());</script> <a href="#"><span class="span text-violat ">AideOne Consulting </span></a></p>
+                              </div>
+                              <hr>
+                              <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                                  <h6><a style="color: #6f5f23; font-size: small;" href="https://github.com/Oluwafemi-iDEAR" target="_blank">Designed by iDEAR Concept </a></h6>
+                              </div>
+                              <hr>
+                          </div>
+                <!-- Copyright -->
+              </footer>
+                                        <!-- ./Footer ends -->
+
+
+     
+
+            
 
 <!-- scroll up script-->
 <script>
@@ -263,9 +821,9 @@ body { -webkit-font-smoothing: antialiased;
   <!-- scroll up script ends-->
     <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
     <script>
-      window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
-      formbutton("create", {action: "https://formspree.io/mgepwneb"})
-    </script>
+    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+    formbutton("create", {action: "https://formspree.io/f/xwkavlbk"})
+  </script>
       <!-- page content ends -->
   
       <script src="js/services.js"></script>
