@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name="keywords" content="Financial Audit Consult Firm Website">
+  <meta name="description" content="Financial Audit Consult Firm Website">
+  <meta name="robots" content="contact, follow">
+  <meta name="author" content="">
+  <link href="images/aideone.jpg" rel="icon" type="image/png">
+  <title>AideOne - Academy</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+                <!--Icon Fonts - Font Awesome Icons-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<script src="js/jquery-1.11.1.min.js"></script>
+              <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="js/bootstrap.min.js"></script>
+              <!-- Google font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700,700i,900">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i">
+  
+  <script src="js/typewriter.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+       wow = new WOW(
+    {
+      animateClass: 'animated',
+      offset:       100,
+      callback:     function(box) {
+        console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+      }
+    }
+  );
+  wow.init();
+  document.getElementById('moar').onclick = function() {
+    var section = document.createElement('section');
+    section.className = 'section--purple wow fadeInDown';
+    this.parentNode.insertBefore(section, this);
+  };
+  </script>
+
+  <style>
+    .header-blue {
+    background:linear-gradient(135deg, #172a74, #fff);
+    background-color:#184e8e;
+    padding-bottom:80px;
+    padding-top:80px;
+    font-family:'Source Sans Pro', sans-serif;
+  }
+
+  @media (min-width:768px) {
+    .header-blue {
+      padding-bottom:120px;
+    }
+  }
+.header-blue .action-button,  .action-button:not(.disabled):active {
+border:1px solid rgba(255,255,255,0.7);
+border-radius:40px;
+color:#ebeff1;
+box-shadow:none;
+text-shadow:none;
+padding:.3rem .8rem;
+background:transparent;
+transition:background-color 0.25s;
+outline:none;
+}
+
+.header-blue .action-button:hover {
+color:#fff;
+}
+.heros {
+margin-top:20px;
+text-align:center;
+}
+
+@media (min-width:768px) {
+ .heros {
+  margin-top:60px;
+  text-align:left;
+}
+}
+
+.heros h1 {
+color:#fff;
+font-size:40px;
+margin-top:0;
+margin-bottom:15px;
+font-weight:300;
+line-height:1.4;
+}
+
+@media (min-width:992px) {
+ .heros h1 {
+  margin-top:190px;
+  margin-bottom:24px;
+  line-height:1.2;
+}
+}
+
+.heros p {
+color:rgba(255,255,255,0.8);
+font-size:20px;
+margin-bottom:30px;
+font-weight:300;
+}
+
+.phone-holder {
+text-align:right;
+}
+
+div.iphone-mockup {
+position:relative;
+max-width:300px;
+margin:20px;
+display:inline-block;
+}
+
+.iphone-mockup img.device {
+width:100%;
+height:90%;
+margin-top: 30px;
+}
+
+.iphone-mockup .screen {
+position:absolute;
+width:88%;
+height:77%;
+top:12.3%;
+border-radius:2px;
+left:6%;
+border:1px solid #444;
+background-color:#aaa;
+overflow:hidden;
+background:url(../../assets/img/screen-content-iphone-6.jpg);
+background-size:cover;
+background-position:center;
+}
+
+.iphone-mockup .screen:before {
+content:'';
+background-color:#fff;
+position:absolute;
+width:70%;
+height:140%;
+top:-12%;
+right:-60%;
+transform:rotate(-19deg);
+opacity:0.2;
+}
+
+/* for gallery */
+
+
+.aide1 {
+position: relative;
+width: 320px;
+margin: 100px auto 0 auto;
+perspective: 1000px;
+margin-top: 179px;
+}
+
+@media only screen and (max-width:767px) {
+      
+.aide1 {
+position: relative;
+width: 320px;
+margin: 100px auto 0 auto;
+perspective: 1000px;
+      }
+  }
+
+.carousel {
+position: absolute;
+width: 100%;
+height: 100%;
+transform-style: preserve-3d; 
+animation: rotate360 60s infinite forwards linear;
+}
+.carousel__face { 
+position: absolute;
+width: 150px;
+height: 187px;
+top: 20px;
+left: 10px;
+right: 10px;
+background-size: cover;
+box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+display: flex;
+}
+
+span {
+margin: auto;
+font-size: 2rem;
+}
+
+
+.carousel__face:nth-child(1) {
+background-image: url("https://images.pexels.com/photos/1141853/pexels-photo-1141853.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+transform: rotateY(  0deg) translateZ(230px); }
+.carousel__face:nth-child(2) { 
+background-image: url("https://images.pexels.com/photos/1258865/pexels-photo-1258865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  transform: rotateY( 40deg) translateZ(230px); }
+.carousel__face:nth-child(3) {
+background-image: url("https://images.pexels.com/photos/808466/pexels-photo-808466.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+transform: rotateY( 80deg) translateZ(230px); }
+.carousel__face:nth-child(4) {
+background-image: url("https://images.pexels.com/photos/1394841/pexels-photo-1394841.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+transform: rotateY(120deg) translateZ(230px); }
+.carousel__face:nth-child(5) { 
+background-image: url("https://images.pexels.com/photos/969679/pexels-photo-969679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+transform: rotateY(160deg) translateZ(230px); }
+.carousel__face:nth-child(6) { 
+background-image: url("https://images.pexels.com/photos/1834400/pexels-photo-1834400.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+transform: rotateY(200deg) translateZ(230px); }
+.carousel__face:nth-child(7) { 
+background-image: url("https://images.pexels.com/photos/1415268/pexels-photo-1415268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+transform: rotateY(240deg) translateZ(230px); }
+.carousel__face:nth-child(8) {
+background-image: url("https://images.pexels.com/photos/135018/pexels-photo-135018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+transform: rotateY(280deg) translateZ(230px); }
+.carousel__face:nth-child(9) {
+background-image: url("https://images.pexels.com/photos/1175135/pexels-photo-1175135.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+transform: rotateY(320deg) translateZ(230px); }
+
+
+
+@keyframes rotate360 {
+from {
+  transform: rotateY(0deg);
+}
+to {
+  transform: rotateY(-360deg);
+}
+}
+
+  </style>
+
+  <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+  <script src='script.js'></script>
+  
+</head>
+<body>
+
+  <div class="header-blue">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-default bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/aideone.png" alt="AideOne" height="50" class='img-responsive'></a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+        
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"> <a class="nav-link" href="index.html">Home </a> </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" data-toggle="dropdown"> About Us </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li><a class="dropdown-item" href="about.html"> Overview</a></li>
+              <li><a class="dropdown-item" href="about_partner.html"> Meet Our Partners </a></li>
+              <li><a class="dropdown-item" href="about_team.html"> Meet Our Team </a></li>
+            </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="newsletters.html">Insights </a></li>
+          <li class="nav-item dropdown">
+              <a class="nav-link" href="#" data-toggle="dropdown">Services</a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a class="dropdown-item" href="services.html">Bookkeeping and Accounting Services</a></li>
+                  <li><a class="dropdown-item" href="services.html">Tax Compliance and Advisory</a></li>
+                  <li><a class="dropdown-item" href="services.html">Accounting Process Review and Transformation</a></li>
+                  <li><a class="dropdown-item" href="services.html">Finance function resourcing and outsourcing</a></li>
+                  <li><a class="dropdown-item" href="services.html">Audit and Assurance Service</a></li>
+                  <li><a class="dropdown-item" href="services.html">Human Resource and Payroll Services</a></li>
+                    <li><a class="dropdown-item" href="school.html">Aideone School of Finance and Tax</a></li>
+                </ul>
+            </li>
+          <li class="nav-item active"><a class="nav-link" href="contact.html"> Contact Us </a></li>
+          <li class="nav-item"><a class="nav-link">Careers </a></li>
+        </ul>
+        </div><!-- end row -->
+      </div>
+    </nav>
+   <!-- navbar-collapse.// -->
+<!-- Navigation ends -->
+      <div class="container heros">
+          <div class="row">
+              <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
+                <div class="aide1">
+                  <div class="carousel">
+                    <div class="carousel__face"><span>This is something</span></div>
+                    <div class="carousel__face"><span>Very special</span></div>
+                    <div class="carousel__face"><span>Special is the key</span></div>
+                    <div class="carousel__face"><span>For you</span></div>
+                    <div class="carousel__face"><span>Just give it</span></div>
+                    <div class="carousel__face"><span>A try</span></div>
+                    <div class="carousel__face"><span>And see</span></div>
+                    <div class="carousel__face"><span>How IT Works</span></div>
+                    <div class="carousel__face"><span>Woow</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block phone-holder">
+                <div class="iphone-mockup"><img src="images/phone.svg" class="device">
+                  <div class="screen">
+                    <img class=" img-fluid" src="images/aideone.com.jpg" alt="card image">
+                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" height="160" width="285">
+                    <source src="images/welcome.mp4" type="video/mp4">
+                  </video><img class=" img-fluid" src="images/academy.jpg" alt="card image">
+                  </div>
+                  
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+      <div class="card-section">
+          <div class="container">
+              <div class="card mb10 shadow">
+                  <div class="row">
+                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                          <!-- section-title -->
+                          <div class="section-title mb-0 text-center testimonial_owlCarousel">
+                              <h2 class="lead text-light typewrite" data-period="2000" data-type='[ "Check out other Services.", "You could also enroll in our academy", " Contact us today for more information", "All about Aiding you better..." ]'><span class="wrap"></span>
+                              </h2>
+                          </div>
+                          <!-- /.section-title -->
+                      </div>
+                  </div>
+              
+              </div>
+          </div>
+      </div>
+    <div class="container">
+                    <div class="heading-title text-center">
+                      <h2 class="text-uppercase">Careers<hr style="width:10%; height:3px; border:none; color:red; background-color:#e91c58;"></h2>
+                  </div>
+      
+      
+        <!-- meet partner -->
+        <div class="d-flex justify-content-center">
+          <div class="card card-main">
+            <div class="card-body">
+                  <div class="paddingTB60">
+                    <div class="heading-title text-center">
+                      <h3 class="text-white">No vacancy available now,.. please check again later</h3>
+                      <div class="space-200"></div>                      
+                  </div>
+                  
+                    
+
+                  </div>
+                </div>
+              </div>       
+        </div>
+
+    </div>
+    <div class="mb-5 wow fadeIn ocean" data-wow-duration="3s" data-wow-delay="4s">
+      <!-- divider -->
+                 <svg class="editorial"
+                 xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 viewBox="0 24 150 28 "
+                 preserveAspectRatio="none">
+             <defs>
+             <path id="gentle-wave"
+             d="M-160 44c30 0 
+                58-18 88-18s
+                58 18 88 18 
+                58-18 88-18 
+                58 18 88 18
+                v44h-352z" />
+              </defs>
+              <g class="parallax1">
+               <use xlink:href="#gentle-wave" x="50" y="3" fill="#f461c1"/>
+              </g>
+                <g class="parallax2">
+               <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2"/>
+                </g>
+                  <g class="parallax3">
+               <use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1"/>
+               </g>
+                <g class="parallax4">
+               <use xlink:href="#gentle-wave" x="50" y="6" fill="#020d29"/>  
+              </g>
+            </svg>
+            </div>
+            
+                 <!-- divider ends -->
+			            <!-- footer -->
+                  <footer class="page-footer font-small elegant-color  wow slideInUp" data-wow-duration="4s" id="footer">
+                    <!-- Footer Links -->
+                    <div class="container">
+                      <div class="row">
+                        <!--Grid column-->
+                        <div class="col my-5">
+                          <!-- Social buttons -->
+                          <ul class="list-unstyled list-inline mb-0 social text-center quick-links">
+                            <li class="list-inline-item">
+                              <a class="btn-floating btn-fb mx-1" href="#" target="blank">
+                                <i class="fa fa-facebook-f"></i>
+                              </a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a class="btn-floating btn-tw mx-1" href="#" target="blank">
+                                <i class="fa fa-twitter"></i>
+                              </a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a class="btn-floating btn-instagram mx-1" href="https://www.instagram.com/aideone_consult/" target="blank">
+                                <i class="fa fa-instagram"></i>
+                              </a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a class="btn-floating btn-linkedin mx-1" href="https://www.linkedin.com/company/aideone-consulting/" target="blank">
+                                <i class="fa fa-linkedin-square"></i>
+                              </a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a class="btn-floating btn-envelope mx-1" href="mailto:info@aideone.com.ng" target="_blank">
+                                <i class="fa fa-envelope"></i>
+                              </a>
+                            </li>
+                          </ul>
+                          <!-- Social buttons -->
+                        </div>
+                        <!--Grid column-->
+                      </div>
+                      <!--Grid row-->
+                    </div>
+                    <!-- Footer Links -->
+                    <!-- Copyright -->	
+                              <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white py-3">
+                                      <p class="m-0 text-center text-black">Copyright &copy; <script> document.write(new Date().getFullYear());</script> <a href="#"><span class="span text-violat ">AideOne Consulting </span></a></p>
+                                  </div>
+                                  <hr>
+                                  <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                                      <h6><a style="color: #6f5f23; font-size: small;" href="https://github.com/Oluwafemi-iDEAR" target="_blank">Designed by iDEAR Concept </a></h6>
+                                  </div>
+                                  <hr>
+                              </div>
+                    <!-- Copyright -->
+                  </footer>
+                                            <!-- ./Footer ends -->
+
+
+<!-- scroll up script-->
+<script>
+    $(document).ready(function(){
+        $('body').append('<div id="toTop" class="btn btn-info"><span class="glyphicon glyphicon-chevron-up"></span> <i class="fa fa-angle-up fa-2x text-dark"></i> </div>');
+        $(window).scroll(function () {
+        if ($(this).scrollTop() != 0) {
+          $('#toTop').fadeIn();
+        } else {
+          $('#toTop').fadeOut();
+        }
+      }); 
+      $('#toTop').click(function(){
+          $("html, body").animate({ scrollTop: 0 }, 600);
+          return false;
+      });
+  });
+  
+  </script>
+  <!-- scroll up script ends-->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+    formbutton("create", {action: "https://formspree.io/f/xwkavlbk"})
+  </script>
+      <!-- page content ends -->
+  
+      <script src="js/services.js"></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+      <script src="js/client.js"></script>
+      <script src="js/counter.js"></script>
+      <!-- 
+      <script src="vendor/bootstrap/js/bootstrap.min.js"></script> -->
+      <script src="js/script.js"></script>
+  
+      <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script> -->
+   
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/aos.js"></script>
+      <script src="js/jquery.sticky.js"></script>
+      <script src="js/main.js"></script>
+  
+      <script>
+        $(window).scroll(function(){
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 150);});
+        
+      </script>
+  
+  <script type="text/javascript">
+    $().ready(function(){
+        $('[rel="tooltip"]').tooltip();
+  
+        $('a.scroll-down').click(function(e){
+            e.preventDefault();
+            scroll_target = $(this).data('href');
+             $('html, body').animate({
+                 scrollTop: $(scroll_target).offset().top - 60
+             }, 1000);
+        });
+  
+    });
+  
+    function rotateCard(btn){
+        var $card = $(btn).closest('.card-container');
+        console.log($card);
+        if($card.hasClass('hover')){
+            $card.removeClass('hover');
+        } else {
+            $card.addClass('hover');
+        }
+    }
+  
+  
+  </script>
+</body>
+</html>
