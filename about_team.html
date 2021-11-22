@@ -1,839 +1,960 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Financial Audit Consult Firm Website">
-    <meta name="description" content="Financial Audit Consult Firm Website">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="">
-    <title>AideOne Consulting  |  About Us</title>
-    <link href="images/aideone.jpg" rel="icon" type="image/png">
-    
-    <!--Icon Fonts - Font Awesome Icons-->
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Financial Audit Consult Firm Website">
+  <meta name="description" content="Financial Audit Consult Firm Website">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="">
+  <title>AideOne Consulting | About Us</title>
+  <link href="images/aideone.jpg" rel="icon" type="image/png">
 
-    <script src="js/jquery-1.11.1.min.js"></script>
+  <!--Icon Fonts - Font Awesome Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Bootstrap core CSS -->
-	  <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-	  <script src="js/bootstrap.min.js"></script>
-	  <script src="js/typewriter.js"></script>
+  <script src="js/jquery-1.11.1.min.js"></script>
 
-         
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
-    
-                <!-- Google font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700,700i,900">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i">
- 
-    <!-- for head slider -->
-    <script>
-        wow = new WOW(
-     {
-       animateClass: 'animated',
-       offset:       100,
-       callback:     function(box) {
-         console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-       }
-     }
-   );
-   wow.init();
-   document.getElementById('moar').onclick = function() {
-     var section = document.createElement('section');
-     section.className = 'section--purple wow fadeInDown';
-     this.parentNode.insertBefore(section, this);
-   };
-   </script>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/typewriter.js"></script>
 
 
- <!-- head slider script ends -->
-   <link rel="stylesheet" href="css/styling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
 
-   <style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
 
-/*--------------------------------------------------------------
+  <!-- Google font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700,700i,900">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i">
+
+  <!-- for head slider -->
+  <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset: 100,
+        callback: function (box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function () {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+  </script>
+
+
+  <!-- head slider script ends -->
+  <link rel="stylesheet" href="css/styling.css">
+
+  <style>
+    /*--------------------------------------------------------------
 	10. Social
 --------------------------------------------------------------*/
-.basr-social-share {
-  left:0;
-  right:0;
-  width: 25%;
-  text-align:center;
-  padding:0 auto;
-}
+    .basr-social-share {
+      left: 0;
+      right: 0;
+      width: 25%;
+      text-align: center;
+      padding: 0 auto;
+    }
 
-.social ul {
-  list-style: none;
-  padding-left: 0;
-  padding-right: 0;
-}
-.social ul li {
-  border: 5px solid #181251;
-  border-radius: 50%;
-  float: left;
-  position: relative;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-@media only screen and (max-width: 480px) {
-  .social ul li {
-    border-width: 4px;
-    width: 30px;
-    height: 30px;
-  }
-}
-.social ul li:not(:last-child) {
-  margin-right: 10px;
-}
-.social ul li:before {
-  content: '';
-  border-radius: 50%;
-  /* -webkit-shadow: inset 0 0px 3px rgba(149, 90, 42, 0.28), 0px 0px 0px 2px rgba(149, 90, 42, 0.28);
+    .social ul {
+      list-style: none;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .social ul li {
+      border: 5px solid #181251;
+      border-radius: 50%;
+      float: left;
+      position: relative;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+    }
+
+    @media only screen and (max-width: 480px) {
+      .social ul li {
+        border-width: 4px;
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .social ul li:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    .social ul li:before {
+      content: '';
+      border-radius: 50%;
+      /* -webkit-shadow: inset 0 0px 3px rgba(149, 90, 42, 0.28), 0px 0px 0px 2px rgba(149, 90, 42, 0.28);
   -ms-box-shadow: inset 0 0px 3px rgba(149, 90, 42, 0.28), 0px 0px 0px 2px rgba(149, 90, 42, 0.28);
   box-shadow: inset 0 0px 3px rgba(149, 90, 42, 0.28), 0px 0px 0px 2px rgba(149, 90, 42, 0.28); */
-  -webkit-shadow: inset 0 0px 3px rgba(108, 44, 160, 0.28), 0px 0px 0px 2px rgba(108, 44, 160, 0.28);
-  -ms-box-shadow: inset 0 0px 3px rgba(108, 44, 160, 0.28), 0px 0px 0px 2px rgba(108, 44, 160, 0.28);
-  box-shadow: inset 0 0px 3px rgba(108, 44, 160, 0.28), 0px 0px 0px 2px rgba(108, 44, 160, 0.28);
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 40px;
-  height: 40px;
-  opacity: 0.35;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-@media only screen and (max-width: 480px) {
-  .social ul li:before {
-    width: 30px;
-    height: 30px;
-  }
-}
-.social ul li:hover {
-  border-color: #e91c58;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-.social ul li:hover:before {
-  -webkit-shadow: inset 0 0px 3px rgba(108, 44, 160, 0.28), 0px 0px 0px 2px rgba(108, 44, 160, 0.28);
-  -ms-box-shadow: inset 0 0px 3px rgba(108, 44, 160, 0.28), 0px 0px 0px 2px rgba(108, 44, 160, 0.28);
-  box-shadow: inset 0 0px 3px rgba(108, 44, 160, 0.28), 0px 0px 0px 2px rgba(108, 44, 160, 0.28);
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-.social ul li:hover i {
-  color: #6a57d6;
-  -webkit-stroke-width: 5.3px;
-  -webkit-stroke-color: #2931a3;
-  -webkit-fill-color: #2931a3;
-  text-shadow: 1px 0px 20px #2931a3;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-.social ul li a {
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  width: 40px;
-  height: 40px;
-  line-height: 60px;
-}
-@media only screen and (max-width: 480px) {
-  .social ul li a {
-    background-size: cover;
-    top: -5px;
-    left: -5px;
-    width: 30px;
-    height: 30px;
-    line-height: 45px;
-  }
-}
-.social ul li a:before {
-  content: '';
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 36px;
-  height: 35px;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  opacity: 0;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-@media only screen and (max-width: 480px) {
-  .social ul li a:before {
-    background-size: cover;
-    width: 20px;
-    height: 20px;
-  }
-}
-.social ul li a:after {
-  content: '';
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 36px;
-  height: 35px;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-@media only screen and (max-width: 480px) {
-  .social ul li a:after {
-    background-size: cover;
-    width: 20px;
-    height: 20px;
-  }
-}
-.social ul li a:hover:before {
-  opacity: 1;
-  -webkit-transform: translate(-50%, -50%) rotate(360deg);
-  -ms-transform: translate(-50%, -50%) rotate(360deg);
-  transform: translate(-50%, -50%) rotate(360deg);
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.social ul li a:hover:after {
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%) rotate(360deg);
-  -ms-transform: translate(-50%, -50%) rotate(360deg);
-  transform: translate(-50%, -50%) rotate(360deg);
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.social ul li a i {
-  color: #f039b9;
-  font-size: 13px;
-  font-weight: 900;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-stroke-width: 5.3px;
-  -webkit-stroke-color: #ffead3;
-  -webkit-fill-color: #ffead3;
-  text-shadow: 1px 0px 20px #ffead3;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-@media only screen and (max-width: 480px) {
-  .social ul li a i {
-    font-size: 8px;
-  }
-}
-.social ul li a i.fa-envelope {
-  font-size: 7px;
-  top: 48%;
-}
-.k2t-footer.dark-style .social li a,
-.dark-style .social li a {
-  color: #fff;
-}
-.k2t-footer.dark-style .social li a:hover,
-.dark-style .social li a:hover {
-  color: #fff;
-}
-.basr-social-share.social li:hover a {
-  color: #898989;
-}
-.basr-social-share.social li a {
-  border-width: 0;
-  color: #cccccc;
-}
-.basr-social-share.social li a:hover {
-  color: #898989;
-}
-.basr-social-share.social li a span {
-  display: none;
-}
-   </style>
-   <link rel="stylesheet" href="css/style.css">
+      -webkit-shadow: inset 0 0px 3px rgba(108, 44, 160, 0.28), 0px 0px 0px 2px rgba(108, 44, 160, 0.28);
+      -ms-box-shadow: inset 0 0px 3px rgba(108, 44, 160, 0.28), 0px 0px 0px 2px rgba(108, 44, 160, 0.28);
+      box-shadow: inset 0 0px 3px rgba(108, 44, 160, 0.28), 0px 0px 0px 2px rgba(108, 44, 160, 0.28);
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 40px;
+      height: 40px;
+      opacity: 0.35;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+    }
 
-   <style>
-       
+    @media only screen and (max-width: 480px) {
+      .social ul li:before {
+        width: 30px;
+        height: 30px;
+      }
+    }
 
-.paddingTB60 {
-    padding-top:60px;
-    padding-bottom:60px;
-}
+    .social ul li:hover {
+      border-color: #e91c58;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+    }
 
-   </style>
- </head>
- <body class="hero">
+    .social ul li:hover:before {
+      -webkit-shadow: inset 0 0px 3px rgba(108, 44, 160, 0.28), 0px 0px 0px 2px rgba(108, 44, 160, 0.28);
+      -ms-box-shadow: inset 0 0px 3px rgba(108, 44, 160, 0.28), 0px 0px 0px 2px rgba(108, 44, 160, 0.28);
+      box-shadow: inset 0 0px 3px rgba(108, 44, 160, 0.28), 0px 0px 0px 2px rgba(108, 44, 160, 0.28);
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+    }
+
+    .social ul li:hover i {
+      color: #6a57d6;
+      -webkit-stroke-width: 5.3px;
+      -webkit-stroke-color: #2931a3;
+      -webkit-fill-color: #2931a3;
+      text-shadow: 1px 0px 20px #2931a3;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+    }
+
+    .social ul li a {
+      border-radius: 50%;
+      display: block;
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      width: 40px;
+      height: 40px;
+      line-height: 60px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      .social ul li a {
+        background-size: cover;
+        top: -5px;
+        left: -5px;
+        width: 30px;
+        height: 30px;
+        line-height: 45px;
+      }
+    }
+
+    .social ul li a:before {
+      content: '';
+      border-radius: 50%;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 36px;
+      height: 35px;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      opacity: 0;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+    }
+
+    @media only screen and (max-width: 480px) {
+      .social ul li a:before {
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .social ul li a:after {
+      content: '';
+      border-radius: 50%;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 36px;
+      height: 35px;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+    }
+
+    @media only screen and (max-width: 480px) {
+      .social ul li a:after {
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .social ul li a:hover:before {
+      opacity: 1;
+      -webkit-transform: translate(-50%, -50%) rotate(360deg);
+      -ms-transform: translate(-50%, -50%) rotate(360deg);
+      transform: translate(-50%, -50%) rotate(360deg);
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+
+    .social ul li a:hover:after {
+      opacity: 0;
+      -webkit-transform: translate(-50%, -50%) rotate(360deg);
+      -ms-transform: translate(-50%, -50%) rotate(360deg);
+      transform: translate(-50%, -50%) rotate(360deg);
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+
+    .social ul li a i {
+      color: #f039b9;
+      font-size: 13px;
+      font-weight: 900;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-stroke-width: 5.3px;
+      -webkit-stroke-color: #ffead3;
+      -webkit-fill-color: #ffead3;
+      text-shadow: 1px 0px 20px #ffead3;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+    }
+
+    @media only screen and (max-width: 480px) {
+      .social ul li a i {
+        font-size: 8px;
+      }
+    }
+
+    .social ul li a i.fa-envelope {
+      font-size: 7px;
+      top: 48%;
+    }
+
+    .k2t-footer.dark-style .social li a,
+    .dark-style .social li a {
+      color: #fff;
+    }
+
+    .k2t-footer.dark-style .social li a:hover,
+    .dark-style .social li a:hover {
+      color: #fff;
+    }
+
+    .basr-social-share.social li:hover a {
+      color: #898989;
+    }
+
+    .basr-social-share.social li a {
+      border-width: 0;
+      color: #cccccc;
+    }
+
+    .basr-social-share.social li a:hover {
+      color: #898989;
+    }
+
+    .basr-social-share.social li a span {
+      display: none;
+    }
+  </style>
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .paddingTB60 {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  </style>
+</head>
+
+<body class="hero">
   <nav class="navbar navbar-expand-lg navbar-default bg-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="images/aideone.png" alt="AideOne" height="50" class='img-responsive'></a>
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <a class="navbar-brand" href="index.html"><img src="images/aideone.png" alt="AideOne" height="50"
+          class='img-responsive'></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="main_nav">
-      
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"> <a class="nav-link" href="index.html">Home </a> </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="#" data-toggle="dropdown"> About Us </a>
-          <ul class="dropdown-menu dropdown-menu-right">
-            <li><a class="dropdown-item" href="about.html"> Overview</a></li>
-            <li><a class="dropdown-item" href="about_partner.html"> Meet Our Partners </a></li>
-            <li><a class="dropdown-item"> Meet Our Team </a></li>
-          </ul>
-      </li>
-      <li class="nav-item"><a class="nav-link" href="newsletters.html">Insights </a></li>
-        <li class="nav-item dropdown">
-            <a class="nav-link" href="#" data-toggle="dropdown">Services</a>
-              <ul class="dropdown-menu dropdown-menu-right">
-                <li><a class="dropdown-item" href="services.html">Bookkeeping and Accounting Services</a></li>
-                <li><a class="dropdown-item" href="services.html">Tax Compliance and Advisory</a></li>
-                <li><a class="dropdown-item" href="services.html">Finance Transformation</a></li>
-                <li><a class="dropdown-item" href="services.html">Finance function resourcing and outsourcing</a></li>
-                <li><a class="dropdown-item" href="services.html">Audit and Assurance Service</a></li>
-                <li><a class="dropdown-item" href="services.html">Human Resource and Payroll Services</a></li>
-                  <li><a class="dropdown-item" href="school.html">AideOne School of Finance and Tax</a></li>
-              </ul>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"> <a class="nav-link" href="index.html">Home </a> </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" data-toggle="dropdown"> About Us </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li><a class="dropdown-item" href="about.html"> Overview</a></li>
+              <li><a class="dropdown-item" href="about_partner.html"> Meet Our Partners </a></li>
+              <li><a class="dropdown-item"> Meet Our Team </a></li>
+            </ul>
           </li>
-        <li class="nav-item"><a class="nav-link" href="contact.html"> Contact Us </a></li>
-        <li class="nav-item"><a class="nav-link" href="careers.html">Careers </a></li>
-      </ul>
+          <li class="nav-item"><a class="nav-link" href="newsletters.html">Insights </a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" data-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li><a class="dropdown-item" href="services.html">Bookkeeping and Accounting Services</a></li>
+              <li><a class="dropdown-item" href="services.html">Tax Compliance and Advisory</a></li>
+              <li><a class="dropdown-item" href="services.html">Finance Transformation</a></li>
+              <li><a class="dropdown-item" href="services.html">Finance function resourcing and outsourcing</a></li>
+              <li><a class="dropdown-item" href="services.html">Audit and Assurance Service</a></li>
+              <li><a class="dropdown-item" href="services.html">Human Resource and Payroll Services</a></li>
+              <li><a class="dropdown-item" href="school.html">AideOne School of Finance and Tax</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html"> Contact Us </a></li>
+          <li class="nav-item"><a class="nav-link" href="careers.html">Careers </a></li>
+        </ul>
       </div><!-- end row -->
     </div>
   </nav>
-         <!-- navbar-collapse.// -->
-    <!-- Navigation ends -->
-    <div class="main">
-    <section class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark" style="height:60vh; background-image: url(images/pageheader.jpg);">
-     <div class="container-fluid">
-      <div class="row  justify-content-center align-items-center d-flex text-center h-100">
-        <div class="col-12 col-md-8  h-50 ">
+  <!-- navbar-collapse.// -->
+  <!-- Navigation ends -->
+  <div class="main">
+    <section class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark"
+      style="height:60vh; background-image: url(images/pageheader.jpg);">
+      <div class="container-fluid">
+        <div class="row  justify-content-center align-items-center d-flex text-center h-100">
+          <div class="col-12 col-md-8  h-50 ">
             <!-- <h1 class="display-2  mb-2 mt-5"><strong>AideOne</strong> </h1> -->
-            <h1 class="text-uppercase text-light">Meet Our Team <hr style="width:10%; height:3px; border:none; color:red; background-color:#e91c58;"></h1>
+            <h1 class="text-uppercase text-light">Meet Our Team
+              <hr style="width:10%; height:3px; border:none; color:red; background-color:#e91c58;">
+            </h1>
+          </div>
         </div>
       </div>
-    </div>
     </section>
 
     <div class="bread-bar">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-sm-6 col-xs-8">
-                      <ol class="breadcrumb">
-                          <li><a href="index.html">Home</a></li>
-                          <li><a href="about.html">About Us</a></li>
-                          <li class="active">Meet Our Team</li>
-                      </ol>
-                </div>
-              </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-8">
+            <ol class="breadcrumb">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li class="active">Meet Our Team</li>
+            </ol>
           </div>
+        </div>
       </div>
-        <div class="container-fluid px-2 px-md-4 py-5 mx-auto">
-          <!-- <div class="heading-title text-center">
+    </div>
+    <div class="container-fluid px-2 px-md-4 py-5 mx-auto">
+      <!-- <div class="heading-title text-center">
             <div class="space-200"></div>
             <p class="p-top-30 half-txt lead"><strong><em>“Coming together is a beginning; keeping together is progress; working together is success.”</em> – Henry Ford</strong></p>
         </div> -->
-      
-        <!-- meet partner -->
-        <!-- <div class="justify-content-center">
+
+      <!-- meet partner -->
+      <!-- <div class="justify-content-center">
           <div class="card card-main">
             <div class="card-body"> -->
 
-              <!-- meet ikechi -->
-             <div class="wrapper profile-page">
-  <div class="main-container">
-    <div class="content main">
-          <div class="employee-profile-panel">
+
+      <!-- meet ikechi -->
+      <div class="wrapper profile-page">
+        <div class="main-container">
+          <div class="content main">
+            <div class="employee-profile-panel">
               <div class="employee-profile-container">
                 <div class="tier">
-                      <div class="col-100">
-                      </div> 
+                  <div class="col-100">
                   </div>
-                  <div class="tier">
-                      <div class="col-90 main-col">
-  
-                          <h1 class="primary-headline white-title">Ikechi Nwankwo</h1>
-                          <h2 class="secondary-headline">Associate | Tax &amp; Regulatory
-                          </h2>
-              <h3 class="tertiary-headline">B.Sc. Accounting</h3>
-              <div class="employee-mobile-content"> 
-                            <div class="profile-image mt-3" id="employee-profile__image-mobile">
-                                <img src="images/IMG-47.jpg" width="150" height="130" class='img-responsive' content="image/" alt="ikechi nwankwo" data-aspectratio="1:1"/>
-                            </div>
-                            
-                          </div>
-                          <div class="contact-links-wrapper">
-                            <ul class="contact-links" id="employee-profile__contact-links">
-                              <li>
-                                <i class="fa fa-envelope"></i>
-                                  <a class="btn-floating btn-envelope mx-1" href="mailto:ikechi.nwankwo@aideone.com.ng" target="blank">
-                                    ikechi.nwankwo@aideone.com.ng
-                           </a>
-                           </li>
-                            </ul> 
-                            <div class="social">
-                             <ul class="contact-links social-icons" id="employee-profile__social-share">
-                               <li>
-                                <a class="linkedin" target="blank" href="https://www.linkedin.com/in/ikechi-nwankwo-575662175/">
-                                <i class="fa fa-linkedin"></i>
-                                </a>
-                              </li>
-                              <!-- <li>
+                </div>
+                <div class="tier">
+                  <div class="col-90 main-col">
+
+                    <h1 class="primary-headline white-title">Ikechi Nwankwo</h1>
+                    <h2 class="secondary-headline">Associate | Tax &amp; Regulatory
+                    </h2>
+                    <h3 class="tertiary-headline">B.Sc. Accounting</h3>
+                    <div class="employee-mobile-content">
+                      <div class="profile-image mt-3" id="employee-profile__image-mobile">
+                        <img src="images/IMG-47.jpg" width="150" height="130" class='img-responsive' content="image/"
+                          alt="ikechi nwankwo" data-aspectratio="1:1" />
+                      </div>
+
+                    </div>
+                    <div class="contact-links-wrapper">
+                      <ul class="contact-links" id="employee-profile__contact-links">
+                        <li>
+                          <i class="fa fa-envelope"></i>
+                          <a class="btn-floating btn-envelope mx-1" href="mailto:ikechi.nwankwo@aideone.com.ng"
+                            target="blank">
+                            ikechi.nwankwo@aideone.com.ng
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="social">
+                        <ul class="contact-links social-icons" id="employee-profile__social-share">
+                          <li>
+                            <a class="linkedin" target="blank"
+                              href="https://www.linkedin.com/in/ikechi-nwankwo-575662175/">
+                              <i class="fa fa-linkedin"></i>
+                            </a>
+                          </li>
+                          <!-- <li>
                                 <a class="facebook" target="blank" href="https://web.facebook.com/ikechi">
                                 <i class="fa fa-facebook"></i>
                                 </a>
                                  </li>     -->
-                              </ul> 
-                            </div> 
-                             
-               </div>	
-                         
+                        </ul>
                       </div>
-                      <div class="col-10 side-col">
-                          <div class="profiles-image" id="employee-profile__image-desktop">
-                              <img src="images/IMG-47.jpg" class='img-responsive' content="image/" alt="ikechi nwankwo" data-aspectratio="1:1"/>
-                          </div>
-              
-                            
-                      </div>
+
+                    </div>
+
                   </div>
+                  <div class="col-10 side-col">
+                    <div class="profiles-image" id="employee-profile__image-desktop">
+                      <img src="images/IMG-47.jpg" class='img-responsive' content="image/" alt="ikechi nwankwo"
+                        data-aspectratio="1:1" />
+                    </div>
+
+
+                  </div>
+                </div>
               </div>
+            </div>
           </div>
-  </div>
-  </div>
-  </div>
-    <!-- meet ikechi ends -->
+        </div>
+      </div>
+      <!-- meet ikechi ends -->
 
-    
-              <!-- meet grace -->
-              <div class="wrapper profile-page">
-                <div class="main-container">
-                  <div class="content main">
-                        <div class="employee-profile-panel">
-                            <div class="employee-profile-container">
-                              <div class="tier">
-                                    <div class="col-100">
-                                    </div> 
-                                </div>
-                                <div class="tier">
-                                    <div class="col-90 main-col">
-                
-                                        <h2 class="primary-headline white-title">Grace Sobande</h2>
-                                        <h2 class="secondary-headline">Associate | Accounting &amp; Financial Advisory
-                                        </h2>
-                            <h3 class="tertiary-headline">B.Sc. Accounting</h3>
-                            <div class="employee-mobile-content"> 
-                                          <div class="profile-image mt-3" id="employee-profile__image-mobile">
-                                              <img src="images/grace.jpg" width="150" height="130" class='img-responsive' content="image/" alt="grace sobande" data-aspectratio="1:1"/>
-                                          </div>
-                                          
-                                        </div>
-                                        <div class="contact-links-wrapper">
-                                          <ul class="contact-links" id="employee-profile__contact-links">
-                                            <li>
-                                              <i class="fa fa-envelope"></i>
-                                                <a class="btn-floating btn-envelope mx-1" href="mailto:grace.sobande@aideone.com.ng" target="blank">
-                                                  grace.sobande@aideone.com.ng
-                                         </a>
-                                         </li>
-                                          </ul> 
-                                          <div class="social">
-                                           <ul class="contact-links social-icons" id="employee-profile__social-share">
-                                             <li>
-                                              <a class="linkedin" target="blank" href="https://www.linkedin.com/in/grace-sobande-a58615116/">
-                                              <i class="fa fa-linkedin"></i>
-                                              </a>
-                                            </li>
-                                            <!-- <li>
-                                              <a class="facebook" target="blank" href="https://web.facebook.com/popogbe.grace">
-                                              <i class="fa fa-facebook"></i>
-                                              </a>
-                                               </li>     -->
-                                            </ul> 
-                                          </div> 
-                                           
-                             </div>	
-                              
-                                    </div>
-                                    <div class="col-10 side-col">
-                                        <div class="profiles-image" id="employee-profile__image-desktop">
-                                            <img src="images/grace.jpg" class='img-responsive' content="image/" alt="grace sobande" data-aspectratio="1:1"/>
-                                        </div>
-                            
-                                          
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-                </div>
-                </div>
-                  <!-- meet grace ends -->
 
-    <!-- meet dotun -->
-        
-    <div class="wrapper profile-page">
-      <div class="main-container">
-        <div class="content main">
-              <div class="employee-profile-panel">
-                  <div class="employee-profile-container">
-                      <div class="tier">
-                          <div class="col-90 main-col">
-      
-                              <h2 class="primary-headline white-title">Oludotun Agbaje</h2>
-                              <h2 class="secondary-headline">Associate | Accounting &amp; Financial Advisory
-                              </h2>
-                  <h3 class="tertiary-headline">ACA | B.Sc Economics</h3>
-                  <div class="employee-mobile-content"> 
-                                <div class="profile-image mt-3" id="employee-profile__image-mobile">
-                                    <img src="images/IMG-38.jpg" width="150" height="130" class='img-responsive' content="image/" alt="oludotun agbaje" data-aspectratio="1:1"/>
-                                </div>
-                                
-                              </div>
-                              <div class="contact-links-wrapper">
-                                <ul class="contact-links" id="employee-profile__contact-links">
-                                  <li>
-                                    <i class="fa fa-envelope"></i>
-                                      <a class="btn-floating btn-envelope mx-1" href="mailto:oludotun.agbaje@aideone.com.ng" target="blank">
-                                        oludotun.agbaje@aideone.com.ng
-                               </a>
-                               </li>
-                                </ul> 
-                                <div class="social">
-                                 <ul class="contact-links social-icons" id="employee-profile__social-share">
-                                   <li>
-                                    <a class="linkedin" target="blank" href="https://www.linkedin.com/in/agbaje-oludotun-a43264167/">
-                                    <i class="fa fa-linkedin"></i>
-                                    </a>
-                                  </li>
-                                  <!-- <li>
+
+
+      <!-- meet dotun -->
+
+      <div class="wrapper profile-page">
+        <div class="main-container">
+          <div class="content main">
+            <div class="employee-profile-panel">
+              <div class="employee-profile-container">
+                <div class="tier">
+                  <div class="col-90 main-col">
+
+                    <h2 class="primary-headline white-title">Oludotun Agbaje</h2>
+                    <h2 class="secondary-headline">Associate | Accounting &amp; Financial Advisory
+                    </h2>
+                    <h3 class="tertiary-headline">ACA | B.Sc Economics</h3>
+                    <div class="employee-mobile-content">
+                      <div class="profile-image mt-3" id="employee-profile__image-mobile">
+                        <img src="images/IMG-38.jpg" width="150" height="130" class='img-responsive' content="image/"
+                          alt="oludotun agbaje" data-aspectratio="1:1" />
+                      </div>
+
+                    </div>
+                    <div class="contact-links-wrapper">
+                      <ul class="contact-links" id="employee-profile__contact-links">
+                        <li>
+                          <i class="fa fa-envelope"></i>
+                          <a class="btn-floating btn-envelope mx-1" href="mailto:oludotun.agbaje@aideone.com.ng"
+                            target="blank">
+                            oludotun.agbaje@aideone.com.ng
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="social">
+                        <ul class="contact-links social-icons" id="employee-profile__social-share">
+                          <li>
+                            <a class="linkedin" target="blank"
+                              href="https://www.linkedin.com/in/agbaje-oludotun-a43264167/">
+                              <i class="fa fa-linkedin"></i>
+                            </a>
+                          </li>
+                          <!-- <li>
                                     <a class="facebook" target="blank" href="https://web.facebook.com/oludotun.yesufu">
                                     <i class="fa fa-facebook"></i>
                                     </a>
                                      </li>     -->
-                                  </ul> 
-                                </div> 
-                                 
-                   </div>	
-                    
-                          </div>
-                          <div class="col-10 side-col">
-                              <div class="profiles-image" id="employee-profile__image-desktop">
-                                  <img src="images/IMG-38.jpg" class='img-responsive' content="image/" alt="oludotun agbaje" data-aspectratio="1:1"/>
-                              </div> 
-                          </div>
+                        </ul>
                       </div>
-                  </div>
-              </div>
-      </div>
-      </div>
-      </div>
-    
-    
-    <!-- meet dotun ends -->
 
-    
-              <!-- meet tofunmi -->
-              <div class="wrapper profile-page">
-                <div class="main-container">
-                  <div class="content main">
-                        <div class="employee-profile-panel">
-                            <div class="employee-profile-container">
-                              <div class="tier">
-                                    <div class="col-100">
-                                    </div> 
-                                </div>
-                                <div class="tier">
-                                    <div class="col-90 main-col">
-                
-                                        <h2 class="primary-headline white-title">Jesutofunmi Osho</h2>
-                                        <h2 class="secondary-headline">Associate | Audit Services
-                                        </h2>
-                            <h3 class="tertiary-headline">ACA | B.Sc Economics</h3>
-                            <div class="employee-mobile-content"> 
-                                          <div class="profile-image mt-3" id="employee-profile__image-mobile">
-                                              <img src="images/IMG-36.jpg" width="150" height="130" class='img-responsive' content="image/" alt="jesutofunmi osho" data-aspectratio="1:1"/>
-                                          </div>
-                                          
-                                        </div>
-                                        <div class="contact-links-wrapper">
-                                          <ul class="contact-links" id="employee-profile__contact-links">
-                                            <li>
-                                              <i class="fa fa-envelope"></i>
-                                                <a class="btn-floating btn-envelope mx-1" href="mailto:jesutofunmi.osho@aideone.com.ng" target="blank">
-                                                  jesutofunmi.osho@aideone.com.ng
-                                         </a>
-                                         </li>
-                                          </ul> 
-                                          <div class="social">
-                                           <ul class="contact-links social-icons" id="employee-profile__social-share">
-                                             <li>
-                                              <a class="linkedin" target="blank" href="https://www.linkedin.com/in/jesutofunmi-osho-111a23b2/">
-                                              <i class="fa fa-linkedin"></i>
-                                              </a>
-                                            </li>
-                                            <!-- <li>
+                    </div>
+
+                  </div>
+                  <div class="col-10 side-col">
+                    <div class="profiles-image" id="employee-profile__image-desktop">
+                      <img src="images/IMG-38.jpg" class='img-responsive' content="image/" alt="oludotun agbaje"
+                        data-aspectratio="1:1" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- meet dotun ends -->
+
+
+      <!-- meet Seun -->
+      <div class="wrapper profile-page">
+        <div class="main-container">
+          <div class="content main">
+            <div class="employee-profile-panel">
+              <div class="employee-profile-container">
+                <div class="tier">
+                  <div class="col-100">
+                  </div>
+                </div>
+                <div class="tier">
+                  <div class="col-90 main-col">
+
+                    <h2 class="primary-headline white-title">Odumusi Seun</h2>
+                    <h2 class="secondary-headline">Business Development Adminstrator
+                    </h2>
+                    <h3 class="tertiary-headline"></h3>
+                    <div class="employee-mobile-content">
+                      <div class="profile-image mt-3" id="employee-profile__image-mobile">
+                        <img src="images/seun.jpg" width="150" height="130" class='img-responsive' content="image/"
+                          alt="seun odumusi" data-aspectratio="1:1" />
+                      </div>
+
+                    </div>
+                    <div class="contact-links-wrapper">
+                      <ul class="contact-links" id="employee-profile__contact-links">
+                        <li>
+                          <i class="fa fa-envelope"></i>
+                          <a class="btn-floating btn-envelope mx-1" href="mailto:seun.odumusi@aideone.com.ng"
+                            target="blank">
+                            seun.odumusi@aideone.com.ng
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="social">
+                        <ul class="contact-links social-icons" id="employee-profile__social-share">
+                          <li>
+                            <a class="linkedin" target="blank"
+                              href="https://www.linkedin.com/in/odumusi-seun-04b87b164/">
+                              <i class="fa fa-linkedin"></i>
+                            </a>
+                          </li>
+                          <!-- <li>
                                               <a class="facebook" target="blank" href="https://web.facebook.com/popogbe.jesutofunmi">
                                               <i class="fa fa-facebook"></i>
                                               </a>
                                                </li>     -->
-                                            </ul> 
-                                          </div> 
-                                           
-                             </div>	
-                              
-                                    </div>
-                                    <div class="col-10 side-col">
-                                        <div class="profiles-image" id="employee-profile__image-desktop">
-                                            <img src="images/IMG-36.jpg" class='img-responsive' content="image/" alt="jesutofunmi osho" data-aspectratio="1:1"/>
-                                        </div>
-                            
-                                          
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-                </div>
-                </div>
-                  <!-- meet tofunmi ends -->
-
-    <!-- meet samuel -->
-        
-    <div class="wrapper profile-page">
-      <div class="main-container">
-        <div class="content main">
-              <div class="employee-profile-panel">
-                  <div class="employee-profile-container">
-                      <div class="tier">
-                          <div class="col-90 main-col">
-      
-                              <h2 class="primary-headline white-title">Samuel Iroaye</h2>
-                              <h2 class="secondary-headline">Senior | Accounting &amp; Financial Advisory
-                              </h2>
-                  <h3 class="tertiary-headline">ACA | HND Accounting </h3>
-                  <div class="employee-mobile-content"> 
-                                <div class="profile-image mt-3" id="employee-profile__image-mobile">
-                                    <img src="images/IMG-9.jpg" width="150" height="130" class='img-responsive' content="image/" alt="samuel iroaye" data-aspectratio="1:1"/>
-                                </div>
-                                
-                              </div>
-                              <div class="contact-links-wrapper">
-                                <ul class="contact-links" id="employee-profile__contact-links">
-                                  <li>
-                                    <i class="fa fa-envelope"></i>
-                                      <a class="btn-floating btn-envelope mx-1" href="mailto:samuel.iroaye@aideone.com.ng" target="blank">
-                                        samuel.iroaye@aideone.com.ng
-                               </a>
-                               </li>
-                                </ul> 
-                                <div class="social">
-                                 <ul class="contact-links social-icons" id="employee-profile__social-share">
-                                   <li>
-                                    <a class="linkedin" target="blank" href="https://www.linkedin.com/in/iroaye-samuel-53922115a/">
-                                    <i class="fa fa-linkedin"></i>
-                                    </a>
-                                  </li>
-                                  <!-- <li>
-                                    <a class="facebook" target="blank" href="https://web.facebook.com/samuel.iroaye">
-                                    <i class="fa fa-facebook"></i>
-                                    </a>
-                                     </li>     -->
-                                  </ul> 
-                                </div> 
-                                 
-                   </div>	
-                    
-                          </div>
-                          <div class="col-10 side-col">
-                              <div class="profiles-image" id="employee-profile__image-desktop">
-                                  <img src="images/IMG-9.jpg" class='img-responsive' content="image/" alt="samuel iroaye" data-aspectratio="1:1"/>
-                              </div> 
-                          </div>
+                        </ul>
                       </div>
-                  </div>
-              </div>
-      </div>
-      </div>
-      </div>
-    
-    
-    <!-- meet samuel ends -->
 
-<!--    
+                    </div>
+
+                  </div>
+                  <div class="col-10 side-col">
+                    <div class="profiles-image" id="employee-profile__image-desktop">
+                      <img src="images/seun.jpg" class='img-responsive' content="image/" alt="seun odumusi"
+                        data-aspectratio="1:1" />
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- meet seun ends -->
+
+      <!-- meet omodele -->
+      <div class="wrapper profile-page">
+        <div class="main-container">
+          <div class="content main">
+            <div class="employee-profile-panel">
+              <div class="employee-profile-container">
+                <div class="tier">
+                  <div class="col-100">
+                  </div>
+                </div>
+                <div class="tier">
+                  <div class="col-90 main-col">
+
+                    <h2 class="primary-headline white-title">Omodele Daodu</h2>
+                    <h2 class="secondary-headline">Associate
+                    </h2>
+                    <h3 class="tertiary-headline"> Bsc Accounting | ACILRM</h3>
+                    <div class="employee-mobile-content">
+                      <div class="profile-image mt-3" id="employee-profile__image-mobile">
+                        <img src="images/omodele.jpg" width="150" height="130" class='img-responsive' content="image/"
+                          alt="omodele daodu" data-aspectratio="1:1" />
+                      </div>
+
+                    </div>
+                    <div class="contact-links-wrapper">
+                      <ul class="contact-links" id="employee-profile__contact-links">
+                        <li>
+                          <i class="fa fa-envelope"></i>
+                          <a class="btn-floating btn-envelope mx-1" href="mailto:omodele.daodu@aideone.com.ng"
+                            target="blank">
+                            omodele.daodu@aideone.com.ng
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="social">
+                        <ul class="contact-links social-icons" id="employee-profile__social-share">
+                          <li>
+                            <a class="linkedin" target="blank"
+                              href="https://www.linkedin.com/in/omodele-daodu-acilrm-4610a5b6/">
+                              <i class="fa fa-linkedin"></i>
+                            </a>
+                          </li>
+                          <!-- <li>
+                                              <a class="facebook" target="blank" href="https://web.facebook.com/popogbe.jesutofunmi">
+                                              <i class="fa fa-facebook"></i>
+                                              </a>
+                                               </li>     -->
+                        </ul>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="col-10 side-col">
+                    <div class="profiles-image" id="employee-profile__image-desktop">
+                      <img src="images/omodele.jpg" class='img-responsive' content="image/" alt="jesutofunmi osho"
+                        data-aspectratio="1:1" />
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- meet omodele ends -->
+
+      <!-- meet kolawole -->
+      <div class="wrapper profile-page">
+        <div class="main-container">
+          <div class="content main">
+            <div class="employee-profile-panel">
+              <div class="employee-profile-container">
+                <div class="tier">
+                  <div class="col-100">
+                  </div>
+                </div>
+                <div class="tier">
+                  <div class="col-90 main-col">
+
+                    <h2 class="primary-headline white-title">Samuel kolawole</h2>
+                    <h2 class="secondary-headline">Associate | Intern
+                    </h2>
+                    <h3 class="tertiary-headline">ACA | B.Sc Public Administration ATA</h3>
+                    <div class="employee-mobile-content">
+                      <div class="profile-image mt-3" id="employee-profile__image-mobile">
+                        <img src="images/kolawole.jpg" width="150" height="130" class='img-responsive' content="image/"
+                          alt="samuel kolawole" data-aspectratio="1:1" />
+                      </div>
+
+                    </div>
+                    <div class="contact-links-wrapper">
+                      <ul class="contact-links" id="employee-profile__contact-links">
+                        <li>
+                          <i class="fa fa-envelope"></i>
+                          <a class="btn-floating btn-envelope mx-1" href="mailto:samuel.kolawole@aideone.com.ng"
+                            target="blank">
+                            samuel.kolawole@aideone.com.ng
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="social">
+                        <ul class="contact-links social-icons" id="employee-profile__social-share">
+                          <li>
+                            <a class="linkedin" target="blank" href="https://www.linkedin.com/in/samuelkolawole/">
+                              <i class="fa fa-linkedin"></i>
+                            </a>
+                          </li>
+                          <!-- <li>
+                                              <a class="facebook" target="blank" href="https://web.facebook.com/popogbe.jesutofunmi">
+                                              <i class="fa fa-facebook"></i>
+                                              </a>
+                                               </li>     -->
+                        </ul>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="col-10 side-col">
+                    <div class="profiles-image" id="employee-profile__image-desktop">
+                      <img src="images/kolawole.jpg" class='img-responsive' content="image/" alt="samuel kolawole"
+                        data-aspectratio="1:1" />
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- meet kolawole ends -->
+
+      <!-- meet moji -->
+      <div class="wrapper profile-page">
+        <div class="main-container">
+          <div class="content main">
+            <div class="employee-profile-panel">
+              <div class="employee-profile-container">
+                <div class="tier">
+                  <div class="col-100">
+                  </div>
+                </div>
+                <div class="tier">
+                  <div class="col-90 main-col">
+
+                    <h2 class="primary-headline white-title">Mojisola Olaposi</h2>
+                    <h2 class="secondary-headline">Associate | Intern
+                    </h2>
+                    <h3 class="tertiary-headline">ACA | AAT | HND</h3>
+                    <div class="employee-mobile-content">
+                      <div class="profile-image mt-3" id="employee-profile__image-mobile">
+                        <img src="images/mojisola.jpg" width="150" height="130" class='img-responsive' content="image/"
+                          alt="mojisola olaposi" data-aspectratio="1:1" />
+                      </div>
+
+                    </div>
+                    <div class="contact-links-wrapper">
+                      <ul class="contact-links" id="employee-profile__contact-links">
+                        <li>
+                          <i class="fa fa-envelope"></i>
+                          <a class="btn-floating btn-envelope mx-1" href="mailto:mojisola.olaposi@aideone.com.ng"
+                            target="blank">
+                            mojisola.olaposi@aideone.com.ng
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="social">
+                        <ul class="contact-links social-icons" id="employee-profile__social-share">
+                          <li>
+                            <a class="linkedin" target="blank"
+                              href="https://www.linkedin.com/in/mojisola-olaposi-025200220/">
+                              <i class="fa fa-linkedin"></i>
+                            </a>
+                          </li>
+                          <!-- <li>
+                                              <a class="facebook" target="blank" href="https://web.facebook.com/popogbe.mojisola">laposi                                            <i class="fa fa-facebook"></i>
+                                              </a>
+                                               </li>     -->
+                        </ul>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="col-10 side-col">
+                    <div class="profiles-image" id="employee-profile__image-desktop">
+                      <img src="images/mojisola.jpg" class='img-responsive' content="image/" alt="jesutofunmi osho"
+                        data-aspectratio="1:1" />
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- meet moji ends -->
+      <!--    
         </div>
                   </div>
               </div> -->
-        </div>
+    </div>
 
 
 
 
- 
+
     <!-- <div class="contain"> -->
-      <div class="mb-5 wow fadeIn ocean" data-wow-duration="3s" data-wow-delay="3s">
-        <!-- divider -->
-                   <svg class="editorial"
-                   xmlns="http://www.w3.org/2000/svg"
-                   xmlns:xlink="http://www.w3.org/1999/xlink"
-                   viewBox="0 24 150 28 "
-                   preserveAspectRatio="none">
-               <defs>
-               <path id="gentle-wave"
-               d="M-160 44c30 0 
+    <div class="mb-5 wow fadeIn ocean" data-wow-duration="3s" data-wow-delay="3s">
+      <!-- divider -->
+      <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 
                   58-18 88-18s
                   58 18 88 18 
                   58-18 88-18 
                   58 18 88 18
                   v44h-352z" />
-                </defs>
-                <g class="parallax1">
-                 <use xlink:href="#gentle-wave" x="50" y="3" fill="#f461c1"/>
-                </g>
-                  <g class="parallax2">
-                 <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2"/>
-                  </g>
-                    <g class="parallax3">
-                 <use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1"/>
-                 </g>
-                  <g class="parallax4">
-                 <use xlink:href="#gentle-wave" x="50" y="6" fill="#020d29"/>  
-                </g>
-              </svg>
-              
-                   <!-- divider ends -->
-               </div>
-              <!-- </div> -->
-                    <!-- footer -->
-                    <footer class="page-footer font-small elegant-color  wow slideInUp" data-wow-duration="4s" id="footer">
-                      <!-- Footer Links -->
-                      <div class="container">
-                        <div class="row">
-                          <!--Grid column-->
-                          <div class="col my-5">
-                            <!-- Social buttons -->
-                            <ul class="list-unstyled list-inline mb-0 social text-center quick-links">
-                              <li class="list-inline-item">
-                                <a class="btn-floating btn-fb mx-1" href="#" target="blank">
-                                  <i class="fa fa-facebook-f"></i>
-                                </a>
-                              </li>
-                              <li class="list-inline-item">
-                                <a class="btn-floating btn-tw mx-1" href="#" target="blank">
-                                  <i class="fa fa-twitter"></i>
-                                </a>
-                              </li>
-                              <li class="list-inline-item">
-                                <a class="btn-floating btn-instagram mx-1" href="https://www.instagram.com/aideone_consult/" target="blank">
-                                  <i class="fa fa-instagram"></i>
-                                </a>
-                              </li>
-                              <li class="list-inline-item">
-                                <a class="btn-floating btn-linkedin mx-1" href="https://www.linkedin.com/company/aideone-consulting/" target="blank">
-                                  <i class="fa fa-linkedin-square"></i>
-                                </a>
-                              </li>
-                              <li class="list-inline-item">
-                                <a class="btn-floating btn-envelope mx-1" href="mailto:info@aideone.com.ng" target="_blank">
-                                  <i class="fa fa-envelope"></i>
-                                </a>
-                              </li>
-                            </ul>
-                            <!-- Social buttons -->
-                          </div>
-                          <!--Grid column-->
-                        </div>
-                        <!--Grid row-->
-                      </div>
-                      <!-- Footer Links -->
-                      <!-- Copyright -->	
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white py-3">
-                                        <p class="m-0 text-center text-black">Copyright &copy; <script> document.write(new Date().getFullYear());</script> <a href="#"><span class="span text-violat ">AideOne Consulting </span></a></p>
-                                    </div>
-                                    <hr>
-                                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-                                        <h6><a style="color: #6f5f23; font-size: small;" href="https://github.com/Oluwafemi-iDEAR" target="_blank">Designed by iDEAR Concept </a></h6>
-                                    </div>
-                                    <hr>
-                                </div>
-                      <!-- Copyright -->
-                    </footer>
-                                              <!-- ./Footer ends -->
-  
-  
+        </defs>
+        <g class="parallax1">
+          <use xlink:href="#gentle-wave" x="50" y="3" fill="#f461c1" />
+        </g>
+        <g class="parallax2">
+          <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2" />
+        </g>
+        <g class="parallax3">
+          <use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1" />
+        </g>
+        <g class="parallax4">
+          <use xlink:href="#gentle-wave" x="50" y="6" fill="#020d29" />
+        </g>
+      </svg>
 
-<!-- scroll up script-->
-<script>
-  $(document).ready(function(){
-      $('body').append('<div id="toTop" class="btn btn-info"><span class="glyphicon glyphicon-chevron-up"></span> <i class="fa fa-angle-up fa-2x text-dark"></i> </div>');
-      $(window).scroll(function () {
-      if ($(this).scrollTop() != 0) {
-        $('#toTop').fadeIn();
-      } else {
-        $('#toTop').fadeOut();
-      }
-    }); 
-    $('#toTop').click(function(){
-        $("html, body").animate({ scrollTop: 0 }, 600);
-        return false;
-    });
-});
+      <!-- divider ends -->
+    </div>
+    <!-- </div> -->
+    <!-- footer -->
+    <footer class="page-footer font-small elegant-color  wow slideInUp" data-wow-duration="4s" id="footer">
+      <!-- Footer Links -->
+      <div class="container">
+        <div class="row">
+          <!--Grid column-->
+          <div class="col my-5">
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline mb-0 social text-center quick-links">
+              <li class="list-inline-item">
+                <a class="btn-floating btn-fb mx-1" href="#" target="blank">
+                  <i class="fa fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-tw mx-1" href="#" target="blank">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-instagram mx-1" href="https://www.instagram.com/aideone_consult/"
+                  target="blank">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-linkedin mx-1" href="https://www.linkedin.com/company/aideone-consulting/"
+                  target="blank">
+                  <i class="fa fa-linkedin-square"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-envelope mx-1" href="mailto:info@aideone.com.ng" target="_blank">
+                  <i class="fa fa-envelope"></i>
+                </a>
+              </li>
+            </ul>
+            <!-- Social buttons -->
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Footer Links -->
+      <!-- Copyright -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white py-3">
+          <p class="m-0 text-center text-black">Copyright &copy;
+            <script> document.write(new Date().getFullYear());</script> <a href="#"><span
+                class="span text-violat ">AideOne Consulting </span></a>
+          </p>
+        </div>
+        <hr>
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+          <h6><a style="color: #6f5f23; font-size: small;" href="https://github.com/Oluwafemi-iDEAR"
+              target="_blank">Designed by iDEAR Concept </a></h6>
+        </div>
+        <hr>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- ./Footer ends -->
 
-</script>
-<!-- scroll up script ends-->
-  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
-  <script>
-    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
-    formbutton("create", {action: "https://formspree.io/f/xwkavlbk"})
-  </script>
+
+
+    <!-- scroll up script-->
+    <script>
+      $(document).ready(function () {
+        $('body').append('<div id="toTop" class="btn btn-info"><span class="glyphicon glyphicon-chevron-up"></span> <i class="fa fa-angle-up fa-2x text-dark"></i> </div>');
+        $(window).scroll(function () {
+          if ($(this).scrollTop() != 0) {
+            $('#toTop').fadeIn();
+          } else {
+            $('#toTop').fadeOut();
+          }
+        });
+        $('#toTop').click(function () {
+          $("html, body").animate({ scrollTop: 0 }, 600);
+          return false;
+        });
+      });
+
+    </script>
+    <!-- scroll up script ends-->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+      window.formbutton = window.formbutton || function () { (formbutton.q = formbutton.q || []).push(arguments) };
+      formbutton("create", { action: "https://formspree.io/f/xwkavlbk" })
+    </script>
     <!-- page content ends -->
 
     <script src="js/services.js"></script>
@@ -842,23 +963,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="js/client.js"></script>
     <script src="js/counter.js"></script>
-   
+
     <!-- Script for navbar -->
-   <script>
-        $(document).ready(function(){
-    $(".dropdown").hover(            
-        function() {
-            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
-            $(this).toggleClass('open');        
-        },
-        function() {
-            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
-            $(this).toggleClass('open');       
-        }
-    );
-});
+    <script>
+      $(document).ready(function () {
+        $(".dropdown").hover(
+          function () {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideDown("400");
+            $(this).toggleClass('open');
+          },
+          function () {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideUp("400");
+            $(this).toggleClass('open');
+          }
+        );
+      });
     </script>
- <!-- Script for navbar ends-->
+    <!-- Script for navbar ends-->
 
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/aos.js"></script>
@@ -866,10 +987,12 @@
     <script src="js/main.js"></script>
 
     <script>
-      $(window).scroll(function(){
-      $('nav').toggleClass('scrolled', $(this).scrollTop() > 150);});
-      
+      $(window).scroll(function () {
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 150);
+      });
+
     </script>
 
 </body>
+
 </html>
