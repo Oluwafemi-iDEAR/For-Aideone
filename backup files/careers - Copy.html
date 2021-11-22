@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Services</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="images/aideone.jpg" rel="icon" type="image/png">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/services.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src="js/jquery-1.11.1.min.js"></script>
+	  <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  	<script src="js/bootstrap.min.js"></script>
+	  <script src="js/typewriter.js"></script>
+    <script src='main.js'></script>
+    <style>
+        
+
+.masthead {
+  padding: 3rem 0 7rem;
+  position: relative;
+  background-image: url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, #e91c58 0%, #d22f23 100%);
+  background-size: cover;
+  z-index: 0;
+  margin-top: 30px;
+}
+
+.masthead svg.wave {
+  position: absolute;
+  bottom: -1px;
+  left: 0
+}
+
+.masthead h1 {
+  color: #000;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.1;
+  z-index: 1
+}
+
+.masthead h2 {
+  color: rgba(255, 255, 255, .6);
+  font-weight: 600;
+  z-index: 1;
+  font-size: 1.2rem
+}
+
+.masthead a {
+  text-decoration: none;
+  z-index: 1
+}
+
+
+.masthead a:active {
+  text-decoration: none
+}
+
+@media(min-width:992px) {
+  .masthead h1 {
+      font-size: 3rem
+  }
+  .masthead h2 {
+      font-size: 1.5rem
+  }
+}
+
+.masthead .masthead-cards {
+  position: relative;
+  z-index: 1
+}
+
+.masthead .masthead-cards .shape {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .3);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 30% 70% 70% 30%/30% 30% 70% 70%
+}
+
+.masthead .masthead-cards .card {
+  opacity: 1;
+  font-size: .8rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: .05rem;
+  color: #212529;
+  transition: .15s all
+}
+
+.masthead .masthead-cards .card:hover {
+  margin-top: -.25rem;
+  margin-bottom: .25rem
+}
+
+.masthead .masthead-cards .card:active {
+  margin-top: inherit;
+  margin-bottom: inherit
+}
+
+.masthead .masthead-cards .card.border-bottom-blue:hover {
+  color: #2092ed
+}
+
+/* .masthead .masthead-cards .card.border-bottom-green:hover {
+  color: #28a745
+} */
+
+.masthead .masthead-cards .card.border-bottom-red:hover {
+  color: #dd3d31
+}
+
+/* .masthead .masthead-cards .card.border-bottom-yellow:hover {
+  color: #ffc107
+} */
+
+.masthead-page {
+  padding: 1rem 0 4rem
+}
+
+@media(min-width:992px) {
+  .masthead-page h1 {
+      font-size: 2.5rem
+  }
+}
+
+/* .border-bottom-yellow {
+  border-color: #ffc107!important;
+} */
+
+.border-bottom-red {
+  border-color: #dd3d31!important;
+}
+
+.border-bottom-blue {
+  border-color: #2092ed!important;
+}
+
+/* .border-bottom-green {
+  border-color: #28a745!important;
+} */
+
+.border-bottom-blue, /*.border-bottom-green,*/ .border-bottom-red /*,.border-bottom-yellow */{
+  border-bottom: .4rem solid!important;
+}
+.shadow-lg {
+  box-shadow: 0 2rem 1.5rem -1.5rem rgba(33,37,41,.15),0 0 1.5rem .5rem rgba(33,37,41,.05)!important;
+}
+.border-0 {
+  border: 0!important;
+}
+
+    </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-default bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="images/aideone.png" alt="AideOne" height="50" class='img-responsive'></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="main_nav">
+      
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"> <a class="nav-link" href="index.html">Home </a> </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" data-toggle="dropdown"> About Us </a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li><a class="dropdown-item" href="about.html"> Overview</a></li>
+            <li><a class="dropdown-item" href="about_partner.html"> Meet Our Partners </a></li>
+            <li><a class="dropdown-item" href="about_team.html"> Meet Our Team </a></li>
+          </ul>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="newsletters.html">Insights </a></li>
+        <li class="nav-item dropdown">
+            <a class="nav-link" href="#" data-toggle="dropdown">Services</a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li><a class="dropdown-item" href="services.html">Bookkeeping and Accounting Services</a></li>
+                <li><a class="dropdown-item" href="services.html">Tax Compliance and Advisory</a></li>
+                <li><a class="dropdown-item" href="services.html">Accounting Process Review and Transformation</a></li>
+                <li><a class="dropdown-item" href="services.html">Finance function resourcing and outsourcing</a></li>
+                <li><a class="dropdown-item" href="services.html">Audit and Assurance Service</a></li>
+                <li><a class="dropdown-item" href="services.html">Human Resource and Payroll Services</a></li>
+                  <li><a class="dropdown-item" href="school.html">Aideone School of Finance and Tax</a></li>
+              </ul>
+          </li>
+        <li class="nav-item"><a class="nav-link" href="contact.html"> Contact Us </a></li>
+        <li class="nav-item active"><a class="nav-link">Careers </a></li>
+      </ul>
+      </div><!-- end row -->
+    </div>
+  </nav>
+         <!-- navbar-collapse.// -->
+      <!-- Navigation ends -->
+<div style="background-color: #020d29;">
+    <!-- Demo header-->
+<div class="masthead">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 py-5">
+                <h1 class="mb-4">Aideone School of
+                  Finance and Tax!</h1>
+                <h2 class="m-0">Aideone Academy is a leading learning solution provider with various training products ranging from:
+                   General Board administration Training, General Finance and Operations Management Trainings e.t.c.</h2>
+            </div>
+            <div class="col-lg-5">
+                <div class="py-5 px-4 masthead-cards">
+                    <div class="d-flex">
+                        <a href="school.html" class="w-50 pr-3 pb-4">
+                            <div class="card border-0 border-bottom-blue shadow-lg shadow-hover">
+                                <div class="card-body text-center">
+                                    <div class="text-center">
+                                        <i class="fa fa-pencil fa-4x my-2"></i>
+                                    </div>
+                                    Register
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="w-50 pl-3 pb-4">
+                            <div class="card border-0 border-bottom-red shadow-lg shadow-hover">
+                                <div class="card-body text-center">
+                                    <div class="text-center">
+                                        <i class="fa fa-th fa-4x my-2"></i>
+                                    </div>
+                                    FAQ
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="d-flex">
+                        <a href="services.html" class="w-50 pr-3">
+                            <div class="card border-0 border-bottom-blue shadow-lg shadow-hover">
+                                <div class="card-body text-center">
+                                    <div class="text-center">
+                                        <i class="fa fa-4x fa-list my-2"></i>
+                                    </div>
+                                    Other Services
+                                </div>
+                            </div>
+                        </a>
+                        <a href="index.html" class="w-50 pl-3">
+                            <div class="card border-0 border-bottom-red shadow-lg shadow-hover">
+                                <div class="card-body text-center">
+                                    <div class="text-center">
+                                        <i class="fa fa-4x fa-home my-2"></i>
+                                    </div>
+                                    Home
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="shape"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <svg style="pointer-events: none" class="wave" width="100%" height="50px" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 75">
+        <defs>
+            <style>
+                .a {
+                    fill: none;
+                }
+                
+                .b {
+                    clip-path: url(#a);
+                }
+                
+                .c,
+                .d {
+                    fill: #020d29;
+                }
+                
+                .d {
+                    opacity: 0.5;
+                    isolation: isolate;
+                }
+            </style>
+            <clipPath id="a">
+                <rect class="a" width="1920" height="75"></rect>
+            </clipPath>
+        </defs>
+        <title>wave</title>
+        <g class="b">
+            <path class="c" d="M1963,327H-105V65A2647.49,2647.49,0,0,1,431,19c217.7,3.5,239.6,30.8,470,36,297.3,6.7,367.5-36.2,642-28a2511.41,2511.41,0,0,1,420,48"></path>
+        </g>
+        <g class="b">
+            <path class="d" d="M-127,404H1963V44c-140.1-28-343.3-46.7-566,22-75.5,23.3-118.5,45.9-162,64-48.6,20.2-404.7,128-784,0C355.2,97.7,341.6,78.3,235,50,86.6,10.6-41.8,6.9-127,10"></path>
+        </g>
+        <g class="b">
+            <path class="d" d="M1979,462-155,446V106C251.8,20.2,576.6,15.9,805,30c167.4,10.3,322.3,32.9,680,56,207,13.4,378,20.3,494,24"></path>
+        </g>
+        <g class="b">
+            <path class="d" d="M1998,484H-243V100c445.8,26.8,794.2-4.1,1035-39,141-20.4,231.1-40.1,378-45,349.6-11.6,636.7,73.8,828,150"></path>
+        </g>
+    </svg>
+      </div>
+      
+    <section class="academy_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="about_content">
+              <div class="background_layer"></div>
+                <div class="layer_content wow fadeIn" data-wow-duration="6s">
+                  <div class="section_title"><!-- 
+                    <h5> Academy </h5> -->
+                    <h2>Aideone School of<strong>Finance and Tax</strong>
+                    </h2>
+                    <div class="heading_line"><span></span></div>
+                    <p>Aideone Academy is a leading learning solution provider with various training products ranging from:</p>
+                          <ul>
+                            <li>
+                              International financial reporting standards ((IFRS) Training)
+                            </li>
+                            <li>Tax Regulatory and Economy Update Courses</li>
+                            <li>General Finance and Operations Management Trainings</li>
+                            <li>General Board administration Training</li>
+                          </ul>
+                         <p>Aiding the fulfillment of your career goals with finesse and a professional touch.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+                  <div class="col-lg-5">
+
+                      <div class="academy_box">
+                          <div class="academy_container">
+                              <div class="background_layer"></div>
+                              <div class="layer_content">
+                                  <div class="testimonial_owlCarousel owl-carousel">
+                                      <div class="academy"> 
+                                          <div class="section_title">
+                                  <div class="heading_line"><span></span></div>
+                                  <h2><p class="typewrite" data-period="2000" data-type='[ "Focus on the goal; not the noise.", " We aid your business goals.", "We can best Aid you..." ]'> 
+                        <span class="wrap"></span>
+                        </p></h2>
+                        <!-- <p>Learn the fastest and secure way to grow business with the leader in Professional Services.</p>  --> 
+                        <img class=" img-fluid" src="images/smiling-4654734-removebg-preview.png" alt="card image">
+
+                              </div>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+    </div>
+
+
+    <div class="container">
+    
+    <section class="contact pt-100 pb-100 wow fadeIn" data-wow-duration="5s" id="contact">
+        <div class="container">
+           <div class="row">
+              <div class="col-xl-6 mx-auto text-center">
+                 <div class="section-title mb-100">
+                    <h4>Register!</h4>
+                 </div>
+              </div>
+           </div>
+           <div class="row text-center">
+                 <div class="col-md-8 form mb-5">
+                   <form action="contact.php" method="post" id="form" class="contact-form">
+                       <div class="row">
+                          <div class="col-xl-4">
+                             <input type="text" required placeholder="name" name=”cf_name”>
+                          </div>
+                          <div class="col-xl-4">
+                             <input type="email" required placeholder="email" name=”cf_email”>
+                          </div>
+                          <div class="col-xl-4">
+                             <input type="text" required placeholder="telephone" name=”cf_telephone”>
+                          </div>
+                          <div class="col-xl-12">
+                             <textarea placeholder="message" cols="30" rows="10" name=”cf_message”></textarea>
+                             <input class="mb-3" type="submit" value="send message">
+                          </div>
+                       </div>
+                    </form>
+                 </div>
+                 <div class="col-md-4 details">
+                    <div class="single-contact">
+                      <h4>Contact us now!</h4><br>
+                       <i class="fa fa-map-marker"></i>
+                       <h5>Address</h5>
+                       <p>26 Shittu Animashaun Street,
+                        Off Jogunomi Street, Gbagada phase II,
+                        Lagos State, Nigeria</p>
+                    </div>
+                    <div class="single-contact">
+                       <i class="fa fa-phone"></i>
+                       <h5>Phone</h5>
+                       <p>+2348032006438</p>
+                    </div>
+                    <div class="single-contact">
+                       <i class="fa fa-envelope"></i>
+                       <h5>Email</h5>
+                       <p>info@aideone.com.ng</p>
+                    </div>
+                 </div>
+           </div>
+        </div>
+     </section>
+
+      
+    </div>
+
+
+    <div class="mb-5 wow fadeIn" data-wow-duration="3s" data-wow-delay="3s">
+      <!-- divider -->
+                 <svg class="editorial"
+                 xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 viewBox="0 24 150 28 "
+                 preserveAspectRatio="none">
+             <defs>
+             <path id="gentle-wave"
+             d="M-160 44c30 0 
+                58-18 88-18s
+                58 18 88 18 
+                58-18 88-18 
+                58 18 88 18
+                v44h-352z" />
+              </defs>
+              <g class="parallax1">
+               <use xlink:href="#gentle-wave" x="50" y="3" fill="#f461c1"/>
+              </g>
+                <g class="parallax2">
+               <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2"/>
+                </g>
+                  <g class="parallax3">
+               <use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1"/>
+               </g>
+                <g class="parallax4">
+               <use xlink:href="#gentle-wave" x="50" y="6" fill="#020d29"/>  
+              </g>
+            </svg>
+            
+                 <!-- divider ends -->
+             </div>
+			            <!-- footer -->
+                  <footer class="page-footer font-small elegant-color  wow slideInUp" data-wow-duration="4s" id="footer">
+                    <!-- Footer Links -->
+                    <div class="container">
+                      <div class="row">
+                        <!--Grid column-->
+                        <div class="col my-5">
+                          <!-- Social buttons -->
+                          <ul class="list-unstyled list-inline mb-0 social text-center quick-links">
+                            <li class="list-inline-item">
+                              <a class="btn-floating btn-fb mx-1" href="#" target="blank">
+                                <i class="fa fa-facebook-f"></i>
+                              </a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a class="btn-floating btn-tw mx-1" href="#" target="blank">
+                                <i class="fa fa-twitter"></i>
+                              </a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a class="btn-floating btn-instagram mx-1" href="https://www.instagram.com/aideone_consult/" target="blank">
+                                <i class="fa fa-instagram"></i>
+                              </a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a class="btn-floating btn-linkedin mx-1" href="https://www.linkedin.com/company/aideone-consulting/" target="blank">
+                                <i class="fa fa-linkedin-square"></i>
+                              </a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a class="btn-floating btn-envelope mx-1" href="mailto:info@aideone.com.ng" target="_blank">
+                                <i class="fa fa-envelope"></i>
+                              </a>
+                            </li>
+                          </ul>
+                          <!-- Social buttons -->
+                        </div>
+                        <!--Grid column-->
+                      </div>
+                      <!--Grid row-->
+                    </div>
+                    <!-- Footer Links -->
+                    <!-- Copyright -->	
+                              <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white py-3">
+                                      <p class="m-0 text-center text-black">Copyright &copy; <script> document.write(new Date().getFullYear());</script> <a href="#"><span class="span text-violat ">AideOne Consulting </span></a></p>
+                                  </div>
+                                  <hr>
+                                  <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                                      <h6><a style="color: #6f5f23; font-size: small;" href="https://github.com/Oluwafemi-iDEAR" target="_blank">Designed by iDEAR Concept </a></h6>
+                                  </div>
+                                  <hr>
+                              </div>
+                    <!-- Copyright -->
+                  </footer>
+                                            <!-- ./Footer ends -->
+
+
+<!-- scroll up script-->
+<script>
+    $(document).ready(function(){
+        $('body').append('<div id="toTop" class="btn btn-info"><span class="glyphicon glyphicon-chevron-up"></span> <i class="fa fa-angle-up fa-2x text-dark"></i> </div>');
+        $(window).scroll(function () {
+        if ($(this).scrollTop() != 0) {
+          $('#toTop').fadeIn();
+        } else {
+          $('#toTop').fadeOut();
+        }
+      }); 
+      $('#toTop').click(function(){
+          $("html, body").animate({ scrollTop: 0 }, 600);
+          return false;
+      });
+  });
+  
+  </script>
+  <!-- scroll up script ends-->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+    formbutton("create", {action: "https://formspree.io/f/xwkavlbk"})
+  </script>
+      <!-- page content ends -->
+  
+      <script src="js/services.js"></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+      <script src="js/client.js"></script>
+      <script src="js/counter.js"></script>
+      <!-- 
+      <script src="vendor/bootstrap/js/bootstrap.min.js"></script> -->
+      <script src="js/script.js"></script>
+  
+      <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script> -->
+   
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/aos.js"></script>
+      <script src="js/jquery.sticky.js"></script>
+      <script src="js/main.js"></script>
+  
+      <script>
+        $(window).scroll(function(){
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 150);});
+        
+      </script>
+  
+  <script type="text/javascript">
+    $().ready(function(){
+        $('[rel="tooltip"]').tooltip();
+  
+        $('a.scroll-down').click(function(e){
+            e.preventDefault();
+            scroll_target = $(this).data('href');
+             $('html, body').animate({
+                 scrollTop: $(scroll_target).offset().top - 60
+             }, 1000);
+        });
+  
+    });
+  
+    function rotateCard(btn){
+        var $card = $(btn).closest('.card-container');
+        console.log($card);
+        if($card.hasClass('hover')){
+            $card.removeClass('hover');
+        } else {
+            $card.addClass('hover');
+        }
+    }
+  
+  
+  </script>
+</body>
+</html>
