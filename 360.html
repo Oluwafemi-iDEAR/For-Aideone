@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Services | Private Wealth</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="images/aideone.jpg" rel="icon" type="image/png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Rubik:wght@300;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@800&family=Pushster&display=swap"
+        rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <style type="text/css">
+        body {
+            background-color: #d4d5d7 !important;
+        }
+
+        .login-block {
+            float: left;
+            width: 100%;
+            padding: 50px 0;
+            margin-top: 30px;
+        }
+
+        .banner-sec {
+            background-size: cover;
+            height: 700px;
+            border-radius: 0 10px 10px 0;
+            padding: 0;
+            overflow-y: scroll;
+        }
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .banner-sec::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .banner-sec {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            /* Firefox */
+            scrollbar-width: none;
+
+        }
+
+
+        .container {
+            border-radius: 10px;
+        }
+
+        .carousel-inner {
+            border-radius: 0 10px 10px 0;
+        }
+
+        .carousel-caption {
+            text-align: left;
+            left: 5%;
+        }
+
+        .login-sec {
+            padding: 50px 30px;
+            position: relative;
+        }
+
+        .login-sec .copy-text {
+            position: absolute;
+            width: 80%;
+            bottom: 20px;
+            font-size: 13px;
+            text-align: center;
+        }
+
+        .banner-text {
+            width: 70%;
+            position: absolute;
+            bottom: 40px;
+            padding-left: 20px;
+        }
+
+        .banner-text h2 {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .banner-text h2:after {
+            content: " ";
+            width: 100px;
+            height: 5px;
+            background: #FFF;
+            display: block;
+            margin-top: 20px;
+            border-radius: 3px;
+        }
+
+        .banner-text p {
+            color: #fff;
+        }
+
+        .how-section1 {
+            margin-top: -15%;
+            padding: 10%;
+        }
+
+        .how-section1 h4 {
+            color: #e91c58;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .wealth-heading {
+            color: #3931af;
+            font-size: 25px;
+        }
+
+        .how-section1 .subheading {
+            color: #3931af;
+            font-size: 20px;
+        }
+
+        .how-section1 .row {
+            margin-top: 10%;
+        }
+
+        .how-img {
+            text-align: center;
+        }
+
+        .how-img img {
+            width: 40%;
+        }
+
+        /* Extra small devices (portrait phones, less than 576px */
+        @media (max-width: 575.98px) {
+            .image-sec {
+                display: none;
+            }
+
+            .banner-sec::-webkit-scrollbar {
+                display: none;
+            }
+
+            .banner-sec {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+
+            }
+        }
+
+        /* Small devices (landscape phones, 576px and up) */
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            .image-sec {
+                display: none;
+            }
+
+            .banner-sec::-webkit-scrollbar {
+                display: none;
+            }
+
+            .banner-sec {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+
+            }
+        }
+
+        /* Medium devices (tablets, 768px and up) */
+        @media (min-width: 768px) and (max-width: 991.98px) {}
+
+        /* Large devices (desktops, 992px and up) */
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+            .banner-sec {
+                width: 300px !important;
+            }
+        }
+
+        .bx-border-circle {
+            border: 2px solid #e91c58;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- loader ends -->
+    <nav class="navbar navbar-expand-lg navbar-default bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/aideone.png" alt="AideOne" height="50"
+                    class='img-responsive'></a>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav"
+                aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main_nav">
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"> <a class="nav-link" href="index.html">Home </a> </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" data-toggle="dropdown"> About Us </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a class="dropdown-item" href="about.html"> Overview</a></li>
+                            <li><a class="dropdown-item" href="about_partner.html"> Meet Our Partners </a></li>
+                            <li><a class="dropdown-item" href="about_team.html"> Meet Our Team </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="newsletters.html">Insights </a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" data-toggle="dropdown">Services</a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a class="dropdown-item" href="services.html">Bookkeeping and Accounting Services</a>
+                            </li>
+                            <li><a class="dropdown-item" href="services.html">Tax Compliance and Advisory</a></li>
+                            <li><a class="dropdown-item" href="services.html">Finance Transformation</a></li>
+                            <li><a class="dropdown-item" href="services.html">Finance function resourcing and
+                                    outsourcing</a></li>
+                            <li><a class="dropdown-item" href="services.html">Audit and Assurance Service</a></li>
+                            <li><a class="dropdown-item" href="services.html">Human Resource and Payroll Services</a>
+                            </li>
+                            <li><a class="dropdown-item" href="school.html">AideOne School of Finance and Tax</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link" href="#" data-toggle="dropdown">Products</a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a class="dropdown-item" href="360.html">360 Degrees</a></li>
+                            <li><a class="dropdown-item" href="wealth.html">Private Wealth</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html"> Contact Us </a></li>
+                    <li class="nav-item"><a class="nav-link" href="careers.html">Careers </a></li>
+                </ul>
+            </div><!-- end row -->
+        </div>
+    </nav>
+    <!-- navbar-collapse.// -->
+    <!-- Navigation ends -->
+
+    <section class="login-block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 login-sec d-none d-md-block image-sec">
+                    <img src="images/360-solution.jpg" width="400" alt="">
+                </div>
+                <div class="col-md-6 col-lg-8 banner-sec mt-3">
+                    <div class="container">
+                        <div class="d-md-none d-sm-block mb-5">
+                            <h2 style="font-size: 48px; font-family: 'Pushster', cursive; color: #e91c58;">360° Tax
+                                Solutions</h2>
+                        </div>
+                        <div class="col-md-12 text-light">
+                            <h4 class="wealth-heading d-none d-md-block"
+                                style="font-size: 42px; font-family: 'Pushster', cursive; color: #e91c58;">360° Tax
+                                Solutions</h4>
+                            <p class="text-muted">Small and Medium businesses contribute approximately 50% to Nigeria’s
+                                GDP and account for over 80% of employment in the country. The Nigerian tax environment
+                                with the introduction of the annual Finance Act, requires a careful examination of
+                                today's tax function to better adapt to inevitable changes, manage risks, and create
+                                value for your organization while addressing the capability gaps.
+                                The cost of tax compliance is far cheaper than any imagined nightmare of non-compliance.
+                            </p>
+
+                            <h4 class="wealth-heading"></h4>
+                            <p class="text-muted">No doubt the annual Tax clearance certificate (TCC) issued by the
+                                Federal Inland Revenue Service (FIRS) in the case of incorporated entities or the State
+                                Internal Revenue Service (SIRS) in the case of individuals and unincorporated business
+                                registration shows that the business tax affairs is in good shape. The TCC is required
+                                for a number of corporate transactions as stipulated by law and the application for a
+                                TCC starts with obtaining a Taxpayers Identification Number (TIN) from the relevant tax
+                                authority and this is free of cost.</p>
+                        </div>
+                    </div>
+                    <div class="how-section1">
+                        <div class="row">
+                            <div class="col-md-4 how-img">
+                                <i class='bx bx-math bx-lg  bx-border-circle bx-burst' style="color: #0a0368;"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <h4>Tax-Proof Your Current System</h4>
+                                <p class="text-muted">
+                                    An ethical business
+                                    operation involves paying tax, and paying tax means doing a lot of computations and
+                                    filling out prescribed tax forms (returns) within statutory timelines. This includes
+                                    reviewing contracts for tax optimization and mitigating tax risk embedded in
+                                    business
+                                    arrangements. Review of operational transactions and the financial statements as a
+                                    basis
+                                    of the information produced from Bookkeeping are critical to a tax proof system.
+                                    <br>
+                                    The Tax compliance function will make sure all statutory forms and tax returns are
+                                    proactively completed and submitted on-time to the relevant tax authorities to avoid
+                                    penalty and interest. A strong Tax compliance function in a small and medium
+                                    business
+                                    will go one step beyond simple compliance and will find ways within harmless tax
+                                    provisions and reliefs to minimize tax, so as to maximize the company’s net income
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h4>Minimum and Efficient Tax</h4>
+                                <p class="text-muted">
+                                    The Tax Function should endeavor and ensure that all tax issues
+                                    affecting the business are taken seriously at all level of operation and escalated
+                                    for
+                                    timely resolution as soon as possible. To achieve this, the finance staff should
+                                    embrace
+                                    the <b>“Think Tax Ahead Concept”</b> This will make all stakeholders to understand
+                                    the
+                                    tax impact of major and minor activities within the business operation and create a
+                                    tax
+                                    awareness culture across the business for maximum efficiency. This could be adopted
+                                    through sharing and reading tax advertorials such as this, tax publications, tax
+                                    roadshows and deliberate tax workshops.
+                                </p>
+                            </div>
+                            <div class="col-md-4 how-img">
+                                <i class='bx bxs-bar-chart-alt-2 bx-lg  bx-border-circle bx-flashing'
+                                    style="color: #0a0368;"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 how-img">
+                                <i class='bx bxs-time-five bx-lg  bx-border-circle' style="color: #0a0368;"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <h4>Straighten Your Past Tax History</h4>
+                                <p class="text-muted">A periodic diagnostic tax health-check for business regulatory
+                                    issues
+                                    would engender best practice. A self-initiated tax-proof compliance exercise
+                                    covering
+                                    identified tax obligations such as Value Added Tax (VAT), Company Income Tax,
+                                    Withholding tax (WHT), PAYE tax, and other transaction taxes is usually very helpful
+                                    in
+                                    the long run.
+                                    <br>
+                                    Typical tax audit process entails review of taxpayer's records to ascertain
+                                    compliance
+                                    with relevant tax laws. It is usually for not more than 6 years back from the date
+                                    of
+                                    submission of the relevant returns or when the audit notice is received.
+                                    The anticipated outcome of a tax health-check is to close identified gaps and make
+                                    necessary provisions to address the gaps and ensure that the tax returns filed going
+                                    forward are accurate, compliant, timely, and supported by up-to-date and precise
+                                    documentation.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h4>Tax Defense </h4>
+                                <p class="text-muted">Having tax-proofed your system and straightened your past history,
+                                    it
+                                    is easy to confidently defend your position without fear of the tax man. The Tax
+                                    function should manage tax audits by defending positions taken in the tax returns
+                                    with
+                                    all reasonable technical and factual arguments on a cost-effective basis to minimize
+                                    any
+                                    unexpected additional taxes and/or penalties. This includes proper documentation of
+                                    material positions.</p>
+                                </p>
+                            </div>
+                            <div class="col-md-4 how-img">
+                                <i class='bx bxs-analyse bx-lg  bx-border-circle bx-spin' style="color: #0a0368;"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 how-img">
+                                <i class='bx bxs-certification bx-lg  bx-border-circle bx-tada'
+                                    style="color: #0a0368;"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <h4>Tax Clearance Certificate</h4>
+                                <p class="text-muted">A periodic diagnostic tax health-check for business regulatory
+                                    issues
+                                    would engender best practice. A self-initiated tax-proof compliance exercise
+                                    covering
+                                    identified tax obligations such as Value Added Tax (VAT), Company Income Tax,
+                                    Withholding tax (WHT), PAYE tax, and other transaction taxes is usually very helpful
+                                    in
+                                    the long run.
+                                    <br>
+                                    Typical tax audit process entails review of taxpayer's records to ascertain
+                                    compliance
+                                    with relevant tax laws. It is usually for not more than 6 years back from the date
+                                    of
+                                    submission of the relevant returns or when the audit notice is received.
+                                    The anticipated outcome of a tax health-check is to close identified gaps and make
+                                    necessary provisions to address the gaps and ensure that the tax returns filed going
+                                    forward are accurate, compliant, timely, and supported by up-to-date and precise
+                                    documentation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 how-img">
+                <img src="images/idea.png" class="img-fluid" alt="" />
+            </div>
+            <div class="col-md-6 mb-5">
+                <h5 class="wealth-heading"><i>Conclusion</i></h5>
+                <p class="text-muted">There are still some other strategic tax functions required as the
+                    business grows bigger, however the focus is for every business owner to essentially
+                    build a efficient Finance department (inclusive of the tax function) that is a strategic
+                    partner for the overall fulfillment of the purpose of the business.
+                    <br>
+                    <i>So why not let us do some work for you? We’ll do the “watchout” while you spend your
+                        time where it counts: managing and growing your business.</i>
+                    <br>
+                    <i>With our unparalleled training and experience, we offer a range of tax services to
+                        assist small and medium taxpayers with: tax planning, compliance, tax audit
+                        reconciliations and appeals.</i>
+                    <br>
+                    <i> We have the ability to uncover hidden deductions and tax credits that will
+                        significantly
+                        cushion your taxes.</i>
+                    <br>
+                    <i>We diligently create personalized tax plans to reduce your tax burden and protect
+                        income
+                        for highly successful business owners.</i>
+                    <br>
+                    <i>Our staff with cutting edge training and experience, will provide a 360 degree
+                        support
+                        all the way from Tax registration, Tax computation, Income Tax filing, VAT & PAYE
+                        returns, Tax Audit defense and Tax clearance certificate.</i>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="page-footer font-small elegant-color  wow slideInUp" data-wow-duration="4s" id="footer">
+        <!-- Footer Links -->
+        <div class="container">
+            <div class="row">
+                <!--Grid column-->
+                <div class="col my-5">
+                    <!-- Social buttons -->
+                    <ul class="list-unstyled list-inline mb-0 social text-center quick-links">
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-fb mx-1" href="#" target="blank">
+                                <i class="fa fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-tw mx-1" href="#" target="blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-instagram mx-1" href="https://www.instagram.com/aideone_consult/"
+                                target="blank">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-gplus mx-1"
+                                href="https://www.linkedin.com/company/aideone-consulting/" target="blank">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-envelope mx-1" href="mailto:info@aideone.com.ng" target="_blank">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Social buttons -->
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Footer Links -->
+        <!-- Copyright -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white py-3">
+                <p class="m-0 text-center text-black">Copyright &copy;
+                    <script> document.write(new Date().getFullYear());</script> <a href="#"><span
+                            class="span text-violat ">AideOne Consulting </span></a>
+                </p>
+            </div>
+            <hr>
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                <h6><a style="color: #6f5f23; font-size: small;" href="https://github.com/Oluwafemi-iDEAR"
+                        target="_blank">Designed by iDEAR Concept </a></h6>
+            </div>
+            <hr>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+    <!-- ./Footer ends -->
+
+
+    <!-- scroll up script-->
+    <script>
+        $(document).ready(function () {
+            $('body').append('<div id="toTop" class="btn btn-info"><span class="glyphicon glyphicon-chevron-up"></span> <i class="fa fa-angle-up fa-2x text-dark"></i> </div>');
+            $(window).scroll(function () {
+                if ($(this).scrollTop() != 0) {
+                    $('#toTop').fadeIn();
+                } else {
+                    $('#toTop').fadeOut();
+                }
+            });
+            $('#toTop').click(function () {
+                $("html, body").animate({ scrollTop: 0 }, 600);
+                return false;
+            });
+        });
+
+    </script>
+    <!-- scroll up script ends-->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+        window.formbutton = window.formbutton || function () { (formbutton.q = formbutton.q || []).push(arguments) };
+        formbutton("create", { action: "https://formspree.io/f/xwkavlbk" })
+    </script>
+    <!-- page content ends -->
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/typewriter.js"></script>
+    <script src="js/services.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="js/client.js"></script>
+    <script src="js/counter.js"></script>
+    <!-- 
+      <script src="vendor/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="js/script.js"></script>
+
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
+
+
+    <!-- Script for navbar -->
+    <script>
+        $(document).ready(function () {
+            $(".dropdown").hover(
+                function () {
+                    $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideDown("400");
+                    $(this).toggleClass('open');
+                },
+                function () {
+                    $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideUp("400");
+                    $(this).toggleClass('open');
+                }
+            );
+        });
+    </script>
+    <!-- Script for navbar ends-->
+    <script>
+        $(window).scroll(function () {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 150);
+        });
+
+    </script>
+
+    <script type="text/javascript">
+        $().ready(function () {
+            $('[rel="tooltip"]').tooltip();
+
+            $('a.scroll-down').click(function (e) {
+                e.preventDefault();
+                scroll_target = $(this).data('href');
+                $('html, body').animate({
+                    scrollTop: $(scroll_target).offset().top - 60
+                }, 1000);
+            });
+
+        });
+
+        function rotateCard(btn) {
+            var $card = $(btn).closest('.card-container');
+            console.log($card);
+            if ($card.hasClass('hover')) {
+                $card.removeClass('hover');
+            } else {
+                $card.addClass('hover');
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
