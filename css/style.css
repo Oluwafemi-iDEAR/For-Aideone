@@ -1065,27 +1065,27 @@ section .section-title {
 }
 /* -----------------------------------Team index2 ends------------------------------*/
 /* General scrollbar */
-        /* width */
-        ::-webkit-scrollbar {
-          width: 10px;
-      }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
-      /* Track */
-      ::-webkit-scrollbar-track {
-          box-shadow: inset 0 0 5px grey;
-          border-radius: 10px;
-      }
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
 
-      /* Handle */
-      ::-webkit-scrollbar-thumb {
-          background: #020d29;
-          border-radius: 10px;
-      }
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #020d29;
+  border-radius: 10px;
+}
 
-      /* Handle on hover */
-      ::-webkit-scrollbar-thumb:hover {
-          background: #e91c58;
-      }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e91c58;
+}
 
 /* -------------------------------Insights--------------------------------------- */
 
@@ -1336,7 +1336,6 @@ figure img {
   margin-top: 50px;
   margin-bottom: 50px;
   box-shadow: 0px 4px 8px 0px #283593;
-
 }
 
 .card-0 {
@@ -3317,7 +3316,7 @@ section .section-title {
   flex-wrap: wrap;
   width: 80%;
   height: 50px;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 .news {
@@ -3343,20 +3342,20 @@ section .section-title {
   border-top: 28px solid transparent;
   border-right: 20px solid transparent;
   border-bottom: 21px solid transparent;
-  top: 0px
+  top: 0px;
 }
 
 .seasons h5 {
   font-size: 18px;
-  margin: 8% 0
+  margin: 8% 0;
 }
 
 .news marquee {
   font-size: 18px;
-  margin-top: 12px
+  margin-top: 12px;
 }
 
 .news-content p {
   margin-right: 41px;
-  display: inline
+  display: inline;
 }

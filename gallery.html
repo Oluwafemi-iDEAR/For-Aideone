@@ -258,6 +258,12 @@
         transform: rotateY(-360deg);
       }
     }
+    
+#borderimg { 
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 30 round;
+}
   </style>
 
   <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
@@ -316,6 +322,16 @@
       </div>
     </nav>
     <!-- navbar-collapse.// -->
+
+<h1>The border-image Property</h1>
+
+<p>Here, the middle sections of the image are repeated to create the border:</p>
+<p id="borderimg">border-image: url(border.png) 30 round;</p>
+
+<p>Here is the original image:</p><img src="images/pc.jpg">
+<p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
+
+
     <!-- Navigation ends -->
     <div class="container heros">
       <div class="row">
@@ -352,40 +368,7 @@
 
   <!-- make sure to delete -->
 
-  <div class="container heros">
-    <div class="p-md-5">
-      <div class="col-md-8 offset-2 px-0">
-        <div class="row">
-          <div class="col-12 col-lg-6 col-xl-5 offset-xl-1 mx-5">
-            <div class="aide1">
-              <div class="carousel">
-                <div class="carousel__face"></div>
-                <div class="carousel__face"></div>
-                <div class="carousel__face"></div>
-                <div class="carousel__face"></div>
-                <div class="carousel__face"></div>
-                <div class="carousel__face"></div>
-                <div class="carousel__face"></div>
-                <div class="carousel__face"></div>
-                <div class="carousel__face"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block phone-holder">
-            <div class="iphone-mockup"><img src="images/phone.svg" class="device">
-              <div class="screen">
-                <img class=" img-fluid" src="images/aideone.com.jpg" alt="card image">
-                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" height="160" width="285">
-                  <source src="images/welcome.mp4" type="video/mp4">
-                </video><img class=" img-fluid" src="images/academy.jpg" alt="card image">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--  -->
+
 
   <section class="contact pt-100 pb-100 wow fadeIn" data-wow-duration="5s" id="contact">
     <div class="container">
